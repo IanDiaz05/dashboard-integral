@@ -1,0 +1,78 @@
+Fecha,Máquina,TipoMantenimiento,Duracion_min,Responsable,Causa
+2023-01-01,Línea-2,Preventivo,193,Técnico-5,Lubricación insuficiente
+2023-01-01,Línea-5,Preventivo,140,Técnico-9,Falla eléctrica
+2023-01-02,Línea-3,Correctivo,121,Técnico-10,Error humano
+2023-01-02,Línea-5,Correctivo,141,Técnico-10,Error humano
+2023-01-03,Línea-3,Preventivo,87,Técnico-8,Falla eléctrica
+2023-01-04,Línea-3,Correctivo,128,Técnico-6,Desgaste
+2023-01-05,Línea-2,Correctivo,139,Técnico-7,Lubricación insuficiente
+2023-01-06,Línea-4,Correctivo,197,Técnico-9,Error humano
+2023-01-07,Línea-1,Preventivo,120,Técnico-4,Lubricación insuficiente
+2023-01-07,Línea-4,Preventivo,110,Técnico-9,Lubricación insuficiente
+2023-01-09,Línea-3,Correctivo,165,Técnico-5,Desgaste
+2023-01-09,Línea-4,Correctivo,169,Técnico-3,Desgaste
+2023-01-10,Línea-3,Correctivo,209,Técnico-6,Error humano
+2023-01-13,Línea-3,Preventivo,174,Técnico-1,Desgaste
+2023-01-13,Línea-5,Preventivo,168,Técnico-7,Falla eléctrica
+2023-01-18,Línea-5,Correctivo,74,Técnico-10,Desgaste
+2023-01-19,Línea-4,Preventivo,188,Técnico-10,Lubricación insuficiente
+2023-01-21,Línea-2,Correctivo,239,Técnico-6,Desgaste
+2023-01-23,Línea-1,Correctivo,30,Técnico-9,Lubricación insuficiente
+2023-01-24,Línea-2,Preventivo,31,Técnico-6,Lubricación insuficiente
+2023-01-26,Línea-1,Preventivo,211,Técnico-5,Desgaste
+2023-01-26,Línea-5,Correctivo,173,Técnico-2,Lubricación insuficiente
+2023-01-27,Línea-1,Preventivo,74,Técnico-1,Desgaste
+2023-01-27,Línea-3,Correctivo,178,Técnico-6,Desgaste
+2023-01-28,Línea-3,Correctivo,142,Técnico-7,Desgaste
+2023-01-28,Línea-5,Correctivo,234,Técnico-7,Lubricación insuficiente
+2023-01-31,Línea-3,Preventivo,201,Técnico-6,Desgaste
+2023-02-02,Línea-4,Preventivo,127,Técnico-5,Error humano
+2023-02-03,Línea-4,Preventivo,214,Técnico-4,Lubricación insuficiente
+2023-02-05,Línea-4,Correctivo,96,Técnico-9,Error humano
+2023-02-05,Línea-5,Preventivo,236,Técnico-10,Desgaste
+2023-02-06,Línea-5,Correctivo,114,Técnico-5,Desgaste
+2023-02-07,Línea-2,Correctivo,158,Técnico-4,Desgaste
+2023-02-07,Línea-3,Preventivo,200,Técnico-2,Error humano
+2023-02-07,Línea-4,Preventivo,35,Técnico-2,Lubricación insuficiente
+2023-02-11,Línea-3,Correctivo,208,Técnico-8,Falla eléctrica
+2023-02-11,Línea-5,Correctivo,173,Técnico-7,Error humano
+2023-02-13,Línea-1,Correctivo,197,Técnico-7,Lubricación insuficiente
+2023-02-14,Línea-3,Correctivo,104,Técnico-10,Desgaste
+2023-02-15,Línea-3,Correctivo,128,Técnico-10,Desgaste
+2023-02-15,Línea-5,Preventivo,183,Técnico-4,Desgaste
+2023-02-16,Línea-4,Preventivo,86,Técnico-9,Error humano
+2023-02-18,Línea-5,Correctivo,143,Técnico-9,Falla eléctrica
+2023-02-19,Línea-2,Preventivo,64,Técnico-9,Error humano
+2023-02-23,Línea-1,Correctivo,35,Técnico-7,Desgaste
+2023-02-24,Línea-3,Preventivo,193,Técnico-5,Falla eléctrica
+2023-02-27,Línea-1,Preventivo,206,Técnico-7,Desgaste
+2023-02-27,Línea-5,Correctivo,189,Técnico-7,Lubricación insuficiente
+2023-02-28,Línea-4,Preventivo,121,Técnico-7,Lubricación insuficiente
+2023-03-01,Línea-1,Preventivo,39,Técnico-5,Lubricación insuficiente
+2023-03-01,Línea-3,Preventivo,83,Técnico-2,Error humano
+2023-03-02,Línea-3,Preventivo,145,Técnico-5,Error humano
+2023-03-02,Línea-5,Preventivo,65,Técnico-4,Desgaste
+2023-03-03,Línea-3,Correctivo,195,Técnico-1,Falla eléctrica
+2023-03-04,Línea-1,Correctivo,167,Técnico-9,Error humano
+2023-03-04,Línea-2,Preventivo,109,Técnico-5,Desgaste
+2023-03-04,Línea-3,Preventivo,56,Técnico-6,Falla eléctrica
+2023-03-06,Línea-3,Correctivo,221,Técnico-9,Desgaste
+2023-03-07,Línea-5,Correctivo,52,Técnico-2,Error humano
+2023-03-09,Línea-5,Correctivo,228,Técnico-7,Error humano
+2023-03-11,Línea-1,Preventivo,158,Técnico-3,Falla eléctrica
+2023-03-11,Línea-2,Correctivo,228,Técnico-10,Lubricación insuficiente
+2023-03-13,Línea-3,Preventivo,148,Técnico-6,Lubricación insuficiente
+2023-03-13,Línea-5,Correctivo,60,Técnico-8,Desgaste
+2023-03-14,Línea-4,Correctivo,140,Técnico-10,Desgaste
+2023-03-14,Línea-5,Correctivo,140,Técnico-9,Lubricación insuficiente
+2023-03-19,Línea-2,Correctivo,57,Técnico-10,Desgaste
+2023-03-19,Línea-3,Preventivo,231,Técnico-3,Falla eléctrica
+2023-03-19,Línea-4,Preventivo,104,Técnico-8,Falla eléctrica
+2023-03-23,Línea-4,Preventivo,55,Técnico-8,Falla eléctrica
+2023-03-23,Línea-5,Correctivo,224,Técnico-2,Error humano
+2023-03-24,Línea-2,Preventivo,112,Técnico-5,Lubricación insuficiente
+2023-03-25,Línea-1,Preventivo,76,Técnico-10,Falla eléctrica
+2023-03-27,Línea-1,Preventivo,182,Técnico-2,Desgaste
+2023-03-27,Línea-2,Preventivo,90,Técnico-10,Error humano
+2023-03-27,Línea-3,Preventivo,240,Técnico-8,Falla eléctrica
+2023-03-27,Línea-5,Preventivo,150,Técnico-8,Error humano

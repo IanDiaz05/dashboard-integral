@@ -1,0 +1,21 @@
+---
+title: "Exploración de Datos - Dashboard Mantenimiento"
+output: html_notebook
+---
+
+### Cargar librerias
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(skimr)
+```
+
+### Cargar dataset
+
+```{r message=FALSE, warning=FALSE}
+mantenimiento <- read_csv("mantenimiento.csv", locale = locale(encoding = "latin1"))
+
+# Visualizacion inicial del dataset
+glimpse(mantenimiento)
+skim(mantenimiento)
+```
