@@ -53,14 +53,16 @@ ui <- dashboardPage(
                                 selectInput("filtro_tipo", "Tipo de Mantenimiento",
                                     choices = unique(mantenimiento$TipoMantenimiento),
                                     selected = unique(mantenimiento$TipoMantenimiento),
-                                    multiple = TRUE
+                                    multiple = TRUE,
+                                    selectize = FALSE
                                 )
                             ),
                             column(3,
                                 selectInput("filtro_tecnico", "Responsable",
                                     choices = unique(mantenimiento$Responsable),
                                     selected = unique(mantenimiento$Responsable),
-                                    multiple = TRUE
+                                    multiple = TRUE,
+                                    selectize = FALSE
                                 )
                             ),
                             column(3,
