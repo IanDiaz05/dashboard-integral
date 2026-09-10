@@ -65,12 +65,20 @@ ui <- dashboardPage(
                                     selectize = FALSE
                                 )
                             ),
-                            column(3,
+                            column(2,
                                 sliderInput("filtro_duracion", "Duración (min)",
                                     min = min(mantenimiento$Duracion_min),
                                     max = max(mantenimiento$Duracion_min),
                                     value = c(min(mantenimiento$Duracion_min), max(mantenimiento$Duracion_min)),
                                     step = 1
+                                )
+                            ),
+                            column(1,
+                                br(),
+                                actionButton("reset_filtros", "Reset",
+                                    icon = icon("rotate-left"),
+                                    class = "btn-warning",
+                                    style = "margin-top: 5px;"
                                 )
                             )
                         )
@@ -83,7 +91,13 @@ ui <- dashboardPage(
 )
 
 server <- function(input, output, session) {
-    
+    fecha_min <- min(mantenimiento$Fecha, na.rm = TRUE)
+    fecha_max <- max(mantenimiento$Fecha, na.rm = TRUE)
+    tipos     <- sort(unique(mantenimiento$TipoMantenimiento))
+    tecnicos  <- sort(unique(mantenimiento$Responsable))
+    dur_min   <- min(mantenimiento$Duracion_min, na.rm = TRUE)
+    dur_max   <- max(mantenimiento$Duracion_min, na.rm = TRUE)
+
     output$total_mantenimientos <- renderValueBox({
         total <- nrow(mantenimiento)
         valueBox(
@@ -163,6 +177,24 @@ server <- function(input, output, session) {
             coord_flip() +
             labs(title = "Intervenciones por Técnico", x = "", y = "Cantidad de Mantenimientos") +
             theme_minimal()
+    })
+
+    observeEvent(input$reset_filtros, {
+        updateDateRangeInput(session, "filtro_fecha",
+            start = fecha_min,
+            end   = fecha_max
+        )
+        updateSelectInput(session, "filtro_tipo",
+            choices  = tipos,
+            selected = tipos
+        )
+        updateSelectInput(session, "filtro_tecnico",
+            choices  = tecnicos,
+            selected = tecnicos
+        )
+        updateSliderInput(session, "filtro_duracion",
+            value = c(dur_min, dur_max)
+        )
     })
     
     datos_filtrados <- reactive({
