@@ -36,6 +36,44 @@ ui <- dashboardPage(
             ),
             tabItem(tabName = "datos",
                 h2("Registro Histórico de Mantenimientos"),
+                fluidRow(
+                    box(width = 12, title = "Filtros", status = "primary", solidHeader = TRUE, collapsible = TRUE,
+                        fluidRow(
+                            column(3,
+                                dateRangeInput("filtro_fecha", "Rango de Fechas",
+                                    start = min(mantenimiento$Fecha),
+                                    end = max(mantenimiento$Fecha),
+                                    min = min(mantenimiento$Fecha),
+                                    max = max(mantenimiento$Fecha),
+                                    format = "dd/mm/yyyy",
+                                    language = "es"
+                                )
+                            ),
+                            column(3,
+                                selectInput("filtro_tipo", "Tipo de Mantenimiento",
+                                    choices = unique(mantenimiento$TipoMantenimiento),
+                                    selected = unique(mantenimiento$TipoMantenimiento),
+                                    multiple = TRUE
+                                )
+                            ),
+                            column(3,
+                                selectInput("filtro_tecnico", "Responsable",
+                                    choices = unique(mantenimiento$Responsable),
+                                    selected = unique(mantenimiento$Responsable),
+                                    multiple = TRUE
+                                )
+                            ),
+                            column(3,
+                                sliderInput("filtro_duracion", "Duración (min)",
+                                    min = min(mantenimiento$Duracion_min),
+                                    max = max(mantenimiento$Duracion_min),
+                                    value = c(min(mantenimiento$Duracion_min), max(mantenimiento$Duracion_min)),
+                                    step = 1
+                                )
+                            )
+                        )
+                    )
+                ),
                 DT::dataTableOutput("tabla_mantenimiento")
             )
         )
@@ -125,18 +163,41 @@ server <- function(input, output, session) {
             theme_minimal()
     })
     
+    datos_filtrados <- reactive({
+        df <- mantenimiento
+        
+        if (!is.null(input$filtro_fecha) && length(input$filtro_fecha) == 2) {
+            df <- df %>% filter(Fecha >= input$filtro_fecha[1] & Fecha <= input$filtro_fecha[2])
+        }
+        
+        if (!is.null(input$filtro_tipo) && length(input$filtro_tipo) > 0) {
+            df <- df %>% filter(TipoMantenimiento %in% input$filtro_tipo)
+        }
+        
+        if (!is.null(input$filtro_tecnico) && length(input$filtro_tecnico) > 0) {
+            df <- df %>% filter(Responsable %in% input$filtro_tecnico)
+        }
+        
+        if (!is.null(input$filtro_duracion) && length(input$filtro_duracion) == 2) {
+            df <- df %>% filter(Duracion_min >= input$filtro_duracion[1] & Duracion_min <= input$filtro_duracion[2])
+        }
+        
+        df
+    })
+    
     output$tabla_mantenimiento <- DT::renderDataTable({
         DT::datatable(
-            mantenimiento,
+            datos_filtrados(),
             extensions = 'Buttons',
             options = list(
-                dom = 'Bfrtip',
+                dom = 'Blfrtip',
                 buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
                 pageLength = 10,
+                lengthMenu = list(c(10, 25, 50, -1), c('10', '25', '50', 'Todos')),
                 scrollX = TRUE
             )
         )
-    })
+    }, server = FALSE)
 }
 
 shinyApp(ui, server)
