@@ -22,7 +22,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "R -q -e 'install.packages(\"tidyverse\")'",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends libuv1-dev libssl-dev libcurl4-openssl-dev libxml2-dev libfontconfig1-dev libfreetype6-dev libharfbuzz-dev libfribidi-dev libpng-dev libtiff5-dev libjpeg-dev libgit2-dev libicu-dev libzstd-dev zlib1g-dev pkg-config cmake make g++ pandoc",
 
 	// Configure tool-specific properties.
 	"customizations": {
