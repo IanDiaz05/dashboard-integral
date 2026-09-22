@@ -1,0 +1,1977 @@
+"","Continent","Country","Year","Status","Lifeexpectancy","Population","GDP"
+"1","Asia","Afghanistan",2015,"Developing",65,33736494,584.25921
+"2","Asia","Afghanistan",2014,"Developing",59.9,327582,612.696514
+"3","Asia","Afghanistan",2013,"Developing",59.9,31731688,631.744976
+"4","Asia","Afghanistan",2012,"Developing",59.5,3696958,669.959
+"5","Asia","Afghanistan",2011,"Developing",59.2,2978599,63.537231
+"6","Asia","Afghanistan",2010,"Developing",58.8,2883167,553.32894
+"7","Asia","Afghanistan",2009,"Developing",58.6,284331,445.8932979
+"8","Asia","Afghanistan",2008,"Developing",58.1,2729431,373.3611163
+"9","Asia","Afghanistan",2007,"Developing",57.5,26616792,369.835796
+"10","Asia","Afghanistan",2006,"Developing",57.3,2589345,272.56377
+"11","Asia","Afghanistan",2005,"Developing",57.3,257798,25.2941299
+"12","Asia","Afghanistan",2004,"Developing",57,24118979,219.1413528
+"13","Asia","Afghanistan",2003,"Developing",56.7,2364851,198.7285436
+"14","Asia","Afghanistan",2002,"Developing",56.2,21979923,187.84595
+"15","Asia","Afghanistan",2001,"Developing",55.3,2966463,117.49698
+"16","Asia","Afghanistan",2000,"Developing",54.8,293756,114.56
+"17","Europe","Albania",2015,"Developing",77.8,28873,3954.22783
+"18","Europe","Albania",2014,"Developing",77.5,288914,4575.763787
+"19","Europe","Albania",2013,"Developing",77.2,289592,4414.72314
+"20","Europe","Albania",2012,"Developing",76.9,2941,4247.61438
+"21","Europe","Albania",2011,"Developing",76.6,295195,4437.17868
+"22","Europe","Albania",2010,"Developing",76.2,291321,494.358832
+"23","Europe","Albania",2009,"Developing",76.1,2927519,4114.136545
+"24","Europe","Albania",2008,"Developing",75.3,2947314,437.539647
+"25","Europe","Albania",2007,"Developing",75.9,29717,363.13685
+"26","Europe","Albania",2006,"Developing",74.2,2992547,35.1293
+"27","Europe","Albania",2005,"Developing",73.5,311487,279.142931
+"28","Europe","Albania",2004,"Developing",73,326939,2416.588235
+"29","Europe","Albania",2003,"Developing",72.8,339616,189.681557
+"30","Europe","Albania",2002,"Developing",73.3,3511,1453.642777
+"31","Europe","Albania",2001,"Developing",73.6,36173,1326.97339
+"32","Europe","Albania",2000,"Developing",72.6,38927,1175.788981
+"33","Africa","Algeria",2015,"Developing",75.6,39871528,4132.76292
+"34","Africa","Algeria",2014,"Developing",75.4,39113313,547.8517
+"35","Africa","Algeria",2013,"Developing",75.3,38338562,5471.866766
+"36","Africa","Algeria",2012,"Developing",75.1,37565847,5564.82566
+"37","Africa","Algeria",2011,"Developing",74.9,36819558,5432.2523
+"38","Africa","Algeria",2010,"Developing",74.7,36117637,4463.394675
+"39","Africa","Algeria",2009,"Developing",74.4,3546576,3868.83123
+"40","Africa","Algeria",2008,"Developing",74.1,3486715,495.254866
+"41","Africa","Algeria",2007,"Developing",73.8,34376,3935.183343
+"42","Africa","Algeria",2006,"Developing",73.4,33777915,3464.6179
+"43","Africa","Algeria",2005,"Developing",72.9,33288437,31.122378
+"44","Africa","Algeria",2004,"Developing",72.3,3283196,2598.9823
+"45","Africa","Algeria",2003,"Developing",71.7,3243514,294.33556
+"46","Africa","Algeria",2002,"Developing",71.6,3199546,1774.33673
+"47","Africa","Algeria",2001,"Developing",71.4,31592153,1732.857979
+"48","Africa","Algeria",2000,"Developing",71.3,3118366,1757.17797
+"49","Africa","Angola",2015,"Developing",52.4,2785935,3695.793748
+"50","Africa","Angola",2014,"Developing",51.7,2692466,479.31224
+"51","Africa","Angola",2013,"Developing",51.1,2599834,484.616884
+"52","Africa","Angola",2012,"Developing",56,259615,4598.249988
+"53","Africa","Angola",2011,"Developing",51,24218565,4299.12889
+"54","Africa","Angola",2010,"Developing",49.6,23369131,3529.53482
+"55","Africa","Angola",2009,"Developing",49.1,22549547,3347.84485
+"56","Africa","Angola",2008,"Developing",48.7,2175942,3868.578883
+"57","Africa","Angola",2007,"Developing",48.2,2997687,2878.837144
+"58","Africa","Angola",2006,"Developing",47.7,2262399,262.415149
+"59","Africa","Angola",2005,"Developing",47.4,19552542,1443.991929
+"60","Africa","Angola",2004,"Developing",47.1,18865716,141.86844
+"61","Africa","Angola",2003,"Developing",46.8,1823369,779.468356
+"62","Africa","Angola",2002,"Developing",46.5,17572649,711.181716
+"63","Africa","Angola",2001,"Developing",45.7,16983266,526.168743
+"64","Africa","Angola",2000,"Developing",45.3,1644924,555.2969419
+"65","South America","Argentina",2015,"Developing",76.3,43417765,13467.1236
+"66","South America","Argentina",2014,"Developing",76.2,42981515,12245.25645
+"67","South America","Argentina",2013,"Developing",76,42539925,12976.63642
+"68","South America","Argentina",2012,"Developing",75.9,4296739,12969.7712
+"69","South America","Argentina",2011,"Developing",75.7,41656879,12726.9836
+"70","South America","Argentina",2010,"Developing",75.5,41223889,1276.265
+"71","South America","Argentina",2009,"Developing",75.6,479947,8161.36966
+"72","South America","Argentina",2008,"Developing",75.4,4382389,8953.359275
+"73","South America","Argentina",2007,"Developing",74.8,3997224,7193.61764
+"74","South America","Argentina",2006,"Developing",75.2,3955889,5878.76127
+"75","South America","Argentina",2005,"Developing",74.9,39145488,576.883829
+"76","South America","Argentina",2004,"Developing",74.7,38728696,4251.574348
+"77","South America","Argentina",2003,"Developing",74.1,3839379,333.4376
+"78","South America","Argentina",2002,"Developing",74.1,3788937,2579.193168
+"79","South America","Argentina",2001,"Developing",74,3747159,717.694674
+"80","South America","Argentina",2000,"Developing",74.1,3757452,7669.273916
+"81","Asia","Armenia",2015,"Developing",74.8,291695,369.654776
+"82","Asia","Armenia",2014,"Developing",74.6,29622,3994.712355
+"83","Asia","Armenia",2013,"Developing",74.4,289359,3843.591213
+"84","Asia","Armenia",2012,"Developing",74.4,2881922,3684.8481
+"85","Asia","Armenia",2011,"Developing",73.9,2875581,3526.978143
+"86","Asia","Armenia",2010,"Developing",73.5,2877311,3218.381655
+"87","Asia","Armenia",2009,"Developing",73.3,2888584,2993.832531
+"88","Asia","Armenia",2008,"Developing",73.2,29822,41.26997
+"89","Asia","Armenia",2007,"Developing",73.5,293356,3138.8873
+"90","Asia","Armenia",2006,"Developing",72.9,29585,2158.299
+"91","Asia","Armenia",2005,"Developing",73,2981259,1643.758397
+"92","Asia","Armenia",2004,"Developing",73,3612,1191.96192
+"93","Asia","Armenia",2003,"Developing",72.7,31786,93.1661567
+"94","Asia","Armenia",2002,"Developing",72.6,333897,783.261699
+"95","Asia","Armenia",2001,"Developing",72.6,35655,694.435119
+"96","Asia","Armenia",2000,"Developing",72,369588,622.7427477
+"97","Oceania","Australia",2015,"Developed",82.8,23789338,56554.3876
+"98","Oceania","Australia",2014,"Developed",82.7,2346694,62214.6912
+"99","Oceania","Australia",2013,"Developed",82.5,23117353,67792.3386
+"100","Oceania","Australia",2012,"Developed",82.3,22728254,67677.63477
+"101","Oceania","Australia",2011,"Developed",82,223424,62245.129
+"102","Oceania","Australia",2010,"Developed",81.9,223175,51874.848
+"103","Oceania","Australia",2009,"Developed",81.7,216917,42742.99898
+"104","Oceania","Australia",2008,"Developed",81.3,212492,49664.6854
+"105","Oceania","Australia",2007,"Developed",81.3,28276,4991.98289
+"106","Oceania","Australia",2006,"Developed",81.2,26979,36118.28381
+"107","Oceania","Australia",2005,"Developed",81,23948,3416.71483
+"108","Oceania","Australia",2004,"Developed",86,21274,3472.37977
+"109","Oceania","Australia",2003,"Developed",83,198954,23465.38559
+"110","Oceania","Australia",2002,"Developed",79.9,196514,281.81763
+"111","Oceania","Australia",2001,"Developed",79.9,19413,19517.84168
+"112","Oceania","Australia",2000,"Developed",79.5,19153,2169.921
+"113","Europe","Austria",2015,"Developed",81.5,8633169,43665.947
+"114","Europe","Austria",2014,"Developed",81.4,8541575,51322.63997
+"115","Europe","Austria",2013,"Developed",81.1,8479375,554.71532
+"116","Europe","Austria",2012,"Developed",88,8429991,48333.57273
+"117","Europe","Austria",2011,"Developed",88,8391643,51126.74139
+"118","Europe","Austria",2010,"Developed",84,836344,46657.629
+"119","Europe","Austria",2009,"Developed",82,8343323,47654.18721
+"120","Europe","Austria",2008,"Developed",84,8321496,51386.37665
+"121","Europe","Austria",2007,"Developed",81,8295487,46586.6525
+"122","Europe","Austria",2006,"Developed",79.8,8268641,443.99361
+"123","Europe","Austria",2005,"Developed",79.4,8227829,38242.4252
+"124","Europe","Austria",2004,"Developed",79.3,8171966,36693.4262
+"125","Europe","Austria",2003,"Developed",78.8,8121423,3212.9355
+"126","Europe","Austria",2002,"Developed",78.7,881957,26351.37568
+"127","Europe","Austria",2001,"Developed",78.6,842293,24489.73553
+"128","Europe","Austria",2000,"Developed",78.1,811566,24517.26745
+"129","Asia","Azerbaijan",2015,"Developing",72.7,9649341,55.31382
+"130","Asia","Azerbaijan",2014,"Developing",72.5,953579,7891.299776
+"131","Asia","Azerbaijan",2013,"Developing",72.2,941681,7875.756953
+"132","Asia","Azerbaijan",2012,"Developing",71.9,9295784,7496.335728
+"133","Asia","Azerbaijan",2011,"Developing",71.6,917382,7189.691229
+"134","Asia","Azerbaijan",2010,"Developing",71.1,954332,5842.85784
+"135","Asia","Azerbaijan",2009,"Developing",78,8947243,495.294791
+"136","Asia","Azerbaijan",2008,"Developing",73,87634,5574.6382
+"137","Asia","Azerbaijan",2007,"Developing",73,85813,3851.437869
+"138","Asia","Azerbaijan",2006,"Developing",69.2,848455,2473.85776
+"139","Asia","Azerbaijan",2005,"Developing",68.4,839185,1578.4239
+"140","Asia","Azerbaijan",2004,"Developing",68.4,8365,145.2163
+"141","Asia","Azerbaijan",2003,"Developing",67.8,82341,883.6439965
+"142","Asia","Azerbaijan",2002,"Developing",67.8,817195,763.73858
+"143","Asia","Azerbaijan",2001,"Developing",67.5,81112,73.6838434
+"144","Asia","Azerbaijan",2000,"Developing",66.6,8486,655.974326
+"145","Asia","Bangladesh",2015,"Developing",71.8,1612886,121.15812
+"146","Asia","Bangladesh",2014,"Developing",71.4,15945279,184.56543
+"147","Asia","Bangladesh",2013,"Developing",71,157571292,951.8894535
+"148","Asia","Bangladesh",2012,"Developing",77,15572753,856.342857
+"149","Asia","Bangladesh",2011,"Developing",73,153911916,835.789341
+"150","Asia","Bangladesh",2010,"Developing",69.9,15214912,757.6717572
+"151","Asia","Bangladesh",2009,"Developing",69.5,1545478,681.125368
+"152","Asia","Bangladesh",2008,"Developing",69.1,14885814,615.7775411
+"153","Asia","Bangladesh",2007,"Developing",68.6,147139191,541.651484
+"154","Asia","Bangladesh",2006,"Developing",68.2,1453684,494.51466
+"155","Asia","Bangladesh",2005,"Developing",67.8,14343111,484.155471
+"156","Asia","Bangladesh",2004,"Developing",67.3,14137489,46.7579167
+"157","Asia","Bangladesh",2003,"Developing",66.8,139191,432.7388972
+"158","Asia","Bangladesh",2002,"Developing",66.3,1366667,4.6135745
+"159","Asia","Bangladesh",2001,"Developing",65.8,1341716,42.5981152
+"160","Asia","Bangladesh",2000,"Developing",65.3,131581243,45.63371
+"161","Europe","Belarus",2015,"Developing",72.3,9489616,5949.11677
+"162","Europe","Belarus",2014,"Developing",72,9474511,8318.429294
+"163","Europe","Belarus",2013,"Developing",71.7,9465997,7978.825443
+"164","Europe","Belarus",2012,"Developing",71.9,9464495,694.243915
+"165","Europe","Belarus",2011,"Developing",72,9473172,6519.71753
+"166","Europe","Belarus",2010,"Developing",73,949583,63.38877
+"167","Europe","Belarus",2009,"Developing",70,956765,5176.172649
+"168","Europe","Belarus",2008,"Developing",70,9527985,6376.183153
+"169","Europe","Belarus",2007,"Developing",69.8,956953,4735.484827
+"170","Europe","Belarus",2006,"Developing",68.9,964924,3848.215966
+"171","Europe","Belarus",2005,"Developing",68.1,9663915,3126.71767
+"172","Europe","Belarus",2004,"Developing",68.2,973146,2378.33927
+"173","Europe","Belarus",2003,"Developing",67.7,9796749,1819.525644
+"174","Europe","Belarus",2002,"Developing",67.2,9865548,1479.383142
+"175","Europe","Belarus",2001,"Developing",67.7,9928549,1244.373185
+"176","Europe","Belarus",2000,"Developing",68,997961,1276.28834
+"177","Europe","Belgium",2015,"Developed",81.1,11274196,4356.875
+"178","Europe","Belgium",2014,"Developed",89,112957,47439.39684
+"179","Europe","Belgium",2013,"Developed",87,11182817,4651.38647
+"180","Europe","Belgium",2012,"Developed",83,11128246,4474.5717
+"181","Europe","Belgium",2011,"Developed",83,1147744,4772.77415
+"182","Europe","Belgium",2010,"Developed",80,1895586,4438.23741
+"183","Europe","Belgium",2009,"Developed",79.8,1796493,4488.5615
+"184","Europe","Belgium",2008,"Developed",79.5,179973,48424.58927
+"185","Europe","Belgium",2007,"Developed",79.5,16257,4443.83131
+"186","Europe","Belgium",2006,"Developed",79.4,1547958,38852.3613
+"187","Europe","Belgium",2005,"Developed",78.9,1478617,36967.28292
+"188","Europe","Belgium",2004,"Developed",78.8,1421137,35589.71295
+"189","Europe","Belgium",2003,"Developed",78.3,1376133,3743.95693
+"190","Europe","Belgium",2002,"Developed",78,1332785,2552.3328
+"191","Europe","Belgium",2001,"Developed",78,128657,23121.56635
+"192","Europe","Belgium",2000,"Developed",77.6,125125,2327.4591
+"193","North America","Belize",2015,"Developing",71,359288,4849.997495
+"194","North America","Belize",2014,"Developing",70,351694,4852.223666
+"195","North America","Belize",2013,"Developing",69.8,344181,4688.538443
+"196","North America","Belize",2012,"Developing",69.4,33671,4673.63848
+"197","North America","Belize",2011,"Developing",69.4,329192,4516.24675
+"198","North America","Belize",2010,"Developing",69.5,32168,4344.15177
+"199","North America","Belize",2009,"Developing",69.5,313929,4258.788611
+"200","North America","Belize",2008,"Developing",69.6,36165,447.22796
+"201","North America","Belize",2007,"Developing",69.6,29847,4324.876427
+"202","North America","Belize",2006,"Developing",69.4,29747,4187.3783
+"203","North America","Belize",2005,"Developing",69,283277,3933.332215
+"204","North America","Belize",2004,"Developing",68.7,27689,3831.53819
+"205","North America","Belize",2003,"Developing",68.4,26913,3679.99523
+"206","North America","Belize",2002,"Developing",68.5,26226,3556.561825
+"207","North America","Belize",2001,"Developing",68.2,254984,3419.275719
+"208","North America","Belize",2000,"Developing",68.3,247315,3364.423711
+"209","Africa","Benin",2015,"Developing",60,1575952,783.94791
+"210","Africa","Benin",2014,"Developing",59.7,1286712,943.686575
+"211","Africa","Benin",2013,"Developing",59.5,14451,915.2674586
+"212","Africa","Benin",2012,"Developing",59.3,972916,837.9551
+"213","Africa","Benin",2011,"Developing",59.1,94682,825.9427854
+"214","Africa","Benin",2010,"Developing",58.7,9199259,757.695974
+"215","Africa","Benin",2009,"Developing",58.4,894476,793.45243
+"216","Africa","Benin",2008,"Developing",57.6,8696916,82.1513498
+"217","Africa","Benin",2007,"Developing",57.1,8454791,76.535419
+"218","Africa","Benin",2006,"Developing",56.8,8216896,625.8392
+"219","Africa","Benin",2005,"Developing",56.5,7982225,61.799977
+"220","Africa","Benin",2004,"Developing",56.1,7754,583.493514
+"221","Africa","Benin",2003,"Developing",55.8,752555,519.2922847
+"222","Africa","Benin",2002,"Developing",55.6,7295394,418.6985763
+"223","Africa","Benin",2001,"Developing",55.5,776733,378.73654
+"224","Africa","Benin",2000,"Developing",55.4,6865951,374.1923942
+"225","Asia","Bhutan",2015,"Developing",69.8,787386,2613.645177
+"226","Asia","Bhutan",2014,"Developing",69.4,776448,2522.7968
+"227","Asia","Bhutan",2013,"Developing",69.1,764961,235.882889
+"228","Asia","Bhutan",2012,"Developing",68.7,752967,2422.816
+"229","Asia","Bhutan",2011,"Developing",68.3,7451,2458.45976
+"230","Asia","Bhutan",2010,"Developing",67.9,727641,2178.921383
+"231","Asia","Bhutan",2009,"Developing",67.4,714458,177.234497
+"232","Asia","Bhutan",2008,"Developing",67,795,1795.18137
+"233","Asia","Bhutan",2007,"Developing",66.5,686958,1741.142552
+"234","Asia","Bhutan",2006,"Developing",65.8,672228,1335.45696
+"235","Asia","Bhutan",2005,"Developing",65,656639,1247.61392
+"236","Asia","Bhutan",2004,"Developing",64.2,64282,197.45788
+"237","Asia","Bhutan",2003,"Developing",63.3,623434,997.7417141
+"238","Asia","Bhutan",2002,"Developing",62.5,66399,885.6382245
+"239","Asia","Bhutan",2001,"Developing",61.7,5896,87.9387673
+"240","Asia","Bhutan",2000,"Developing",62,573416,765.8632358
+"241","Africa","Botswana",2015,"Developing",65.7,229197,6532.651
+"242","Africa","Botswana",2014,"Developing",65.1,2168573,7497.762376
+"243","Africa","Botswana",2013,"Developing",64.2,212857,77.625783
+"244","Africa","Botswana",2012,"Developing",63.4,289315,729.231453
+"245","Africa","Botswana",2011,"Developing",62.2,251339,7645.21469
+"246","Africa","Botswana",2010,"Developing",61.1,214866,6346.15624
+"247","Africa","Botswana",2009,"Developing",59.2,1979882,5185.729845
+"248","Africa","Botswana",2008,"Developing",57.5,1946351,5623.379566
+"249","Africa","Botswana",2007,"Developing",56.9,1914414,5714.47937
+"250","Africa","Botswana",2006,"Developing",54.8,1884238,5374.554867
+"251","Africa","Botswana",2005,"Developing",51.7,1855852,5351.253732
+"252","Africa","Botswana",2004,"Developing",48.1,182933,4896.583835
+"253","Africa","Botswana",2003,"Developing",46.4,184339,4163.6596
+"254","Africa","Botswana",2002,"Developing",46,1779953,355.618382
+"255","Africa","Botswana",2001,"Developing",46.7,1754935,3128.97793
+"256","Africa","Botswana",2000,"Developing",47.8,172834,3349.68823
+"257","South America","Brazil",2015,"Developing",75,2596218,8757.2622
+"258","South America","Brazil",2014,"Developing",74.8,24213133,1226.61731
+"259","South America","Brazil",2013,"Developing",74.7,2248632,12216.9446
+"260","South America","Brazil",2012,"Developing",74.5,256983,12291.46685
+"261","South America","Brazil",2011,"Developing",74.1,198686688,13167.47289
+"262","South America","Brazil",2010,"Developing",73.8,196796269,11224.1548
+"263","South America","Brazil",2009,"Developing",73.6,194895996,8553.3847
+"264","South America","Brazil",2008,"Developing",73.4,19297929,8787.61375
+"265","South America","Brazil",2007,"Developing",73.3,19126637,7313.557962
+"266","South America","Brazil",2006,"Developing",73,18912412,586.145975
+"267","South America","Brazil",2005,"Developing",72.7,186917361,477.182746
+"268","South America","Brazil",2004,"Developing",72,184738458,3623.47667
+"269","South America","Brazil",2003,"Developing",71.8,182482149,359.587582
+"270","South America","Brazil",2002,"Developing",71.4,1815121,2819.649531
+"271","South America","Brazil",2001,"Developing",71,1777567,3146.95177
+"272","South America","Brazil",2000,"Developing",75,175287587,3739.11936
+"273","Europe","Bulgaria",2015,"Developed",74.5,7177991,6993.47736
+"274","Europe","Bulgaria",2014,"Developed",74.3,7223938,7853.335191
+"275","Europe","Bulgaria",2013,"Developed",74.1,7265115,7674.86559
+"276","Europe","Bulgaria",2012,"Developed",73.9,735888,7378.25539
+"277","Europe","Bulgaria",2011,"Developed",73.7,7348328,7813.83499
+"278","Europe","Bulgaria",2010,"Developed",73.4,7395599,6843.263289
+"279","Europe","Bulgaria",2009,"Developed",73.2,7444443,6955.987733
+"280","Europe","Bulgaria",2008,"Developed",72.9,7492561,7296.122479
+"281","Europe","Bulgaria",2007,"Developed",72.6,7545338,5932.899677
+"282","Europe","Bulgaria",2006,"Developed",72.2,76122,4513.13628
+"283","Europe","Bulgaria",2005,"Developed",72.1,7658972,3893.68998
+"284","Europe","Bulgaria",2004,"Developed",72.2,771686,3381.57837
+"285","Europe","Bulgaria",2003,"Developed",72,7775327,271.46824
+"286","Europe","Bulgaria",2002,"Developed",71.8,7837161,287.534843
+"287","Europe","Bulgaria",2001,"Developed",71.6,89142,1764.97387
+"288","Europe","Bulgaria",2000,"Developed",71.1,817172,169.28586
+"289","Africa","Burundi",2015,"Developing",59.6,119927,33.681223
+"290","Africa","Burundi",2014,"Developing",59.1,989179,312.7489794
+"291","Africa","Burundi",2013,"Developing",58.6,96186,282.7555252
+"292","Africa","Burundi",2012,"Developing",58,931971,265.285651
+"293","Africa","Burundi",2011,"Developing",57.4,94358,26.479973
+"294","Africa","Burundi",2010,"Developing",56.8,876693,231.1943256
+"295","Africa","Burundi",2009,"Developing",56.2,848931,24.944652
+"296","Africa","Burundi",2008,"Developing",55.3,8212264,196.2472628
+"297","Africa","Burundi",2007,"Developing",54.8,7939573,17.79995
+"298","Africa","Burundi",2006,"Developing",54.1,7675338,165.8794176
+"299","Africa","Burundi",2005,"Developing",53.4,7423289,15.57434
+"300","Africa","Burundi",2004,"Developing",52.6,7182451,127.4296648
+"301","Africa","Burundi",2003,"Developing",51.9,6953113,112.849373
+"302","Africa","Burundi",2002,"Developing",51.5,6741569,122.4335893
+"303","Africa","Burundi",2001,"Developing",51.3,6555829,133.7427689
+"304","Africa","Burundi",2000,"Developing",58,6476,135.9984455
+"305","Asia","Cambodia",2015,"Developing",68.7,15517635,1163.18977
+"306","Asia","Cambodia",2014,"Developing",68.3,152779,198.687123
+"307","Asia","Cambodia",2013,"Developing",67.8,1522692,128.419568
+"308","Asia","Cambodia",2012,"Developing",67.4,14776866,95.244132
+"309","Asia","Cambodia",2011,"Developing",67,14537886,882.491462
+"310","Asia","Cambodia",2010,"Developing",66.6,143874,785.6928841
+"311","Asia","Cambodia",2009,"Developing",66.1,14928,738.2326684
+"312","Asia","Cambodia",2008,"Developing",65.6,138859,745.7877873
+"313","Asia","Cambodia",2007,"Developing",65,13676693,631.675789
+"314","Asia","Cambodia",2006,"Developing",64.1,13474489,539.8791529
+"315","Asia","Cambodia",2005,"Developing",62.9,132721,474.2238766
+"316","Asia","Cambodia",2004,"Developing",61.5,1363377,48.615184
+"317","Asia","Cambodia",2003,"Developing",63,12853124,362.4213785
+"318","Asia","Cambodia",2002,"Developing",59.3,12634729,339.676984
+"319","Asia","Cambodia",2001,"Developing",58.5,1242473,321.22634
+"320","Asia","Cambodia",2000,"Developing",57.7,12152354,3.685949
+"321","Africa","Cameroon",2015,"Developing",57.3,22834522,1244.429421
+"322","Africa","Cameroon",2014,"Developing",56.7,2223994,1441.1417
+"323","Africa","Cameroon",2013,"Developing",56.4,21655715,1365.34419
+"324","Africa","Cameroon",2012,"Developing",55.9,2182383,1255.648189
+"325","Africa","Cameroon",2011,"Developing",55.6,252447,1295.649726
+"326","Africa","Cameroon",2010,"Developing",55.3,1997495,1182.869227
+"327","Africa","Cameroon",2009,"Developing",54.8,19432541,123.19538
+"328","Africa","Cameroon",2008,"Developing",54.2,18978,1233.524316
+"329","Africa","Cameroon",2007,"Developing",53.6,18395389,111.71186
+"330","Africa","Cameroon",2006,"Developing",53.3,17899562,12.989164
+"331","Africa","Cameroon",2005,"Developing",52.8,1742795,952.1872484
+"332","Africa","Cameroon",2004,"Developing",52.1,1695981,93.211716
+"333","Africa","Cameroon",2003,"Developing",51.8,16513822,824.8689393
+"334","Africa","Cameroon",2002,"Developing",51.6,1684886,676.397661
+"335","Africa","Cameroon",2001,"Developing",51.5,15671927,614.6729339
+"336","Africa","Cameroon",2000,"Developing",51.4,15274234,68.414399
+"337","North America","Canada",2015,"Developing",82.2,3584861,43315.744
+"338","North America","Canada",2014,"Developing",82,35544564,544.43376
+"339","North America","Canada",2013,"Developing",81.8,35155451,52413.72116
+"340","North America","Canada",2012,"Developing",81.6,3475545,52496.69487
+"341","North America","Canada",2011,"Developing",81.5,3434278,5282.2176
+"342","North America","Canada",2010,"Developing",81.2,345274,47447.4762
+"343","North America","Canada",2009,"Developing",81,33628571,4773.45436
+"344","North America","Canada",2008,"Developing",87,33245773,46596.33599
+"345","North America","Canada",2007,"Developing",85,32887928,44544.5268
+"346","North America","Canada",2006,"Developing",85,325755,4386.69948
+"347","North America","Canada",2005,"Developing",81,32312,36189.58838
+"348","North America","Canada",2004,"Developing",80,31995,31979.87195
+"349","North America","Canada",2003,"Developing",79.7,31676,28172.14883
+"350","North America","Canada",2002,"Developing",79.5,31362,24167.8431
+"351","North America","Canada",2001,"Developing",79.4,31819,23691.59472
+"352","North America","Canada",2000,"Developing",79.1,37697,24124.16917
+"353","Africa","Chad",2015,"Developing",53.1,149413,777.248751
+"354","Africa","Chad",2014,"Developing",52.6,13569438,125.998515
+"355","Africa","Chad",2013,"Developing",52.2,13133589,986.13177
+"356","Africa","Chad",2012,"Developing",51.8,1275135,973.472574
+"357","Africa","Chad",2011,"Developing",51.6,12288651,989.2363633
+"358","Africa","Chad",2010,"Developing",51.2,1188722,896.5697341
+"359","Africa","Chad",2009,"Developing",57,1152786,84.455939
+"360","Africa","Chad",2008,"Developing",49.6,11133861,929.772391
+"361","Africa","Chad",2007,"Developing",49.4,177578,81.683884
+"362","Africa","Chad",2006,"Developing",48.5,1421597,712.1847694
+"363","Africa","Chad",2005,"Developing",48.6,1679,66.2421396
+"364","Africa","Chad",2004,"Developing",48.5,97143,454.6765879
+"365","Africa","Chad",2003,"Developing",48.4,935321,292.5914364
+"366","Africa","Chad",2002,"Developing",48.1,91689,22.854821
+"367","Africa","Chad",2001,"Developing",48,866312,197.3156442
+"368","Africa","Chad",2000,"Developing",47.6,8342559,166.231785
+"369","South America","Chile",2015,"Developing",85,17762681,13653.2264
+"370","South America","Chile",2014,"Developing",83,17613798,14817.37778
+"371","South America","Chile",2013,"Developing",81,17462982,15941.39722
+"372","South America","Chile",2012,"Developing",79.9,1739746,15431.9293
+"373","South America","Chile",2011,"Developing",79.8,17153357,1475.69242
+"374","South America","Chile",2010,"Developing",79.1,16993354,1286.17764
+"375","South America","Chile",2009,"Developing",79.3,16829442,1243.32824
+"376","South America","Chile",2008,"Developing",79.6,16661942,1781.3668
+"377","South America","Chile",2007,"Developing",78.9,16491687,1526.87746
+"378","South America","Chile",2006,"Developing",78.9,16319792,9484.681227
+"379","South America","Chile",2005,"Developing",78.4,1614764,7615.3468
+"380","South America","Chile",2004,"Developing",78,15973778,621.828325
+"381","South America","Chile",2003,"Developing",77.9,15799542,4787.699532
+"382","South America","Chile",2002,"Developing",77.8,15623635,4463.545867
+"383","South America","Chile",2001,"Developing",77.3,15444969,4595.666327
+"384","South America","Chile",2000,"Developing",77.3,15262754,511.368479
+"385","Asia","China",2015,"Developing",76.1,137122,869.211938
+"386","Asia","China",2014,"Developing",75.8,136427,7683.5238
+"387","Asia","China",2013,"Developing",75.6,135738,777.77594
+"388","Asia","China",2012,"Developing",75.4,135695,6337.882993
+"389","Asia","China",2011,"Developing",75.2,134413,5633.79616
+"390","Asia","China",2010,"Developing",75,133775,456.512487
+"391","Asia","China",2009,"Developing",74.9,133126,3838.434292
+"392","Asia","China",2008,"Developing",74.5,1324655,3471.247547
+"393","Asia","China",2007,"Developing",74.4,1317885,2695.366223
+"394","Asia","China",2006,"Developing",74.2,13112,299.229676
+"395","Asia","China",2005,"Developing",73.9,13372,1753.4178
+"396","Asia","China",2004,"Developing",73.5,129675,158.668462
+"397","Asia","China",2003,"Developing",73.1,12884,1288.642924
+"398","Asia","China",2002,"Developing",72.7,1284,1148.5857
+"399","Asia","China",2001,"Developing",72.2,127185,153.1824
+"400","Asia","China",2000,"Developing",71.7,1262645,959.372181
+"401","South America","Colombia",2015,"Developing",74.8,48228697,644.525556
+"402","South America","Colombia",2014,"Developing",74.6,47791911,7913.383432
+"403","South America","Colombia",2013,"Developing",74.4,47342981,83.5863
+"404","South America","Colombia",2012,"Developing",74.3,46881475,7884.984429
+"405","South America","Colombia",2011,"Developing",74.2,4646646,7227.73968
+"406","South America","Colombia",2010,"Developing",73.6,4591897,625.65544
+"407","South America","Colombia",2009,"Developing",73.6,45416181,5148.422113
+"408","South America","Colombia",2008,"Developing",73.5,4491544,5433.7245
+"409","South America","Colombia",2007,"Developing",73.5,44374572,4674.21961
+"410","South America","Colombia",2006,"Developing",73.1,43835722,379.78776
+"411","South America","Colombia",2005,"Developing",73.1,43285634,3386.256
+"412","South America","Colombia",2004,"Developing",72.8,42724163,274.249442
+"413","South America","Colombia",2003,"Developing",72.4,42152151,2246.257472
+"414","South America","Colombia",2002,"Developing",71.8,41572491,2355.725857
+"415","South America","Colombia",2001,"Developing",71.5,498899,2395.856551
+"416","South America","Colombia",2000,"Developing",71.4,443958,2472.197831
+"417","Africa","Comoros",2015,"Developing",63.5,777424,727.6463868
+"418","Africa","Comoros",2014,"Developing",63.2,759385,852.954379
+"419","Africa","Comoros",2013,"Developing",62.9,7415,834.341949
+"420","Africa","Comoros",2012,"Developing",62.5,723868,788.632653
+"421","Africa","Comoros",2011,"Developing",62.2,76569,829.7586885
+"422","Africa","Comoros",2010,"Developing",61.8,689692,769.1742883
+"423","Africa","Comoros",2009,"Developing",61.3,673252,778.5454199
+"424","Africa","Comoros",2008,"Developing",61,657229,795.97519
+"425","Africa","Comoros",2007,"Developing",66,64162,72.759313
+"426","Africa","Comoros",2006,"Developing",63,626425,648.38717
+"427","Africa","Comoros",2005,"Developing",60,611627,621.93372
+"428","Africa","Comoros",2004,"Developing",59.8,597228,616.4197236
+"429","Africa","Comoros",2003,"Developing",59.6,583211,544.566526
+"430","Africa","Comoros",2002,"Developing",59.5,569479,433.2691451
+"431","Africa","Comoros",2001,"Developing",59.5,555888,395.9319363
+"432","Africa","Comoros",2000,"Developing",59.5,542357,375.8528566
+"433","Europe","Croatia",2015,"Developed",78,42364,11579.6674
+"434","Europe","Croatia",2014,"Developed",77.8,4238389,13467.46827
+"435","Europe","Croatia",2013,"Developed",77.7,4255689,13574.749
+"436","Europe","Croatia",2012,"Developed",77.1,4267558,13235.97757
+"437","Europe","Croatia",2011,"Developed",77,428622,14539.18421
+"438","Europe","Croatia",2010,"Developed",76.6,4417781,1355.74586
+"439","Europe","Croatia",2009,"Developed",76.3,442978,14157.14416
+"440","Europe","Croatia",2008,"Developed",76,443458,15893.8656
+"441","Europe","Croatia",2007,"Developed",75.8,4436,13546.69872
+"442","Europe","Croatia",2006,"Developed",75.9,444,11363.41845
+"443","Europe","Croatia",2005,"Developed",75.2,4442,1224.2459
+"444","Europe","Croatia",2004,"Developed",75.4,4439,9365.742468
+"445","Europe","Croatia",2003,"Developed",74.7,444,785.881418
+"446","Europe","Croatia",2002,"Developed",74.8,444,653.71637
+"447","Europe","Croatia",2001,"Developed",74.9,444,5245.421419
+"448","Europe","Croatia",2000,"Developed",74.7,4426,4919.62869
+"449","Asia","Cyprus",2015,"Developed",85,116985,2375.1127
+"450","Asia","Cyprus",2014,"Developed",83,115239,2734.88382
+"451","Asia","Cyprus",2013,"Developed",81,1143896,2797.96736
+"452","Asia","Cyprus",2012,"Developed",80,113562,28951.15556
+"453","Asia","Cyprus",2011,"Developed",79.7,1124835,32233.83942
+"454","Asia","Cyprus",2010,"Developed",79.5,111267,3818.46396
+"455","Asia","Cyprus",2009,"Developed",79.3,19876,3215.8159
+"456","Asia","Cyprus",2008,"Developed",79.1,181563,3539.7488
+"457","Asia","Cyprus",2007,"Developed",78.9,163712,31386.63265
+"458","Asia","Cyprus",2006,"Developed",78.8,14559,27169.99256
+"459","Asia","Cyprus",2005,"Developed",78.7,127658,25324.48666
+"460","Asia","Cyprus",2004,"Developed",78.6,1141,23932.49128
+"461","Asia","Cyprus",2003,"Developed",78.5,993563,2293.4789
+"462","Asia","Cyprus",2002,"Developed",78.4,976966,16372.29152
+"463","Asia","Cyprus",2001,"Developed",78.2,96282,1562.92433
+"464","Asia","Cyprus",2000,"Developed",78.1,943286,14672.8826
+"465","Europe","Denmark",2015,"Developed",86,5683483,5314.64416
+"466","Europe","Denmark",2014,"Developed",84,5643475,62425.5392
+"467","Europe","Denmark",2013,"Developed",81,5614932,61191.19263
+"468","Europe","Denmark",2012,"Developed",80,5591572,5857.521
+"469","Europe","Denmark",2011,"Developed",79.7,557572,61753.667
+"470","Europe","Denmark",2010,"Developed",79.2,5547683,5841.41122
+"471","Europe","Denmark",2009,"Developed",78.9,552395,58163.29359
+"472","Europe","Denmark",2008,"Developed",78.8,5493621,64322.6664
+"473","Europe","Denmark",2007,"Developed",78.4,5461438,58487.451
+"474","Europe","Denmark",2006,"Developed",78.1,5437272,5226.99311
+"475","Europe","Denmark",2005,"Developed",78.1,5419432,48799.8237
+"476","Europe","Denmark",2004,"Developed",77.7,544523,46511.6457
+"477","Europe","Denmark",2003,"Developed",77.3,539574,4458.7764
+"478","Europe","Denmark",2002,"Developed",77,5375931,33228.69291
+"479","Europe","Denmark",2001,"Developed",77,5358783,3751.64946
+"480","Europe","Denmark",2000,"Developed",76.9,5339616,3743.55917
+"481","Africa","Djibouti",2015,"Developing",63.5,927414,1862.167274
+"482","Africa","Djibouti",2014,"Developing",63,912164,174.91511
+"483","Africa","Djibouti",2013,"Developing",62.7,896688,1622.637974
+"484","Africa","Djibouti",2012,"Developing",62.2,881185,1536.15685
+"485","Africa","Djibouti",2011,"Developing",61.8,865937,143.986898
+"486","Africa","Djibouti",2010,"Developing",61.3,851146,1325.99724
+"487","Africa","Djibouti",2009,"Developing",69,83684,1253.657431
+"488","Africa","Djibouti",2008,"Developing",62,822934,1214.77118
+"489","Africa","Djibouti",2007,"Developing",59.8,8942,147.586896
+"490","Africa","Djibouti",2006,"Developing",59.1,79628,965.6693779
+"491","Africa","Djibouti",2005,"Developing",58.6,783254,94.7297489
+"492","Africa","Djibouti",2004,"Developing",58.1,77752,864.184726
+"493","Africa","Djibouti",2003,"Developing",58,758615,819.974118
+"494","Africa","Djibouti",2002,"Developing",57.9,746221,792.15412
+"495","Africa","Djibouti",2001,"Developing",57.7,732711,781.2322196
+"496","Africa","Djibouti",2000,"Developing",57.4,717584,768.176767
+"497","South America","Ecuador",2015,"Developing",76.2,16144368,625.62224
+"498","South America","Ecuador",2014,"Developing",76,1593112,6432.216537
+"499","South America","Ecuador",2013,"Developing",76,15661547,674.9829
+"500","South America","Ecuador",2012,"Developing",75.5,15419666,572.14313
+"501","South America","Ecuador",2011,"Developing",75.3,15177355,5223.351763
+"502","South America","Ecuador",2010,"Developing",75,1493469,4657.32361
+"503","South America","Ecuador",2009,"Developing",75.1,14691275,4255.56571
+"504","South America","Ecuador",2008,"Developing",74.6,14447562,4274.95265
+"505","South America","Ecuador",2007,"Developing",74.7,1425453,359.71886
+"506","South America","Ecuador",2006,"Developing",74.4,1396748,335.786541
+"507","South America","Ecuador",2005,"Developing",74.2,13735233,321.942547
+"508","South America","Ecuador",2004,"Developing",74.4,1359647,278.557892
+"509","South America","Ecuador",2003,"Developing",74.4,1328961,244.46898
+"510","South America","Ecuador",2002,"Developing",73.6,13726,2183.966796
+"511","South America","Ecuador",2001,"Developing",73.4,12852755,193.741571
+"512","South America","Ecuador",2000,"Developing",72.8,12628596,1451.29776
+"513","Africa","Eritrea",2011,"Developing",62.9,447469,582.775532
+"514","Africa","Eritrea",2010,"Developing",62.1,43984,482.14994
+"515","Africa","Eritrea",2009,"Developing",61.4,431334,43.7544499
+"516","Africa","Eritrea",2008,"Developing",67,4232636,326.825642
+"517","Africa","Eritrea",2007,"Developing",62,4153332,317.3294336
+"518","Africa","Eritrea",2006,"Developing",59.7,466648,297.828588
+"519","Africa","Eritrea",2005,"Developing",59.4,39697,276.75896
+"520","Africa","Eritrea",2004,"Developing",59.1,3858623,287.4222243
+"521","Africa","Eritrea",2003,"Developing",58.8,3738265,232.7945459
+"522","Africa","Eritrea",2002,"Developing",58.5,3614639,21.7687981
+"523","Africa","Eritrea",2001,"Developing",58.1,3497124,215.139213
+"524","Africa","Eritrea",2000,"Developing",45.3,339281,28.1969487
+"525","Europe","Estonia",2015,"Developing",77.6,131547,1774.9291
+"526","Europe","Estonia",2014,"Developing",77.3,1314545,19941.45532
+"527","Europe","Estonia",2013,"Developing",76.9,1317997,1929.7746
+"528","Europe","Estonia",2012,"Developing",76.3,1322696,17421.8922
+"529","Europe","Estonia",2011,"Developing",76.1,1327439,17454.84342
+"530","Europe","Estonia",2010,"Developing",75.6,1331475,14638.6482
+"531","Europe","Estonia",2009,"Developing",74.9,1334515,14726.31828
+"532","Europe","Estonia",2008,"Developing",74.2,13379,1894.5485
+"533","Europe","Estonia",2007,"Developing",73,13468,16586.452
+"534","Europe","Estonia",2006,"Developing",73,134681,12595.4165
+"535","Europe","Estonia",2005,"Developing",72.8,1354775,1338.31322
+"536","Europe","Estonia",2004,"Developing",72.3,136255,885.465115
+"537","Europe","Estonia",2003,"Developing",71.9,13772,7174.237415
+"538","Europe","Estonia",2002,"Developing",71.2,137935,538.347781
+"539","Europe","Estonia",2001,"Developing",78,1388115,4498.95727
+"540","Europe","Estonia",2000,"Developing",78,1396985,47.32827
+"541","Africa","Ethiopia",2015,"Developing",64.8,9987333,645.4637627
+"542","Africa","Ethiopia",2014,"Developing",64.2,97366774,571.1622759
+"543","Africa","Ethiopia",2013,"Developing",63.7,94887724,52.1535887
+"544","Africa","Ethiopia",2012,"Developing",63.3,92444183,468.567249
+"545","Africa","Ethiopia",2011,"Developing",62.6,946756,354.8463544
+"546","Africa","Ethiopia",2010,"Developing",61.8,877267,341.39992
+"547","Africa","Ethiopia",2009,"Developing",68,85416253,379.7566385
+"548","Africa","Ethiopia",2008,"Developing",59.8,83184892,325.3825543
+"549","Africa","Ethiopia",2007,"Developing",58.5,8149,243.326822
+"550","Africa","Ethiopia",2006,"Developing",57.2,7885689,193.794956
+"551","Africa","Ethiopia",2005,"Developing",56,7672783,161.6266248
+"552","Africa","Ethiopia",2004,"Developing",55,7462445,135.7623858
+"553","Africa","Ethiopia",2003,"Developing",54,72545144,118.8734466
+"554","Africa","Ethiopia",2002,"Developing",53.2,7497192,111.3634356
+"555","Africa","Ethiopia",2001,"Developing",52.5,68492257,12.1789279
+"556","Africa","Ethiopia",2000,"Developing",51.2,66537331,123.876257
+"557","Oceania","Fiji",2015,"Developing",69.9,892149,4921.89629
+"558","Oceania","Fiji",2014,"Developing",69.7,88586,546.3728
+"559","Oceania","Fiji",2013,"Developing",69.6,879715,4763.68956
+"560","Oceania","Fiji",2012,"Developing",69.4,873596,4546.73854
+"561","Oceania","Fiji",2011,"Developing",69.2,86786,4353.121392
+"562","Oceania","Fiji",2010,"Developing",69.1,85995,3651.966784
+"563","Oceania","Fiji",2009,"Developing",68.9,851967,3369.48247
+"564","Oceania","Fiji",2008,"Developing",68.7,84334,4177.657789
+"565","Oceania","Fiji",2007,"Developing",68.6,834812,478.82327
+"566","Oceania","Fiji",2006,"Developing",68.5,827411,3749.939813
+"567","Oceania","Fiji",2005,"Developing",68.3,821817,3658.63832
+"568","Oceania","Fiji",2004,"Developing",68.1,818354,3332.918533
+"569","Oceania","Fiji",2003,"Developing",68,816628,2835.973972
+"570","Oceania","Fiji",2002,"Developing",67.9,815691,2259.55796
+"571","Oceania","Fiji",2001,"Developing",67.8,814218,238.891729
+"572","Oceania","Fiji",2000,"Developing",67.7,811223,276.1338
+"573","Europe","Finland",2015,"Developing",81.1,5479531,4245.39744
+"574","Europe","Finland",2014,"Developing",89,5461512,49914.61864
+"575","Europe","Finland",2013,"Developing",87,5438972,49638.7713
+"576","Europe","Finland",2012,"Developing",84,5413971,47415.55987
+"577","Europe","Finland",2011,"Developing",83,5388272,579.72415
+"578","Europe","Finland",2010,"Developing",79.9,5363352,4622.41516
+"579","Europe","Finland",2009,"Developing",79.7,5338871,4717.15571
+"580","Europe","Finland",2008,"Developing",79.6,5313399,5341.31487
+"581","Europe","Finland",2007,"Developing",79.3,528872,48288.5491
+"582","Europe","Finland",2006,"Developing",79.2,5266268,4112.67651
+"583","Europe","Finland",2005,"Developing",78.9,524696,38969.17163
+"584","Europe","Finland",2004,"Developing",78.7,5228172,37636.11173
+"585","Europe","Finland",2003,"Developing",78.4,521314,32816.1688
+"586","Europe","Finland",2002,"Developing",78.1,52598,26834.2625
+"587","Europe","Finland",2001,"Developing",78,51888,24913.24452
+"588","Europe","Finland",2000,"Developing",77.5,517629,24253.2542
+"589","Europe","France",2015,"Developing",82.4,6662468,36526.7711
+"590","Europe","France",2014,"Developing",82.2,66331957,42955.24287
+"591","Europe","France",2013,"Developing",82,6599857,42554.1225
+"592","Europe","France",2012,"Developing",81.5,6565979,4838.2444
+"593","Europe","France",2011,"Developing",81.7,65342776,4381.288
+"594","Europe","France",2010,"Developing",81.3,6527512,473.34279
+"595","Europe","France",2009,"Developing",81.1,647744,41631.13141
+"596","Europe","France",2008,"Developing",89,6437499,45413.6571
+"597","Europe","France",2007,"Developing",89,6416229,416.58397
+"598","Europe","France",2006,"Developing",86,63621376,36544.5853
+"599","Europe","France",2005,"Developing",81,63179356,34879.72633
+"600","Europe","France",2004,"Developing",82,6274897,33874.74255
+"601","Europe","France",2003,"Developing",79.3,62244884,29691.18158
+"602","Europe","France",2002,"Developing",79.2,6185267,24275.2426
+"603","Europe","France",2001,"Developing",79,61357431,22527.31775
+"604","Europe","France",2000,"Developing",78.8,6912498,22465.64184
+"605","Africa","Gabon",2015,"Developing",66,193175,7388.984144
+"606","Africa","Gabon",2014,"Developing",65.5,1875713,9692.163874
+"607","Africa","Gabon",2013,"Developing",64.6,1817271,9679.742995
+"608","Africa","Gabon",2012,"Developing",63.5,1756817,9774.18117
+"609","Africa","Gabon",2011,"Developing",62.8,169711,1716.2258
+"610","Africa","Gabon",2010,"Developing",62.3,16421,8754.113376
+"611","Africa","Gabon",2009,"Developing",61.7,1586754,763.66223
+"612","Africa","Gabon",2008,"Developing",61.6,1536411,194.2746
+"613","Africa","Gabon",2007,"Developing",61.6,1489193,8352.81711
+"614","Africa","Gabon",2006,"Developing",61.4,1444844,727.777345
+"615","Africa","Gabon",2005,"Developing",65,143126,6741.293948
+"616","Africa","Gabon",2004,"Developing",59.7,136425,5685.577736
+"617","Africa","Gabon",2003,"Developing",59.7,1328146,4892.11618
+"618","Africa","Gabon",2002,"Developing",59.7,129449,412.55271
+"619","Africa","Gabon",2001,"Developing",59.8,1262259,3976.14887
+"620","Africa","Gabon",2000,"Developing",61,1231122,4116.46693
+"621","Asia","Georgia",2015,"Developing",74.4,37171,3764.64912
+"622","Asia","Georgia",2014,"Developing",74.5,3727,4429.6575
+"623","Asia","Georgia",2013,"Developing",74.5,3776,4274.376857
+"624","Asia","Georgia",2012,"Developing",74.2,3825,4142.869175
+"625","Asia","Georgia",2011,"Developing",73.9,3875,3725.63221
+"626","Asia","Georgia",2010,"Developing",73.8,3926,2964.47734
+"627","Asia","Georgia",2009,"Developing",73.2,3978,276.588512
+"628","Asia","Georgia",2008,"Developing",73.9,43,3174.9491
+"629","Asia","Georgia",2007,"Developing",74.4,482,2492.12878
+"630","Asia","Georgia",2006,"Developing",73.9,4136,1872.68416
+"631","Asia","Georgia",2005,"Developing",73.9,419,153.57521
+"632","Asia","Georgia",2004,"Developing",72.3,4245,127.367228
+"633","Asia","Georgia",2003,"Developing",72.7,431,928.18227
+"634","Asia","Georgia",2002,"Developing",71.7,4357,779.3845935
+"635","Asia","Georgia",2001,"Developing",73,43864,733.974142
+"636","Asia","Georgia",2000,"Developing",71.8,44183,691.997711
+"637","Europe","Germany",2015,"Developed",81,81686611,41176.88158
+"638","Europe","Germany",2014,"Developed",89,89825,4792.65288
+"639","Europe","Germany",2013,"Developed",86,864565,4653.91143
+"640","Europe","Germany",2012,"Developed",86,8425823,4465.24891
+"641","Europe","Germany",2011,"Developed",85,8274983,4681.32796
+"642","Europe","Germany",2010,"Developed",81,8177693,41785.55691
+"643","Europe","Germany",2009,"Developed",80,819237,41732.7725
+"644","Europe","Germany",2008,"Developed",79.9,821197,45699.19832
+"645","Europe","Germany",2007,"Developed",79.8,82266372,41814.8191
+"646","Europe","Germany",2006,"Developed",79.6,82376451,36447.87232
+"647","Europe","Germany",2005,"Developed",79.2,82469422,34696.6292
+"648","Europe","Germany",2004,"Developed",79.1,8251626,34165.9343
+"649","Europe","Germany",2003,"Developed",78.5,82534176,3359.95215
+"650","Europe","Germany",2002,"Developed",78.4,82488495,2525.16445
+"651","Europe","Germany",2001,"Developed",78.3,82349925,23687.31689
+"652","Europe","Germany",2000,"Developed",78,8221158,23718.7467
+"653","Africa","Ghana",2015,"Developing",62.4,27582821,1361.11395
+"654","Africa","Ghana",2014,"Developing",62.1,26962563,1432.227943
+"655","Africa","Ghana",2013,"Developing",61.9,26346251,1814.492297
+"656","Africa","Ghana",2012,"Developing",61.6,2573349,1629.8222
+"657","Africa","Ghana",2011,"Developing",61.2,25121796,1574.978653
+"658","Africa","Ghana",2010,"Developing",69,2451214,1312.67557
+"659","Africa","Ghana",2009,"Developing",66,2393831,186.76538
+"660","Africa","Ghana",2008,"Developing",63,2329864,1224.41554
+"661","Africa","Ghana",2007,"Developing",59.9,227212,19.686718
+"662","Africa","Ghana",2006,"Developing",59.4,22113425,922.9351677
+"663","Africa","Ghana",2005,"Developing",58.9,215429,498.172394
+"664","Africa","Ghana",2004,"Developing",58.3,2986536,423.1936389
+"665","Africa","Ghana",2003,"Developing",57.9,2446782,373.2815537
+"666","Africa","Ghana",2002,"Developing",57.6,19924522,39.484473
+"667","Africa","Ghana",2001,"Developing",57.4,1942165,273.6596668
+"668","Africa","Ghana",2000,"Developing",57.2,18938762,263.1124679
+"669","Europe","Greece",2015,"Developing",81,182883,187.78991
+"670","Europe","Greece",2014,"Developing",88,1892413,21673.7817
+"671","Europe","Greece",2013,"Developing",86,1965211,21874.8195
+"672","Europe","Greece",2012,"Developing",84,114511,22242.68193
+"673","Europe","Greece",2011,"Developing",85,1114899,25916.29353
+"674","Europe","Greece",2010,"Developing",83,11121341,26917.75898
+"675","Europe","Greece",2009,"Developing",80,111717,2971.973
+"676","Europe","Greece",2008,"Developing",79.9,1177841,31997.2821
+"677","Europe","Greece",2007,"Developing",79.4,1148473,28827.32636
+"678","Europe","Greece",2006,"Developing",79.7,112362,2481.15781
+"679","Europe","Greece",2005,"Developing",79.3,1987314,22551.73574
+"680","Europe","Greece",2004,"Developing",79.2,1955141,21955.149
+"681","Europe","Greece",2003,"Developing",79.1,19287,18477.57841
+"682","Europe","Greece",2002,"Developing",79,19222,1411.31339
+"683","Europe","Greece",2001,"Developing",78.7,1862132,12538.17883
+"684","Europe","Greece",2000,"Developing",78.2,18588,1242.95373
+"685","North America","Guatemala",2015,"Developing",71.9,16252429,3923.573344
+"686","North America","Guatemala",2014,"Developing",71.7,15923559,3687.763767
+"687","North America","Guatemala",2013,"Developing",71.4,15596214,3452.828934
+"688","North America","Guatemala",2012,"Developing",71.3,1527156,3299.65139
+"689","North America","Guatemala",2011,"Developing",71.1,14948919,3187.845296
+"690","North America","Guatemala",2010,"Developing",77,1463417,2825.5247
+"691","North America","Guatemala",2009,"Developing",76,1431628,2635.753474
+"692","North America","Guatemala",2008,"Developing",79,146366,2794.22189
+"693","North America","Guatemala",2007,"Developing",75,137286,2489.955836
+"694","North America","Guatemala",2006,"Developing",69.7,133978,2256.56724
+"695","North America","Guatemala",2005,"Developing",69.2,139628,277.83438
+"696","North America","Guatemala",2004,"Developing",69.6,12796925,1872.73783
+"697","North America","Guatemala",2003,"Developing",69.4,125478,1753.349471
+"698","North America","Guatemala",2002,"Developing",69.3,1228848,171.771491
+"699","North America","Guatemala",2001,"Developing",68.4,11924946,1568.376276
+"700","North America","Guatemala",2000,"Developing",67.7,1165743,1655.596261
+"701","Africa","Guinea",2015,"Developing",59,1291533,554.48766
+"702","Africa","Guinea",2014,"Developing",58.1,118559,561.997387
+"703","Africa","Guinea",2013,"Developing",58.8,11536615,54.169324
+"704","Africa","Guinea",2012,"Developing",58.4,11281469,52.3485646
+"705","Africa","Guinea",2011,"Developing",58.1,113517,459.2912
+"706","Africa","Guinea",2010,"Developing",57.8,179417,438.7513346
+"707","Africa","Guinea",2009,"Developing",57.3,1556524,436.6895539
+"708","Africa","Guinea",2008,"Developing",56.8,1323142,437.4467238
+"709","Africa","Guinea",2007,"Developing",56.4,196727,49.456775
+"710","Africa","Guinea",2006,"Developing",55.6,9881428,296.68382
+"711","Africa","Guinea",2005,"Developing",54.7,9679745,33.424498
+"712","Africa","Guinea",2004,"Developing",54,949229,386.3288283
+"713","Africa","Guinea",2003,"Developing",53.3,939848,37.1931781
+"714","Africa","Guinea",2002,"Developing",52.9,9137345,322.811171
+"715","Africa","Guinea",2001,"Developing",52.5,8971139,315.83983
+"716","Africa","Guinea",2000,"Developing",52.5,888546,34.516918
+"717","Africa","Guinea-Bissau",2015,"Developing",58.9,177526,596.8717189
+"718","Africa","Guinea-Bissau",2014,"Developing",58.4,1725744,642.6256154
+"719","Africa","Guinea-Bissau",2013,"Developing",58.1,1681495,61.566347
+"720","Africa","Guinea-Bissau",2012,"Developing",57.6,1638139,67.7518833
+"721","Africa","Guinea-Bissau",2011,"Developing",57.1,1596154,692.69989
+"722","Africa","Guinea-Bissau",2010,"Developing",56.7,155588,543.957418
+"723","Africa","Guinea-Bissau",2009,"Developing",56.3,1517448,544.222779
+"724","Africa","Guinea-Bissau",2008,"Developing",55.6,148841,583.5445622
+"725","Africa","Guinea-Bissau",2007,"Developing",55,1445958,481.694976
+"726","Africa","Guinea-Bissau",2006,"Developing",54.4,1412669,418.94454
+"727","Africa","Guinea-Bissau",2005,"Developing",53.9,138838,424.9534585
+"728","Africa","Guinea-Bissau",2004,"Developing",53.5,135345,393.3138244
+"729","Africa","Guinea-Bissau",2003,"Developing",53,132122,36.5718585
+"730","Africa","Guinea-Bissau",2002,"Developing",52.8,1293523,321.481324
+"731","Africa","Guinea-Bissau",2001,"Developing",52.5,1267512,39.486749
+"732","Africa","Guinea-Bissau",2000,"Developing",52.1,1243229,297.7519443
+"733","South America","Guyana",2015,"Developing",66.2,768514,4136.689919
+"734","South America","Guyana",2014,"Developing",66,763393,43.82321
+"735","South America","Guyana",2013,"Developing",65.9,75881,3944.178173
+"736","South America","Guyana",2012,"Developing",65.8,75391,3785.935665
+"737","South America","Guyana",2011,"Developing",65.6,7491,3439.597513
+"738","South America","Guyana",2010,"Developing",65.9,746556,326.281212
+"739","South America","Guyana",2009,"Developing",66.1,745693,2716.35256
+"740","South America","Guyana",2008,"Developing",66.3,746314,2576.124957
+"741","South America","Guyana",2007,"Developing",65.7,747869,2327.58324
+"742","South America","Guyana",2006,"Developing",65.2,74961,1945.6395
+"743","South America","Guyana",2005,"Developing",65,75946,198.455216
+"744","South America","Guyana",2004,"Developing",65.1,751652,145.58861
+"745","South America","Guyana",2003,"Developing",65.3,751857,986.7958173
+"746","South America","Guyana",2002,"Developing",65.3,751884,96.8674827
+"747","South America","Guyana",2001,"Developing",65.4,752263,925.582546
+"748","South America","Guyana",2000,"Developing",65.4,75331,946.599372
+"749","North America","Haiti",2015,"Developing",63.5,171161,814.5463952
+"750","North America","Haiti",2014,"Developing",63.1,1572466,83.1148117
+"751","North America","Haiti",2013,"Developing",62.7,1431776,81.265673
+"752","North America","Haiti",2012,"Developing",62.3,128921,766.8437623
+"753","North America","Haiti",2011,"Developing",62.3,114554,74.9358452
+"754","North America","Haiti",2010,"Developing",36.3,9999617,662.2795182
+"755","North America","Haiti",2009,"Developing",62.5,985287,668.297646
+"756","North America","Haiti",2008,"Developing",62.1,97529,674.7564147
+"757","North America","Haiti",2007,"Developing",61.8,9556889,615.8198192
+"758","North America","Haiti",2006,"Developing",61.1,949457,55.47626
+"759","North America","Haiti",2005,"Developing",65,926344,465.311876
+"760","North America","Haiti",2004,"Developing",58.7,9119178,387.9429725
+"761","North America","Haiti",2003,"Developing",59.7,8976552,329.782946
+"762","North America","Haiti",2002,"Developing",59.3,8834733,393.16327
+"763","North America","Haiti",2001,"Developing",58.9,8692567,413.7383164
+"764","North America","Haiti",2000,"Developing",58.6,85492,462.486524
+"765","North America","Honduras",2015,"Developing",74.6,896829,2326.15856
+"766","North America","Honduras",2014,"Developing",74.5,889216,2242.711912
+"767","North America","Honduras",2013,"Developing",74.3,8657785,2136.77395
+"768","North America","Honduras",2012,"Developing",74.1,855646,2178.38325
+"769","North America","Honduras",2011,"Developing",73.9,83516,212.584798
+"770","North America","Honduras",2010,"Developing",73.6,8194778,1932.85829
+"771","North America","Honduras",2009,"Developing",73.4,83521,1815.489496
+"772","North America","Honduras",2008,"Developing",73.2,7872658,1751.595857
+"773","North America","Honduras",2007,"Developing",73,777972,1592.572182
+"774","North America","Honduras",2006,"Developing",72.8,754146,1437.628785
+"775","North America","Honduras",2005,"Developing",72.5,737343,1311.741714
+"776","North America","Honduras",2004,"Developing",72.2,724153,1217.657961
+"777","North America","Honduras",2003,"Developing",71.9,733821,1157.3427
+"778","North America","Honduras",2002,"Developing",71.6,6863157,1132.8721
+"779","North America","Honduras",2001,"Developing",71.3,669361,113.4546
+"780","North America","Honduras",2000,"Developing",71,6524283,188.783165
+"781","Europe","Hungary",2015,"Developed",75.8,984328,12365.6263
+"782","Europe","Hungary",2014,"Developed",75.6,9866468,14117.97668
+"783","Europe","Hungary",2013,"Developed",75.5,989382,13613.6147
+"784","Europe","Hungary",2012,"Developed",75,992362,12834.32349
+"785","Europe","Hungary",2011,"Developed",74.8,9971727,1448.87958
+"786","Europe","Hungary",2010,"Developed",74.5,123,1325.53379
+"787","Europe","Hungary",2009,"Developed",74.2,12265,12967.16543
+"788","Europe","Hungary",2008,"Developed",74.1,138188,15669.25929
+"789","Europe","Hungary",2007,"Developed",73.5,15578,13842.6549
+"790","Europe","Hungary",2006,"Developed",73.4,17137,11398.76584
+"791","Europe","Hungary",2005,"Developed",72.9,18765,11161.72441
+"792","Europe","Hungary",2004,"Developed",72.9,117146,1259.5266
+"793","Europe","Hungary",2003,"Developed",72.5,1129552,8396.25323
+"794","Europe","Hungary",2002,"Developed",72.5,115868,665.6443
+"795","Europe","Hungary",2001,"Developed",72.3,1187576,527.85364
+"796","Europe","Hungary",2000,"Developed",71.7,121971,4623.46712
+"797","Europe","Iceland",2015,"Developed",82.7,33815,5734.4436
+"798","Europe","Iceland",2014,"Developed",82.5,327386,52473.11356
+"799","Europe","Iceland",2013,"Developed",82.4,323764,4781.3888
+"800","Europe","Iceland",2012,"Developed",82.5,32716,44333.8518
+"801","Europe","Iceland",2011,"Developed",82.1,31914,46.217
+"802","Europe","Iceland",2010,"Developed",81.8,31841,41676.44527
+"803","Europe","Iceland",2009,"Developed",81.6,318499,4461.89251
+"804","Europe","Iceland",2008,"Developed",81.4,317414,55575.29196
+"805","Europe","Iceland",2007,"Developed",81.3,311566,68348.31817
+"806","Europe","Iceland",2006,"Developed",81.1,33782,5613.54115
+"807","Europe","Iceland",2005,"Developed",81,296734,56249.7555
+"808","Europe","Iceland",2004,"Developed",88,29274,46917.27216
+"809","Europe","Iceland",2003,"Developed",87,289521,3944.999
+"810","Europe","Iceland",2002,"Developed",84,287523,31996.2172
+"811","Europe","Iceland",2001,"Developed",80,284968,28585.9254
+"812","Europe","Iceland",2000,"Developed",79.7,28125,31813.37344
+"813","Asia","India",2015,"Developing",68.3,1395398,1613.18878
+"814","Asia","India",2014,"Developing",68,1293859294,1573.11889
+"815","Asia","India",2013,"Developing",67.6,127856227,1452.195373
+"816","Asia","India",2012,"Developing",67.3,126365852,1446.98541
+"817","Asia","India",2011,"Developing",66.8,124723629,1461.671957
+"818","Asia","India",2010,"Developing",66.4,12398691,1345.77153
+"819","Asia","India",2009,"Developing",66,121427132,19.317765
+"820","Asia","India",2008,"Developing",65.5,119714696,991.484634
+"821","Asia","India",2007,"Developing",65.2,1179681239,118.166373
+"822","Asia","India",2006,"Developing",64.8,1161977719,792.259698
+"823","Asia","India",2005,"Developing",64.4,1144118674,77.819
+"824","Asia","India",2004,"Developing",64,1126135777,621.3183767
+"825","Asia","India",2003,"Developing",63.7,11827848,541.1352279
+"826","Asia","India",2002,"Developing",63.3,18987112,466.2842
+"827","Asia","India",2001,"Developing",62.9,171477855,447.138966
+"828","Asia","India",2000,"Developing",62.5,1535912,438.864634
+"829","Asia","Indonesia",2015,"Developing",69.1,258162113,3336.16686
+"830","Asia","Indonesia",2014,"Developing",68.9,255131116,3491.595887
+"831","Asia","Indonesia",2013,"Developing",68.7,25232263,362.663981
+"832","Asia","Indonesia",2012,"Developing",68.5,248883232,3687.953996
+"833","Asia","Indonesia",2011,"Developing",68.3,24577511,3634.27685
+"834","Asia","Indonesia",2010,"Developing",68.1,242524123,3113.48635
+"835","Asia","Indonesia",2009,"Developing",67.9,23934478,2254.44566
+"836","Asia","Indonesia",2008,"Developing",67.7,236159276,216.52766
+"837","Asia","Indonesia",2007,"Developing",67.5,232989141,1855.93915
+"838","Asia","Indonesia",2006,"Developing",67.3,22983822,1586.254
+"839","Asia","Indonesia",2005,"Developing",67.2,22671273,126.928834
+"840","Asia","Indonesia",2004,"Developing",65.3,223614649,1148.56996
+"841","Asia","Indonesia",2003,"Developing",66.9,22545214,164.59447
+"842","Asia","Indonesia",2002,"Developing",66.7,2175859,899.5556857
+"843","Asia","Indonesia",2001,"Developing",66.5,2145652,747.9817455
+"844","Asia","Indonesia",2000,"Developing",66.3,21154429,78.92744
+"845","Asia","Iraq",2015,"Developing",68.9,36115649,4974.2693
+"846","Asia","Iraq",2014,"Developing",67.9,3568,673.74737
+"847","Asia","Iraq",2013,"Developing",69.5,33883145,6925.22446
+"848","Asia","Iraq",2012,"Developing",76,32776571,6651.12242
+"849","Asia","Iraq",2011,"Developing",77,3172753,5854.614497
+"850","Asia","Iraq",2010,"Developing",76,376271,452.74948
+"851","Asia","Iraq",2009,"Developing",74,29894652,3735.144836
+"852","Asia","Iraq",2008,"Developing",69.3,29111417,4521.3247
+"853","Asia","Iraq",2007,"Developing",65.9,2839433,3129.224922
+"854","Asia","Iraq",2006,"Developing",64.7,27697912,2351.812429
+"855","Asia","Iraq",2005,"Developing",66.8,278426,1849.63911
+"856","Asia","Iraq",2004,"Developing",67.2,2631669,1391.816923
+"857","Europe","Ireland",2015,"Developed",81.4,4676835,6664.144
+"858","Europe","Ireland",2014,"Developed",81.2,4617225,5553.32623
+"859","Europe","Ireland",2013,"Developed",81,4598294,5234.76736
+"860","Europe","Ireland",2012,"Developed",85,4586897,49231.36254
+"861","Europe","Ireland",2011,"Developed",84,4576794,52567.52568
+"862","Europe","Ireland",2010,"Developed",86,456155,48538.58776
+"863","Europe","Ireland",2009,"Developed",79.7,4535375,51983.78892
+"864","Europe","Ireland",2008,"Developed",79.8,4489544,61235.415
+"865","Europe","Ireland",2007,"Developed",79.5,4398942,61388.17457
+"866","Europe","Ireland",2006,"Developed",79,4273591,54326.9713
+"867","Europe","Ireland",2005,"Developed",78.7,4159914,5886.82789
+"868","Europe","Ireland",2004,"Developed",78.3,47262,47631.6377
+"869","Europe","Ireland",2003,"Developed",78,3996521,4117.15532
+"870","Europe","Ireland",2002,"Developed",77.4,3931947,32539.1937
+"871","Europe","Ireland",2001,"Developed",77,3866243,28223.55528
+"872","Europe","Ireland",2000,"Developed",76.4,385174,26241.91883
+"873","Asia","Israel",2015,"Developing",82.5,8381,35729.37253
+"874","Asia","Israel",2014,"Developing",82.2,82157,37582.84624
+"875","Asia","Israel",2013,"Developing",82.1,8595,36393.66932
+"876","Asia","Israel",2012,"Developing",81.8,7915,32569.59683
+"877","Asia","Israel",2011,"Developing",81.8,77658,33657.15727
+"878","Asia","Israel",2010,"Developing",81.7,76236,3661.994
+"879","Asia","Israel",2009,"Developing",81.5,74856,27795.87671
+"880","Asia","Israel",2008,"Developing",81,7388,29657.4421
+"881","Asia","Israel",2007,"Developing",84,7181,258.637
+"882","Asia","Israel",2006,"Developing",84,7537,2195.1769
+"883","Asia","Israel",2005,"Developing",80,6931,2611.17931
+"884","Asia","Israel",2004,"Developing",81,689,19888.172
+"885","Asia","Israel",2003,"Developing",79.7,66897,18946.99942
+"886","Asia","Israel",2002,"Developing",79.3,657,18431.15696
+"887","Asia","Israel",2001,"Developing",79.3,6439,236.19646
+"888","Asia","Israel",2000,"Developing",78.9,6289,2152.1432
+"889","Europe","Italy",2015,"Developed",82.7,673582,349.14755
+"890","Europe","Italy",2014,"Developed",82.5,678914,35396.66517
+"891","Europe","Italy",2013,"Developed",82.3,6233948,3537.27441
+"892","Europe","Italy",2012,"Developed",82,59539717,34814.12436
+"893","Europe","Italy",2011,"Developed",82,59379449,38334.68477
+"894","Europe","Italy",2010,"Developed",81.8,59277417,35849.37364
+"895","Europe","Italy",2009,"Developed",81.6,5995365,36976.84512
+"896","Europe","Italy",2008,"Developed",81.5,58826731,464.18465
+"897","Europe","Italy",2007,"Developed",81.3,5843831,37698.78573
+"898","Europe","Italy",2006,"Developed",81.2,58143979,3341.7482
+"899","Europe","Italy",2005,"Developed",88,57969484,31959.26215
+"900","Europe","Italy",2004,"Developed",89,57685327,31174.56118
+"901","Europe","Italy",2003,"Developed",79.9,5731323,27387.2258
+"902","Europe","Italy",2002,"Developed",80,57597,22196.5736
+"903","Europe","Italy",2001,"Developed",79.8,569741,24.819
+"904","Europe","Italy",2000,"Developed",79.4,5694218,251.2426
+"905","North America","Jamaica",2015,"Developing",76.2,2871934,4965.989857
+"906","North America","Jamaica",2014,"Developing",75.8,286287,4855.743789
+"907","North America","Jamaica",2013,"Developing",75.6,285187,56.144952
+"908","North America","Jamaica",2012,"Developing",75.3,284992,521.33363
+"909","North America","Jamaica",2011,"Developing",75.2,2829493,513.549487
+"910","North America","Jamaica",2010,"Developing",75,281721,4682.728424
+"911","North America","Jamaica",2009,"Developing",74.7,28482,4293.383274
+"912","North America","Jamaica",2008,"Developing",74.5,279122,492.492378
+"913","North America","Jamaica",2007,"Developing",74.2,2775467,462.517913
+"914","North America","Jamaica",2006,"Developing",74,276279,4313.1682
+"915","North America","Jamaica",2005,"Developing",73.5,2744673,482.24762
+"916","North America","Jamaica",2004,"Developing",73.3,2728777,3719.97351
+"917","North America","Jamaica",2003,"Developing",73.1,2712511,3465.221998
+"918","North America","Jamaica",2002,"Developing",73,2695446,3596.496282
+"919","North America","Jamaica",2001,"Developing",72.7,267711,3394.878
+"920","North America","Jamaica",2000,"Developing",72.6,2656864,336.8742
+"921","Asia","Japan",2015,"Developed",83.7,127141,34474.13736
+"922","Asia","Japan",2014,"Developed",83.5,127276,3896.21151
+"923","Asia","Japan",2013,"Developed",83.5,127445,4454.44746
+"924","Asia","Japan",2012,"Developed",83.3,127629,4863.47665
+"925","Asia","Japan",2011,"Developed",82.5,127833,48167.99727
+"926","Asia","Japan",2010,"Developed",83,1287,4457.67639
+"927","Asia","Japan",2009,"Developed",83,12847,4855.17564
+"928","Asia","Japan",2008,"Developed",82.7,12863,39339.29757
+"929","Asia","Japan",2007,"Developed",82.6,1281,35275.22843
+"930","Asia","Japan",2006,"Developed",82.4,127854,35433.98896
+"931","Asia","Japan",2005,"Developed",82,127773,37217.64873
+"932","Asia","Japan",2004,"Developed",82.1,127761,37688.72234
+"933","Asia","Japan",2003,"Developed",81.9,127718,3488.3992
+"934","Asia","Japan",2002,"Developed",81.8,127445,32289.3554
+"935","Asia","Japan",2001,"Developed",81.5,127149,33846.46564
+"936","Asia","Japan",2000,"Developed",81.1,126843,38532.488
+"937","Asia","Jordan",2015,"Developing",74.1,915932,496.99275
+"938","Asia","Jordan",2014,"Developing",74,88936,466.94775
+"939","Asia","Jordan",2013,"Developing",73.9,8413464,3992.86717
+"940","Asia","Jordan",2012,"Developing",73.7,7992573,387.753211
+"941","Asia","Jordan",2011,"Developing",73.6,7574943,387.324145
+"942","Asia","Jordan",2010,"Developing",73.4,718239,3679.19275
+"943","Asia","Jordan",2009,"Developing",73.3,6821116,3492.1396
+"944","Asia","Jordan",2008,"Developing",73.1,6489822,3385.69665
+"945","Asia","Jordan",2007,"Developing",73,6193191,2762.86354
+"946","Asia","Jordan",2006,"Developing",72.8,5934232,2537.349
+"947","Asia","Jordan",2005,"Developing",72.4,5714111,223.83787
+"948","Asia","Jordan",2004,"Developing",72.5,5535595,261.456882
+"949","Asia","Jordan",2003,"Developing",72.3,5396774,1889.213962
+"950","Asia","Jordan",2002,"Developing",72.1,5287488,1812.288374
+"951","Asia","Jordan",2001,"Developing",71.9,5193482,1728.2659
+"952","Asia","Jordan",2000,"Developing",71.7,51313,1657.889256
+"953","Asia","Kazakhstan",2015,"Developing",72,17544126,159.9817
+"954","Asia","Kazakhstan",2014,"Developing",69.9,17289224,1286.56511
+"955","Asia","Kazakhstan",2013,"Developing",69.5,1735275,1389.8561
+"956","Asia","Kazakhstan",2012,"Developing",69.1,16791425,12387.18982
+"957","Asia","Kazakhstan",2011,"Developing",68.5,165566,11634.42422
+"958","Asia","Kazakhstan",2010,"Developing",67.8,16321581,97.649972
+"959","Asia","Kazakhstan",2009,"Developing",67.8,169271,7165.2775
+"960","Asia","Kazakhstan",2008,"Developing",66.6,15674,8513.564645
+"961","Asia","Kazakhstan",2007,"Developing",65.3,15484192,6771.414797
+"962","Asia","Kazakhstan",2006,"Developing",65,153884,5291.57565
+"963","Asia","Kazakhstan",2005,"Developing",64.6,1514729,3771.278957
+"964","Asia","Kazakhstan",2004,"Developing",64.7,1512985,2874.288291
+"965","Asia","Kazakhstan",2003,"Developing",64.4,149918,268.123657
+"966","Asia","Kazakhstan",2002,"Developing",64.7,14858948,1658.31146
+"967","Asia","Kazakhstan",2001,"Developing",64.4,14858335,149.926751
+"968","Asia","Kazakhstan",2000,"Developing",63.9,14883626,1229.958
+"969","Africa","Kenya",2015,"Developing",63.4,47236259,1349.97144
+"970","Africa","Kenya",2014,"Developing",62.9,462425,1335.6458
+"971","Africa","Kenya",2013,"Developing",62.6,44826849,1229.114798
+"972","Africa","Kenya",2012,"Developing",62.1,43646629,1155.2582
+"973","Africa","Kenya",2011,"Developing",61.2,42486839,987.4453967
+"974","Africa","Kenya",2010,"Developing",63,4135152,967.34773
+"975","Africa","Kenya",2009,"Developing",59.1,423724,92.816252
+"976","Africa","Kenya",2008,"Developing",57.9,39148416,916.8992515
+"977","Africa","Kenya",2007,"Developing",56.8,388599,839.181117
+"978","Africa","Kenya",2006,"Developing",55.3,37525,697.66385
+"979","Africa","Kenya",2005,"Developing",54.1,3648288,519.7999346
+"980","Africa","Kenya",2004,"Developing",53,3574931,458.8843551
+"981","Africa","Kenya",2003,"Developing",52.4,3413852,436.6875357
+"982","Africa","Kenya",2002,"Developing",52.1,332149,395.8493511
+"983","Africa","Kenya",2001,"Developing",51.9,32321482,41.7763612
+"984","Africa","Kenya",2000,"Developing",51.9,3145483,43.9797132
+"985","Oceania","Kiribati",2015,"Developing",66.3,11247,1424.483611
+"986","Oceania","Kiribati",2014,"Developing",66.1,11458,1684.54274
+"987","Oceania","Kiribati",2013,"Developing",65.8,18535,1724.361737
+"988","Oceania","Kiribati",2012,"Developing",65.7,16613,1763.815497
+"989","Oceania","Kiribati",2011,"Developing",65.5,14656,1692.613277
+"990","Oceania","Kiribati",2010,"Developing",65.3,12652,1493.1651
+"991","Oceania","Kiribati",2009,"Developing",65.2,1568,1297.285141
+"992","Oceania","Kiribati",2008,"Developing",65.1,9844,1413.3234
+"993","Oceania","Kiribati",2007,"Developing",65,96311,1357.632211
+"994","Oceania","Kiribati",2006,"Developing",65,9426,1151.555618
+"995","Oceania","Kiribati",2005,"Developing",64.9,92325,1214.556667
+"996","Oceania","Kiribati",2004,"Developing",64.8,9542,113.6286
+"997","Oceania","Kiribati",2003,"Developing",64.7,88895,115.3865
+"998","Oceania","Kiribati",2002,"Developing",64.6,87343,826.58554
+"999","Oceania","Kiribati",2001,"Developing",64.3,85858,734.9492461
+"1000","Oceania","Kiribati",2000,"Developing",64.1,8446,796.7937634
+"1001","Europe","Latvia",2015,"Developed",74.6,1977527,13666.58336
+"1002","Europe","Latvia",2014,"Developed",74.4,1993782,15725.1374
+"1003","Europe","Latvia",2013,"Developed",74.1,212647,1532.22924
+"1004","Europe","Latvia",2012,"Developed",73.8,234319,13822.8559
+"1005","Europe","Latvia",2011,"Developed",73.6,25979,1372.68947
+"1006","Europe","Latvia",2010,"Developed",72.8,297555,11326.21947
+"1007","Europe","Latvia",2009,"Developed",72.6,2141669,12219.37379
+"1008","Europe","Latvia",2008,"Developed",71.9,2177322,16348.53121
+"1009","Europe","Latvia",2007,"Developed",78,22325,1444.1589
+"1010","Europe","Latvia",2006,"Developed",75,2218357,9667.9757
+"1011","Europe","Latvia",2005,"Developed",76,2238799,7558.7426
+"1012","Europe","Latvia",2004,"Developed",71,2263122,6351.8125
+"1013","Europe","Latvia",2003,"Developed",78,2287955,5134.95694
+"1014","Europe","Latvia",2002,"Developed",73,231173,4132.34927
+"1015","Europe","Latvia",2001,"Developed",69.9,233717,3572.8513
+"1016","Europe","Latvia",2000,"Developed",71,236755,3352.731296
+"1017","Asia","Lebanon",2015,"Developing",74.9,5851479,846.632851
+"1018","Asia","Lebanon",2014,"Developing",74.8,563279,8161.4614
+"1019","Asia","Lebanon",2013,"Developing",74.9,527612,846.285153
+"1020","Asia","Lebanon",2012,"Developing",75,491644,8787.94668
+"1021","Asia","Lebanon",2011,"Developing",75,4588368,8734.9653
+"1022","Asia","Lebanon",2010,"Developing",74.9,4337141,8763.826274
+"1023","Asia","Lebanon",2009,"Developing",74.7,4183156,84.268878
+"1024","Asia","Lebanon",2008,"Developing",74.5,411147,712.775759
+"1025","Asia","Lebanon",2007,"Developing",74.4,486466,614.271115
+"1026","Asia","Lebanon",2006,"Developing",74.1,45735,5372.65899
+"1027","Asia","Lebanon",2005,"Developing",73.9,3986852,5339.441291
+"1028","Asia","Lebanon",2004,"Developing",73.7,3863267,5424.22356
+"1029","Asia","Lebanon",2003,"Developing",73.5,371464,5425.6697
+"1030","Asia","Lebanon",2002,"Developing",73.2,3522837,5436.595223
+"1031","Asia","Lebanon",2001,"Developing",73,3359859,5253.122599
+"1032","Asia","Lebanon",2000,"Developing",72.7,3235366,5334.93329
+"1033","Africa","Lesotho",2015,"Developing",53.7,2174645,173.82893
+"1034","Africa","Lesotho",2014,"Developing",52.1,2145785,1174.839214
+"1035","Africa","Lesotho",2013,"Developing",52.1,2117361,1196.1335
+"1036","Africa","Lesotho",2012,"Developing",52.2,289928,1281.516
+"1037","Africa","Lesotho",2011,"Developing",52.3,264166,1352.38433
+"1038","Africa","Lesotho",2010,"Developing",51.1,24551,1173.26212
+"1039","Africa","Lesotho",2009,"Developing",49.4,21929,923.136931
+"1040","Africa","Lesotho",2008,"Developing",47.8,199993,934.428563
+"1041","Africa","Lesotho",2007,"Developing",46.2,1982287,918.432717
+"1042","Africa","Lesotho",2006,"Developing",45.3,1965662,915.775754
+"1043","Africa","Lesotho",2005,"Developing",44.5,1949543,862.9463118
+"1044","Africa","Lesotho",2004,"Developing",44.8,1933728,781.5145936
+"1045","Africa","Lesotho",2003,"Developing",45.5,191897,63.636279
+"1046","Africa","Lesotho",2002,"Developing",46.4,192312,47.89395
+"1047","Africa","Lesotho",2001,"Developing",47.8,1885955,437.819184
+"1048","Africa","Lesotho",2000,"Developing",49.3,1868699,474.8197876
+"1049","Africa","Liberia",2015,"Developing",61.4,4499621,452.38717
+"1050","Africa","Liberia",2014,"Developing",58.1,439737,458.4651734
+"1051","Africa","Liberia",2013,"Developing",61.1,4286291,454.1222236
+"1052","Africa","Liberia",2012,"Developing",67,4181563,415.361958
+"1053","Africa","Liberia",2011,"Developing",62,47167,379.689583
+"1054","Africa","Liberia",2010,"Developing",59.7,3948125,327.42597
+"1055","Africa","Liberia",2009,"Developing",59.2,3811528,33.667491
+"1056","Africa","Liberia",2008,"Developing",58.6,3662993,232.61732
+"1057","Africa","Liberia",2007,"Developing",57.9,3512932,21.3733292
+"1058","Africa","Liberia",2006,"Developing",56.7,3375838,178.92799
+"1059","Africa","Liberia",2005,"Developing",55.3,326123,168.648254
+"1060","Africa","Liberia",2004,"Developing",54,3176414,149.4452549
+"1061","Africa","Liberia",2003,"Developing",50,3116233,133.494518
+"1062","Africa","Liberia",2002,"Developing",56,362863,177.285187
+"1063","Africa","Liberia",2001,"Developing",51.5,2991132,174.1815473
+"1064","Africa","Liberia",2000,"Developing",51.9,2884522,183.4149991
+"1065","Europe","Lithuania",2015,"Developed",73.6,29491,14252.42853
+"1066","Europe","Lithuania",2014,"Developed",73.4,2932367,16554.97139
+"1067","Europe","Lithuania",2013,"Developed",73,2957689,15712.82376
+"1068","Europe","Lithuania",2012,"Developed",73,2987773,14341.836
+"1069","Europe","Lithuania",2011,"Developed",72.8,328115,14357.73679
+"1070","Europe","Lithuania",2010,"Developed",72.4,397282,11984.86857
+"1071","Europe","Lithuania",2009,"Developed",72.2,3162916,11837.3913
+"1072","Europe","Lithuania",2008,"Developed",71.1,3198231,14961.56818
+"1073","Europe","Lithuania",2007,"Developed",72,3231294,12297.91535
+"1074","Europe","Lithuania",2006,"Developed",76,326999,924.642548
+"1075","Europe","Lithuania",2005,"Developed",78,3322528,7863.1629
+"1076","Europe","Lithuania",2004,"Developed",71.6,337775,676.966998
+"1077","Europe","Lithuania",2003,"Developed",71.6,3415213,555.535669
+"1078","Europe","Lithuania",2002,"Developed",71.4,344367,4146.987928
+"1079","Europe","Lithuania",2001,"Developed",71.2,347818,353.147337
+"1080","Europe","Lithuania",2000,"Developed",71.6,3499536,3297.35471
+"1081","Europe","Luxembourg",2015,"Developed",82,56964,1199.8223
+"1082","Europe","Luxembourg",2014,"Developed",81.7,556319,119172.7418
+"1083","Europe","Luxembourg",2013,"Developed",81.4,54336,113751.85
+"1084","Europe","Luxembourg",2012,"Developed",81.1,53946,16749.136
+"1085","Europe","Luxembourg",2011,"Developed",88,518347,115761.577
+"1086","Europe","Luxembourg",2010,"Developed",86,56953,14965.361
+"1087","Europe","Luxembourg",2009,"Developed",83,497783,13198.6693
+"1088","Europe","Luxembourg",2008,"Developed",80,48865,114293.8433
+"1089","Europe","Luxembourg",2007,"Developed",79.7,479993,1618.4928
+"1090","Europe","Luxembourg",2006,"Developed",79.4,472637,89739.7117
+"1091","Europe","Luxembourg",2005,"Developed",78.8,465158,8289.69641
+"1092","Europe","Luxembourg",2004,"Developed",78.7,45895,75716.3518
+"1093","Europe","Luxembourg",2003,"Developed",78.6,45163,65445.8853
+"1094","Europe","Luxembourg",2002,"Developed",78.3,446175,5293.64115
+"1095","Europe","Luxembourg",2001,"Developed",78,441525,48179.4285
+"1096","Europe","Luxembourg",2000,"Developed",77.8,4363,48735.99549
+"1097","Africa","Madagascar",2015,"Developing",65.5,2423488,41.8575951
+"1098","Africa","Madagascar",2014,"Developing",65.1,2358981,452.4631926
+"1099","Africa","Madagascar",2013,"Developing",64.7,22961146,461.723722
+"1100","Africa","Madagascar",2012,"Developing",64.3,22346573,443.9611
+"1101","Africa","Madagascar",2011,"Developing",63.8,21743949,454.963464
+"1102","Africa","Madagascar",2010,"Developing",63.3,2115164,412.739341
+"1103","Africa","Madagascar",2009,"Developing",62.8,2569121,415.6893226
+"1104","Africa","Madagascar",2008,"Developing",62.3,19996469,47.733254
+"1105","Africa","Madagascar",2007,"Developing",61.9,19433523,377.8482928
+"1106","Africa","Madagascar",2006,"Developing",61.4,1888268,292.157443
+"1107","Africa","Madagascar",2005,"Developing",69,18336724,274.819723
+"1108","Africa","Madagascar",2004,"Developing",64,1782997,245.1235876
+"1109","Africa","Madagascar",2003,"Developing",59.9,17279141,316.7998965
+"1110","Africa","Madagascar",2002,"Developing",59.3,16765117,262.2859481
+"1111","Africa","Madagascar",2001,"Developing",58.7,1626932,278.555732
+"1112","Africa","Madagascar",2000,"Developing",57.9,1576686,245.939659
+"1113","Africa","Malawi",2015,"Developing",58.3,1757367,362.6575444
+"1114","Africa","Malawi",2014,"Developing",57.6,1768838,354.7253961
+"1115","Africa","Malawi",2013,"Developing",56.7,16577147,332.922339
+"1116","Africa","Malawi",2012,"Developing",55.3,169735,374.51882
+"1117","Africa","Malawi",2011,"Developing",54.1,15627618,512.125451
+"1118","Africa","Malawi",2010,"Developing",52.9,1516795,458.8681744
+"1119","Africa","Malawi",2009,"Developing",51.5,1471462,42.7379657
+"1120","Africa","Malawi",2008,"Developing",50,14271234,372.842678
+"1121","Africa","Malawi",2007,"Developing",48.5,1384969,32.2227274
+"1122","Africa","Malawi",2006,"Developing",47.1,13429262,297.6971211
+"1123","Africa","Malawi",2005,"Developing",46,1339711,28.3673842
+"1124","Africa","Malawi",2004,"Developing",45.1,1267638,274.2256294
+"1125","Africa","Malawi",2003,"Developing",44.6,12336687,26.152517
+"1126","Africa","Malawi",2002,"Developing",44,1213711,29.9798977
+"1127","Africa","Malawi",2001,"Developing",43.5,11695863,146.7615397
+"1128","Africa","Malawi",2000,"Developing",43.1,11376172,153.2594872
+"1129","Asia","Malaysia",2015,"Developing",75,3723155,9643.644683
+"1130","Asia","Malaysia",2014,"Developing",74.8,322817,11183.96191
+"1131","Asia","Malaysia",2013,"Developing",74.6,2976724,1882.27842
+"1132","Asia","Malaysia",2012,"Developing",74.5,2917456,1779.49641
+"1133","Asia","Malaysia",2011,"Developing",74.3,28635128,145.1262
+"1134","Asia","Malaysia",2010,"Developing",74.1,28112289,971.356987
+"1135","Asia","Malaysia",2009,"Developing",74,2765383,7326.744435
+"1136","Asia","Malaysia",2008,"Developing",73.8,2711169,8513.629541
+"1137","Asia","Malaysia",2007,"Developing",73.7,26625845,7269.17114
+"1138","Asia","Malaysia",2006,"Developing",73.6,26143566,6222.982955
+"1139","Asia","Malaysia",2005,"Developing",73.4,25659393,5593.822995
+"1140","Asia","Malaysia",2004,"Developing",73.2,2517419,4955.477743
+"1141","Asia","Malaysia",2003,"Developing",73.1,2468873,4463.675893
+"1142","Asia","Malaysia",2002,"Developing",72.9,24198811,4167.364387
+"1143","Asia","Malaysia",2001,"Developing",72.7,2369897,3915.11546
+"1144","Asia","Malaysia",2000,"Developing",72.4,2318568,445.17471
+"1145","Asia","Maldives",2015,"Developing",78.5,49163,8395.785198
+"1146","Asia","Maldives",2014,"Developing",78.2,41,7716.2415
+"1147","Asia","Maldives",2013,"Developing",77.9,393,7112.33575
+"1148","Asia","Maldives",2012,"Developing",77.6,385,6541.7465
+"1149","Asia","Maldives",2011,"Developing",77.3,377,6497.55443
+"1150","Asia","Maldives",2010,"Developing",76.7,367,633.79498
+"1151","Asia","Maldives",2009,"Developing",76.3,36,597.1659
+"1152","Asia","Maldives",2008,"Developing",75.9,362,5828.621374
+"1153","Asia","Maldives",2007,"Developing",75.4,349,52.862285
+"1154","Asia","Maldives",2006,"Developing",75,333,4428.522898
+"1155","Asia","Maldives",2005,"Developing",74.3,321,3488.493769
+"1156","Asia","Maldives",2004,"Developing",73.4,312,3853.33348
+"1157","Asia","Maldives",2003,"Developing",72.7,34,3432.247841
+"1158","Asia","Maldives",2002,"Developing",71.8,297,32.37239
+"1159","Asia","Maldives",2001,"Developing",78,292,298.67598
+"1160","Asia","Maldives",2000,"Developing",69.6,286,2182.99711
+"1161","Africa","Mali",2015,"Developing",58.2,1746795,729.725338
+"1162","Africa","Mali",2014,"Developing",57.8,16962846,825.5729915
+"1163","Africa","Mali",2013,"Developing",57.3,16477818,777.659139
+"1164","Africa","Mali",2012,"Developing",57.2,16667,777.3476868
+"1165","Africa","Mali",2011,"Developing",56.8,1554989,835.88998
+"1166","Africa","Mali",2010,"Developing",56.5,157585,78.377632
+"1167","Africa","Mali",2009,"Developing",56,1466597,697.153124
+"1168","Africa","Mali",2008,"Developing",55.5,14138216,689.6784228
+"1169","Africa","Mali",2007,"Developing",55,1367566,595.6368319
+"1170","Africa","Mali",2006,"Developing",54.3,1322764,521.6425796
+"1171","Africa","Mali",2005,"Developing",53.6,12798763,487.942556
+"1172","Africa","Mali",2004,"Developing",52.8,1239196,439.3572924
+"1173","Africa","Mali",2003,"Developing",52,125128,391.791281
+"1174","Africa","Mali",2002,"Developing",51.2,11638929,334.22416
+"1175","Africa","Mali",2001,"Developing",55,11293258,36.8473237
+"1176","Africa","Mali",2000,"Developing",49.8,196769,269.3483829
+"1177","Europe","Malta",2015,"Developed",81.7,431874,23819.4636
+"1178","Europe","Malta",2014,"Developed",81.4,427364,2618.92599
+"1179","Europe","Malta",2013,"Developed",81.1,423374,2393.1888
+"1180","Europe","Malta",2012,"Developed",81,419455,2193.8836
+"1181","Europe","Malta",2011,"Developed",87,416268,22821.847
+"1182","Europe","Malta",2010,"Developed",83,41458,2187.79469
+"1183","Europe","Malta",2009,"Developed",82,412477,2675.58259
+"1184","Europe","Malta",2008,"Developed",80,49379,21928.767
+"1185","Europe","Malta",2007,"Developed",79.6,46724,19375.5696
+"1186","Europe","Malta",2006,"Developed",79.3,4538,16671.5672
+"1187","Europe","Malta",2005,"Developed",79,43834,15835.34667
+"1188","Europe","Malta",2004,"Developed",78.7,41268,1519.5497
+"1189","Europe","Malta",2003,"Developed",78.5,398582,13689.98999
+"1190","Europe","Malta",2002,"Developed",78.2,395969,11843.9392
+"1191","Europe","Malta",2001,"Developed",77.8,39328,1121.78636
+"1192","Europe","Malta",2000,"Developed",77.5,3987,1139.5651
+"1193","Africa","Mauritania",2015,"Developing",63.1,4182341,1158.256469
+"1194","Africa","Mauritania",2014,"Developing",63,46392,1326.66882
+"1195","Africa","Mauritania",2013,"Developing",62.7,394617,145.57838
+"1196","Africa","Mauritania",2012,"Developing",62.5,383239,1364.283745
+"1197","Africa","Mauritania",2011,"Developing",62.2,3717672,1393.261593
+"1198","Africa","Mauritania",2010,"Developing",62,369543,123.383675
+"1199","Africa","Mauritania",2009,"Developing",61.7,356288,146.83851
+"1200","Africa","Mauritania",2008,"Developing",61.4,347541,1167.535689
+"1201","Africa","Mauritania",2007,"Developing",61.2,3312665,113.3128
+"1202","Africa","Mauritania",2006,"Developing",69,322653,944.134851
+"1203","Africa","Mauritania",2005,"Developing",66,31372,697.7451989
+"1204","Africa","Mauritania",2004,"Developing",64,342823,62.547286
+"1205","Africa","Mauritania",2003,"Developing",63,2957117,528.586613
+"1206","Africa","Mauritania",2002,"Developing",62,2873228,46.9542322
+"1207","Africa","Mauritania",2001,"Developing",61,279729,464.229758
+"1208","Africa","Mauritania",2000,"Developing",60,279359,477.476124
+"1209","Africa","Mauritius",2015,"Developing",74.6,126265,9252.11724
+"1210","Africa","Mauritius",2014,"Developing",74.2,126934,1153.93822
+"1211","Africa","Mauritius",2013,"Developing",74.1,1258653,9637.265
+"1212","Africa","Mauritius",2012,"Developing",73.9,1255882,9291.227619
+"1213","Africa","Mauritius",2011,"Developing",73.6,125244,9197.26972
+"1214","Africa","Mauritius",2010,"Developing",73.3,1254,8.376432
+"1215","Africa","Mauritius",2009,"Developing",72.8,1247429,7318.12641
+"1216","Africa","Mauritius",2008,"Developing",72.7,1244121,83.635
+"1217","Africa","Mauritius",2007,"Developing",72.9,123963,6574.654338
+"1218","Africa","Mauritius",2006,"Developing",71.8,1233996,5695.969327
+"1219","Africa","Mauritius",2005,"Developing",72.1,1228254,5116.45424
+"1220","Africa","Mauritius",2004,"Developing",71.9,12213,5229.876738
+"1221","Africa","Mauritius",2003,"Developing",71.5,121337,4623.347642
+"1222","Africa","Mauritius",2002,"Developing",71.5,124621,3957.51296
+"1223","Africa","Mauritius",2001,"Developing",71.5,1196287,3792.182152
+"1224","Africa","Mauritius",2000,"Developing",71,1186873,3861.32414
+"1225","North America","Mexico",2015,"Developing",76.7,12589949,9143.128494
+"1226","North America","Mexico",2014,"Developing",76.6,1242216,1452.27766
+"1227","North America","Mexico",2013,"Developing",76.6,122535969,1298.86766
+"1228","North America","Mexico",2012,"Developing",76.3,1282837,982.532572
+"1229","North America","Mexico",2011,"Developing",76.1,119917,9834.472689
+"1230","North America","Mexico",2010,"Developing",75.6,117318941,8959.581416
+"1231","North America","Mexico",2009,"Developing",75.7,11555228,7748.12331
+"1232","North America","Mexico",2008,"Developing",75.6,11366189,9689.52887
+"1233","North America","Mexico",2007,"Developing",76,111836346,933.341687
+"1234","North America","Mexico",2006,"Developing",75.8,1192378,8767.92258
+"1235","North America","Mexico",2005,"Developing",75.3,18472228,7986.798439
+"1236","North America","Mexico",2004,"Developing",75.4,16995583,7199.59665
+"1237","North America","Mexico",2003,"Developing",75,1564453,6751.998987
+"1238","North America","Mexico",2002,"Developing",75,1435568,716.8219
+"1239","North America","Mexico",2001,"Developing",75,136768,731.378864
+"1240","North America","Mexico",2000,"Developing",74.8,11719673,672.92113
+"1241","Asia","Mongolia",2015,"Developing",68.8,2976877,3944.1839
+"1242","Asia","Mongolia",2014,"Developing",68.4,2923896,4181.583321
+"1243","Asia","Mongolia",2013,"Developing",68.1,286917,4385.379355
+"1244","Asia","Mongolia",2012,"Developing",67.8,2814226,4368.82248
+"1245","Asia","Mongolia",2011,"Developing",67.3,2761516,3769.595255
+"1246","Asia","Mongolia",2010,"Developing",66.3,271265,265.353659
+"1247","Asia","Mongolia",2009,"Developing",66.9,2668289,1717.898761
+"1248","Asia","Mongolia",2008,"Developing",67.4,2628131,2139.625631
+"1249","Asia","Mongolia",2007,"Developing",65.9,259167,1634.81431
+"1250","Asia","Mongolia",2006,"Developing",65,255812,1334.651896
+"1251","Asia","Mongolia",2005,"Developing",64.5,2526446,998.8226671
+"1252","Asia","Mongolia",2004,"Developing",64,2496832,797.8377432
+"1253","Asia","Mongolia",2003,"Developing",64,2469286,646.561295
+"1254","Asia","Mongolia",2002,"Developing",63.8,2443659,571.51883
+"1255","Asia","Mongolia",2001,"Developing",63.2,2419776,524.145924
+"1256","Asia","Mongolia",2000,"Developing",62.8,2397436,474.2133361
+"1257","Europe","Montenegro",2015,"Developing",76.1,622159,6461.192554
+"1258","Europe","Montenegro",2014,"Developing",75.9,62181,7378.345289
+"1259","Europe","Montenegro",2013,"Developing",75.8,62127,7186.429787
+"1260","Europe","Montenegro",2012,"Developing",75.6,6261,6586.71929
+"1261","Europe","Montenegro",2011,"Developing",75.4,6279,7318.742449
+"1262","Europe","Montenegro",2010,"Developing",75.3,619428,6682.281158
+"1263","Europe","Montenegro",2009,"Developing",75,618294,6698.79439
+"1264","Europe","Montenegro",2008,"Developing",74.6,616969,7325.73474
+"1265","Europe","Montenegro",2007,"Developing",74.2,615875,5957.145693
+"1266","Europe","Montenegro",2006,"Developing",73.8,61525,4383.59597
+"1267","Europe","Montenegro",2005,"Developing",73.6,614261,3674.617924
+"1268","Europe","Montenegro",2004,"Developing",73.5,613353,338.199535
+"1269","Europe","Montenegro",2003,"Developing",73.5,612267,2789.1735
+"1270","Europe","Montenegro",2002,"Developing",73.4,69828,216.243274
+"1271","Europe","Montenegro",2001,"Developing",73.3,67389,199.583957
+"1272","Europe","Montenegro",2000,"Developing",73,6495,1627.42893
+"1273","Africa","Morocco",2015,"Developing",74.3,3483322,2847.285569
+"1274","Africa","Morocco",2014,"Developing",74.1,3431882,3154.513484
+"1275","Africa","Morocco",2013,"Developing",73.9,33824769,3111.762887
+"1276","Africa","Morocco",2012,"Developing",73.6,33333789,294.746728
+"1277","Africa","Morocco",2011,"Developing",73.3,32858823,339.91616
+"1278","Africa","Morocco",2010,"Developing",72.8,3249639,2834.2472
+"1279","Africa","Morocco",2009,"Developing",72.3,31989897,2861.5545
+"1280","Africa","Morocco",2008,"Developing",71.8,31596855,2884.94776
+"1281","Africa","Morocco",2007,"Developing",71.4,31225881,2494.353552
+"1282","Africa","Morocco",2006,"Developing",71,3869346,2191.478567
+"1283","Africa","Morocco",2005,"Developing",77,35217,213.755559
+"1284","Africa","Morocco",2004,"Developing",72,3179285,1948.812275
+"1285","Africa","Morocco",2003,"Developing",69.9,29843937,1721.973863
+"1286","Africa","Morocco",2002,"Developing",69.5,29512368,1413.757176
+"1287","Africa","Morocco",2001,"Developing",69,29181832,1336.775376
+"1288","Africa","Morocco",2000,"Developing",68.6,28849621,1332.382358
+"1289","Africa","Mozambique",2015,"Developing",57.6,281691,528.3125597
+"1290","Africa","Mozambique",2014,"Developing",56.7,27212382,623.2871141
+"1291","Africa","Mozambique",2013,"Developing",55.3,26434372,65.985681
+"1292","Africa","Mozambique",2012,"Developing",54.8,2567666,566.513873
+"1293","Africa","Mozambique",2011,"Developing",54.3,249395,526.5313517
+"1294","Africa","Mozambique",2010,"Developing",54,2422145,419.2258149
+"1295","Africa","Mozambique",2009,"Developing",53.8,2352463,463.852618
+"1296","Africa","Mozambique",2008,"Developing",53.2,22846758,53.127719
+"1297","Africa","Mozambique",2007,"Developing",52.1,22188387,422.1461573
+"1298","Africa","Mozambique",2006,"Developing",51.2,21547463,385.7567141
+"1299","Africa","Mozambique",2005,"Developing",58,29237,369.1545359
+"1300","Africa","Mozambique",2004,"Developing",54,231275,336.3318145
+"1301","Africa","Mozambique",2003,"Developing",51,19716598,283.8911588
+"1302","Africa","Mozambique",2002,"Developing",49.8,19139658,262.884551
+"1303","Africa","Mozambique",2001,"Developing",49.5,18588758,256.4414872
+"1304","Africa","Mozambique",2000,"Developing",49,1867687,277.6486591
+"1305","Asia","Myanmar",2015,"Developing",66.6,5243669,1194.59137
+"1306","Asia","Myanmar",2014,"Developing",66.4,51924182,1262.893782
+"1307","Asia","Myanmar",2013,"Developing",66.2,51448196,1168.83947
+"1308","Asia","Myanmar",2012,"Developing",65.9,5986514,1171.58257
+"1309","Asia","Myanmar",2011,"Developing",65.6,555331,1186.423937
+"1310","Asia","Myanmar",2010,"Developing",65.4,5155896,987.7365832
+"1311","Asia","Myanmar",2009,"Developing",65.2,49869,741.777116
+"1312","Asia","Myanmar",2008,"Developing",59.2,49479752,643.951373
+"1313","Asia","Myanmar",2007,"Developing",64.5,49171586,41.451
+"1314","Asia","Myanmar",2006,"Developing",64.2,48846474,296.97284
+"1315","Asia","Myanmar",2005,"Developing",63.9,48482614,247.24276
+"1316","Asia","Myanmar",2004,"Developing",63.5,487377,219.8156688
+"1317","Asia","Myanmar",2003,"Developing",63.2,47624894,219.782326
+"1318","Asia","Myanmar",2002,"Developing",62.8,471422,143.77651
+"1319","Asia","Myanmar",2001,"Developing",62.5,46627994,138.9249275
+"1320","Asia","Myanmar",2000,"Developing",62.1,4695462,193.187484
+"1321","Africa","Namibia",2015,"Developing",65.8,2425561,4737.66996
+"1322","Africa","Namibia",2014,"Developing",65.9,237992,5421.343953
+"1323","Africa","Namibia",2013,"Developing",66.1,231652,5488.131712
+"1324","Africa","Namibia",2012,"Developing",65.8,2263934,5749.44752
+"1325","Africa","Namibia",2011,"Developing",64.3,2215621,56.971392
+"1326","Africa","Namibia",2010,"Developing",63,217317,5191.58381
+"1327","Africa","Namibia",2009,"Developing",62.4,21374,4153.497885
+"1328","Africa","Namibia",2008,"Developing",61.7,216375,429.6561
+"1329","Africa","Namibia",2007,"Developing",60,279915,422.51968
+"1330","Africa","Namibia",2006,"Developing",57,255734,3881.29535
+"1331","Africa","Namibia",2005,"Developing",55.1,232196,3573.146387
+"1332","Africa","Namibia",2004,"Developing",54.7,29228,3288.257373
+"1333","Africa","Namibia",2003,"Developing",55,1986535,2482.36862
+"1334","Africa","Namibia",2002,"Developing",55.7,1962147,1713.47594
+"1335","Africa","Namibia",2001,"Developing",56.5,1933596,1834.29486
+"1336","Africa","Namibia",2000,"Developing",57.4,1899257,257.99557
+"1337","Asia","Nepal",2015,"Developing",69.2,28656282,743.7653489
+"1338","Asia","Nepal",2014,"Developing",69.6,28323241,76.2386977
+"1339","Asia","Nepal",2013,"Developing",69.3,2798531,688.6172788
+"1340","Asia","Nepal",2012,"Developing",68.9,27649925,681.7925868
+"1341","Asia","Nepal",2011,"Developing",68.4,27327147,692.1166842
+"1342","Asia","Nepal",2010,"Developing",68,2723137,592.1835216
+"1343","Asia","Nepal",2009,"Developing",67.5,2674113,48.7299
+"1344","Asia","Nepal",2008,"Developing",67,26475859,473.844449
+"1345","Asia","Nepal",2007,"Developing",66.6,26214847,393.8843518
+"1346","Asia","Nepal",2006,"Developing",66,2594618,348.6314534
+"1347","Asia","Nepal",2005,"Developing",65.4,2564287,317.89198
+"1348","Asia","Nepal",2004,"Developing",64.7,2539449,287.4156
+"1349","Asia","Nepal",2003,"Developing",64.3,2495623,253.72412
+"1350","Asia","Nepal",2002,"Developing",63.1,24566342,246.375621
+"1351","Asia","Nepal",2001,"Developing",63.2,24161777,248.6183539
+"1352","Asia","Nepal",2000,"Developing",62.5,2374911,231.42554
+"1353","Europe","Netherlands",2015,"Developed",81.9,16939923,44292.88473
+"1354","Europe","Netherlands",2014,"Developed",81.7,168658,52157.4687
+"1355","Europe","Netherlands",2013,"Developed",81.4,1684432,51574.48942
+"1356","Europe","Netherlands",2012,"Developed",81.1,16754962,49474.7561
+"1357","Europe","Netherlands",2011,"Developed",81.1,1669374,5354.6536
+"1358","Europe","Netherlands",2010,"Developed",88,16615394,5338.25483
+"1359","Europe","Netherlands",2009,"Developed",86,1653388,519.349
+"1360","Europe","Netherlands",2008,"Developed",83,16445593,56928.8248
+"1361","Europe","Netherlands",2007,"Developed",82,16381696,51241.31562
+"1362","Europe","Netherlands",2006,"Developed",79.8,1634611,44453.97119
+"1363","Europe","Netherlands",2005,"Developed",79.4,16319868,41577.169
+"1364","Europe","Netherlands",2004,"Developed",79.2,16281779,39954.64222
+"1365","Europe","Netherlands",2003,"Developed",78.7,1622532,35245.1647
+"1366","Europe","Netherlands",2002,"Developed",78.4,16148929,28817.32321
+"1367","Europe","Netherlands",2001,"Developed",78.3,164618,26584.12169
+"1368","Europe","Netherlands",2000,"Developed",78.1,15925513,25921.12794
+"1369","North America","Nicaragua",2015,"Developing",74.8,68235,295.966488
+"1370","North America","Nicaragua",2014,"Developing",74.5,613997,1975.46477
+"1371","North America","Nicaragua",2013,"Developing",73.9,5945747,1847.19849
+"1372","North America","Nicaragua",2012,"Developing",73.9,587718,1792.3845
+"1373","North America","Nicaragua",2011,"Developing",74.5,58782,1682.957924
+"1374","North America","Nicaragua",2010,"Developing",73.2,5737723,1526.497938
+"1375","North America","Nicaragua",2009,"Developing",73.2,5666581,1464.497754
+"1376","North America","Nicaragua",2008,"Developing",72.5,559456,1518.85386
+"1377","North America","Nicaragua",2007,"Developing",72.5,552216,1344.31871
+"1378","North America","Nicaragua",2006,"Developing",73,545211,124.992617
+"1379","North America","Nicaragua",2005,"Developing",71.2,5379328,1175.116225
+"1380","North America","Nicaragua",2004,"Developing",71,53973,191.55157
+"1381","North America","Nicaragua",2003,"Developing",76,524879,115.565314
+"1382","North America","Nicaragua",2002,"Developing",75,5171734,11.147277
+"1383","North America","Nicaragua",2001,"Developing",73,5175,143.6758
+"1384","North America","Nicaragua",2000,"Developing",73,526796,116.2743
+"1385","Africa","Niger",2015,"Developing",61.8,19896965,358.99731
+"1386","Africa","Niger",2014,"Developing",61.4,19148219,43.646498
+"1387","Africa","Niger",2013,"Developing",69,18426372,416.14838
+"1388","Africa","Niger",2012,"Developing",63,17731634,391.515524
+"1389","Africa","Niger",2011,"Developing",59.4,1764636,375.5819866
+"1390","Africa","Niger",2010,"Developing",58.2,16425578,348.151511
+"1391","Africa","Niger",2009,"Developing",57.1,15813913,341.2894618
+"1392","Africa","Niger",2008,"Developing",56,15228525,354.8185998
+"1393","Africa","Niger",2007,"Developing",55.2,14668338,292.55962
+"1394","Africa","Niger",2006,"Developing",54.5,1413264,258.463873
+"1395","Africa","Niger",2005,"Developing",53.7,13618449,25.383731
+"1396","Africa","Niger",2004,"Developing",52.9,1312712,232.5661574
+"1397","Africa","Niger",2003,"Developing",52.1,1265687,215.8548
+"1398","Africa","Niger",2002,"Developing",51.4,12262,177.828384
+"1399","Africa","Niger",2001,"Developing",56,11771976,165.257247
+"1400","Africa","Niger",2000,"Developing",50,11352973,158.455972
+"1401","Africa","Nigeria",2015,"Developing",54.5,181181744,2655.157977
+"1402","Africa","Nigeria",2014,"Developing",53.6,1764652,3221.678128
+"1403","Africa","Nigeria",2013,"Developing",53.2,17182933,2996.96432
+"1404","Africa","Nigeria",2012,"Developing",52.7,167297284,2755.297787
+"1405","Africa","Nigeria",2011,"Developing",52.3,16287776,2527.9423
+"1406","Africa","Nigeria",2010,"Developing",52,158578261,2327.3267
+"1407","Africa","Nigeria",2009,"Developing",51.6,15442181,197.661422
+"1408","Africa","Nigeria",2008,"Developing",59,1534739,1383.893354
+"1409","Africa","Nigeria",2007,"Developing",55,14641724,1136.829645
+"1410","Africa","Nigeria",2006,"Developing",49.8,14261494,119.743286
+"1411","Africa","Nigeria",2005,"Developing",49.2,138939478,87.8938738
+"1412","Africa","Nigeria",2004,"Developing",48.5,135393616,648.815852
+"1413","Africa","Nigeria",2003,"Developing",48.1,131972533,512.65719
+"1414","Africa","Nigeria",2002,"Developing",47.7,12866671,459.4572117
+"1415","Africa","Nigeria",2001,"Developing",47.4,125463434,351.7996666
+"1416","Africa","Nigeria",2000,"Developing",47.1,1223529,379.1193264
+"1417","Europe","Norway",2015,"Developed",81.8,518867,7455.24654
+"1418","Europe","Norway",2014,"Developed",81.6,5137232,975.49856
+"1419","Europe","Norway",2013,"Developed",81.5,579623,1291.435
+"1420","Europe","Norway",2012,"Developed",81.3,518573,11563.727
+"1421","Europe","Norway",2011,"Developed",81.1,495388,1574.9861
+"1422","Europe","Norway",2010,"Developed",81,4889252,87646.75346
+"1423","Europe","Norway",2009,"Developed",89,4828726,817.77681
+"1424","Europe","Norway",2008,"Developed",86,4768212,9688.5961
+"1425","Europe","Norway",2007,"Developed",85,479153,85128.65759
+"1426","Europe","Norway",2006,"Developed",84,466677,74114.69715
+"1427","Europe","Norway",2005,"Developed",81,4623291,66775.3944
+"1428","Europe","Norway",2004,"Developed",79.8,459191,5757.26916
+"1429","Europe","Norway",2003,"Developed",79.4,4564855,5111.65445
+"1430","Europe","Norway",2002,"Developed",78.9,4538159,4361.1538
+"1431","Europe","Norway",2001,"Developed",78.8,4513751,38549.58934
+"1432","Europe","Norway",2000,"Developed",78.5,449967,38146.71539
+"1433","Asia","Pakistan",2015,"Developing",66.4,18938513,1431.244865
+"1434","Asia","Pakistan",2014,"Developing",66.2,185546257,1316.98966
+"1435","Asia","Pakistan",2013,"Developing",66,181712595,1272.44161
+"1436","Asia","Pakistan",2012,"Developing",65.7,177911533,1261.28967
+"1437","Asia","Pakistan",2011,"Developing",65.5,174184265,1226.215314
+"1438","Asia","Pakistan",2010,"Developing",65.1,1756182,14.142268
+"1439","Asia","Pakistan",2009,"Developing",64.8,1674958,16.63999
+"1440","Asia","Pakistan",2008,"Developing",64.6,16364463,139.31288
+"1441","Asia","Pakistan",2007,"Developing",64.4,16332974,95.4327931
+"1442","Asia","Pakistan",2006,"Developing",64.2,15793993,873.772727
+"1443","Asia","Pakistan",2005,"Developing",62.9,15399667,711.4699463
+"1444","Asia","Pakistan",2004,"Developing",63.7,15783,649.848233
+"1445","Asia","Pakistan",2003,"Developing",63.5,1477341,563.594342
+"1446","Asia","Pakistan",2002,"Developing",63.2,144654143,499.8633
+"1447","Asia","Pakistan",2001,"Developing",63,14161437,51.6568157
+"1448","Asia","Pakistan",2000,"Developing",62.8,138523285,533.8624114
+"1449","North America","Panama",2015,"Developing",77.8,3969249,13134.4367
+"1450","North America","Panama",2014,"Developing",77.6,393986,12593.7374
+"1451","North America","Panama",2013,"Developing",77.5,3838462,11685.97983
+"1452","North America","Panama",2012,"Developing",77.2,3772938,1589.82713
+"1453","North America","Panama",2011,"Developing",77.3,377782,927.723171
+"1454","North America","Panama",2010,"Developing",76.5,3643222,7937.259931
+"1455","North America","Panama",2009,"Developing",76.8,3579385,7429.628274
+"1456","North America","Panama",2008,"Developing",76.5,3516268,6973.9284
+"1457","North America","Panama",2007,"Developing",76.4,345387,668.8667
+"1458","North America","Panama",2006,"Developing",76.2,339195,5348.518399
+"1459","North America","Panama",2005,"Developing",75.8,333465,4916.54886
+"1460","North America","Panama",2004,"Developing",75.8,3269541,4591.892776
+"1461","North America","Panama",2003,"Developing",75.5,329174,4267.13578
+"1462","North America","Panama",2002,"Developing",75.7,3149265,4126.14671
+"1463","North America","Panama",2001,"Developing",75.5,389684,446.372833
+"1464","North America","Panama",2000,"Developing",75.7,33347,46.29935
+"1465","South America","Paraguay",2015,"Developing",74,6639119,419.367724
+"1466","South America","Paraguay",2014,"Developing",73.9,6552584,4712.822736
+"1467","South America","Paraguay",2013,"Developing",73.8,646574,4479.95858
+"1468","South America","Paraguay",2012,"Developing",73.6,6379219,3855.537735
+"1469","South America","Paraguay",2011,"Developing",73.4,6293783,3988.11894
+"1470","South America","Paraguay",2010,"Developing",73.2,629877,3225.591754
+"1471","South America","Paraguay",2009,"Developing",73,6127837,2599.596259
+"1472","South America","Paraguay",2008,"Developing",72.7,647117,359.992184
+"1473","South America","Paraguay",2007,"Developing",72.5,5966159,2312.192926
+"1474","South America","Paraguay",2006,"Developing",72.3,5882796,189.71539
+"1475","South America","Paraguay",2005,"Developing",72.1,5795494,157.145691
+"1476","South America","Paraguay",2004,"Developing",71.9,57374,148.527976
+"1477","South America","Paraguay",2003,"Developing",71.7,56795,1174.779347
+"1478","South America","Paraguay",2002,"Developing",71.5,558611,1148.229882
+"1479","South America","Paraguay",2001,"Developing",71.2,546624,1417.26582
+"1480","South America","Paraguay",2000,"Developing",79,5327,1545.626423
+"1481","South America","Peru",2015,"Developing",75.5,31376671,63.343259
+"1482","South America","Peru",2014,"Developing",75.3,3973354,6491.5245
+"1483","South America","Peru",2013,"Developing",75.3,3565716,6583.116248
+"1484","South America","Peru",2012,"Developing",74.9,3158966,6387.785281
+"1485","South America","Peru",2011,"Developing",74.5,29759989,5771.565878
+"1486","South America","Peru",2010,"Developing",73.7,29373646,522.493191
+"1487","South America","Peru",2009,"Developing",73.8,29157,4166.93387
+"1488","South America","Peru",2008,"Developing",73.9,2864198,428.87811
+"1489","South America","Peru",2007,"Developing",74,28292724,3611.2147
+"1490","South America","Peru",2006,"Developing",74.2,27949944,3171.49856
+"1491","South America","Peru",2005,"Developing",72.8,276141,2754.7829
+"1492","South America","Peru",2004,"Developing",72.2,27273194,2448.143899
+"1493","South America","Peru",2003,"Developing",72.1,26937738,218.25997
+"1494","South America","Peru",2002,"Developing",72.6,2661467,259.192958
+"1495","South America","Peru",2001,"Developing",72.4,26261363,1981.243653
+"1496","South America","Peru",2000,"Developing",71.4,25914879,1996.719689
+"1497","Asia","Philippines",2015,"Developing",68.5,11716359,2878.33837
+"1498","Asia","Philippines",2014,"Developing",68.4,112249,2842.938353
+"1499","Asia","Philippines",2013,"Developing",68.1,9848132,276.289146
+"1500","Asia","Philippines",2012,"Developing",68.1,96866642,2581.818554
+"1501","Asia","Philippines",2011,"Developing",68,9527794,2352.518156
+"1502","Asia","Philippines",2010,"Developing",67.9,93726624,2129.499242
+"1503","Asia","Philippines",2009,"Developing",68,9222879,1825.341521
+"1504","Asia","Philippines",2008,"Developing",67.5,9751864,1919.466195
+"1505","Asia","Philippines",2007,"Developing",67.5,8929349,1672.685433
+"1506","Asia","Philippines",2006,"Developing",67.3,8789419,1391.772325
+"1507","Asia","Philippines",2005,"Developing",67,86274237,1194.697155
+"1508","Asia","Philippines",2004,"Developing",67.3,84678493,179.3715
+"1509","Asia","Philippines",2003,"Developing",67.2,8331954,11.553196
+"1510","Asia","Philippines",2002,"Developing",66.8,813526,1.68135
+"1511","Asia","Philippines",2001,"Developing",66.8,79665315,957.287441
+"1512","Asia","Philippines",2000,"Developing",66.8,77991569,138.91977
+"1513","Europe","Poland",2015,"Developed",77.5,37986412,12565.9876
+"1514","Europe","Poland",2014,"Developed",77.3,3811735,14341.675
+"1515","Europe","Poland",2013,"Developed",77.1,384196,1378.54911
+"1516","Europe","Poland",2012,"Developed",76.8,3863164,13145.1484
+"1517","Europe","Poland",2011,"Developed",76.7,3863255,13893.18768
+"1518","Europe","Poland",2010,"Developed",76.3,3842794,12599.52486
+"1519","Europe","Poland",2009,"Developed",75.7,3815163,11527.59323
+"1520","Europe","Poland",2008,"Developed",75.5,38125759,141.44688
+"1521","Europe","Poland",2007,"Developed",75.3,381256,1126.31852
+"1522","Europe","Poland",2006,"Developed",75.2,38141267,94.7726
+"1523","Europe","Poland",2005,"Developed",75,38165445,821.251569
+"1524","Europe","Poland",2004,"Developed",74.9,38182222,6681.178818
+"1525","Europe","Poland",2003,"Developed",74.7,382457,5693.52416
+"1526","Europe","Poland",2002,"Developed",74.5,3823364,5196.932921
+"1527","Europe","Poland",2001,"Developed",74.2,3824876,4981.198619
+"1528","Europe","Poland",2000,"Developed",73.7,38258629,4492.72764
+"1529","Europe","Portugal",2015,"Developed",81.1,135876,1922.681
+"1530","Europe","Portugal",2014,"Developed",89,14162,2277.53613
+"1531","Europe","Portugal",2013,"Developed",86,1457295,21618.73534
+"1532","Europe","Portugal",2012,"Developed",83,1514844,2577.4264
+"1533","Europe","Portugal",2011,"Developed",82,155756,23196.18375
+"1534","Europe","Portugal",2010,"Developed",79.6,15731,22538.6548
+"1535","Europe","Portugal",2009,"Developed",79.3,1568247,2363.97161
+"1536","Europe","Portugal",2008,"Developed",79,1558177,24815.6884
+"1537","Europe","Portugal",2007,"Developed",78.7,1542964,2278.5845
+"1538","Europe","Portugal",2006,"Developed",78.5,1522288,19821.44463
+"1539","Europe","Portugal",2005,"Developed",77.7,15333,18784.9485
+"1540","Europe","Portugal",2004,"Developed",78,1483861,1845.5881
+"1541","Europe","Portugal",2003,"Developed",77.3,1458821,15772.7334
+"1542","Europe","Portugal",2002,"Developed",77.2,1419631,12882.28897
+"1543","Europe","Portugal",2001,"Developed",76.9,1362722,11729.14616
+"1544","Europe","Portugal",2000,"Developed",76.6,1289898,1152.39681
+"1545","Europe","Romania",2015,"Developed",75,19815481,8958.788593
+"1546","Europe","Romania",2014,"Developed",74.8,1998979,12.27733
+"1547","Europe","Romania",2013,"Developed",74.6,19983693,9585.266593
+"1548","Europe","Romania",2012,"Developed",74.4,25835,8558.39766
+"1549","Europe","Romania",2011,"Developed",74.3,2147528,92.277825
+"1550","Europe","Romania",2010,"Developed",73.4,2246871,8297.483621
+"1551","Europe","Romania",2009,"Developed",73.1,2367487,822.18329
+"1552","Europe","Romania",2008,"Developed",73.1,2537875,1136.47356
+"1553","Europe","Romania",2007,"Developed",72.9,2882982,8214.185378
+"1554","Europe","Romania",2006,"Developed",72.5,2119376,5828.745662
+"1555","Europe","Romania",2005,"Developed",71.9,21319685,4676.315183
+"1556","Europe","Romania",2004,"Developed",71.7,21451748,3552.92452
+"1557","Europe","Romania",2003,"Developed",71.1,21574326,2774.95586
+"1558","Europe","Romania",2002,"Developed",77,2173496,2124.873613
+"1559","Europe","Romania",2001,"Developed",78,2213197,1839.72945
+"1560","Europe","Romania",2000,"Developed",77,22442971,1668.162731
+"1561","Africa","Rwanda",2015,"Developing",66.1,11629553,71.348397
+"1562","Africa","Rwanda",2014,"Developing",65.7,11345357,76.5699517
+"1563","Africa","Rwanda",2013,"Developing",65.2,1165151,688.8768557
+"1564","Africa","Rwanda",2012,"Developing",64.6,1788853,678.796973
+"1565","Africa","Rwanda",2011,"Developing",63.8,151671,617.317648
+"1566","Africa","Rwanda",2010,"Developing",62.8,1246842,563.491487
+"1567","Africa","Rwanda",2009,"Developing",61,9977446,539.1538211
+"1568","Africa","Rwanda",2008,"Developing",68,978169,5.6687264
+"1569","Africa","Rwanda",2007,"Developing",59.6,944742,44.853339
+"1570","Africa","Rwanda",2006,"Developing",57.6,92658,342.3656294
+"1571","Africa","Rwanda",2005,"Developing",55.3,8991735,287.931877
+"1572","Africa","Rwanda",2004,"Developing",53.4,8818438,236.9114381
+"1573","Africa","Rwanda",2003,"Developing",52,868346,212.6619491
+"1574","Africa","Rwanda",2002,"Developing",57,853625,196.59778
+"1575","Africa","Rwanda",2001,"Developing",48.6,832946,21.569654
+"1576","Africa","Rwanda",2000,"Developing",48.3,82573,216.172747
+"1577","Oceania","Samoa",2015,"Developing",74,193759,4149.363444
+"1578","Oceania","Samoa",2014,"Developing",73.8,19229,4178.973369
+"1579","Oceania","Samoa",2013,"Developing",73.6,19757,4219.65123
+"1580","Oceania","Samoa",2012,"Developing",73.2,189194,4234.554443
+"1581","Oceania","Samoa",2011,"Developing",73,187665,3942.9827
+"1582","Oceania","Samoa",2010,"Developing",72.6,18625,3453.487434
+"1583","Oceania","Samoa",2009,"Developing",76,184826,335.112838
+"1584","Oceania","Samoa",2008,"Developing",72.5,183526,359.82223
+"1585","Oceania","Samoa",2007,"Developing",72.2,182286,322.543121
+"1586","Oceania","Samoa",2006,"Developing",72,18194,287.963899
+"1587","Oceania","Samoa",2005,"Developing",71.6,179929,2571.262348
+"1588","Oceania","Samoa",2004,"Developing",71.4,178781,2351.33814
+"1589","Oceania","Samoa",2003,"Developing",79,177662,197.29417
+"1590","Oceania","Samoa",2002,"Developing",76,176582,1631.41727
+"1591","Oceania","Samoa",2001,"Developing",75,175566,1555.47451
+"1592","Oceania","Samoa",2000,"Developing",72,17461,154.68923
+"1593","Africa","Senegal",2015,"Developing",66.7,14976994,98.7256145
+"1594","Africa","Senegal",2014,"Developing",66.4,14546111,152.443873
+"1595","Africa","Senegal",2013,"Developing",66,141232,148.912351
+"1596","Africa","Senegal",2012,"Developing",65.6,1373513,136.4518
+"1597","Africa","Senegal",2011,"Developing",64.9,13391,18.25321
+"1598","Africa","Senegal",2010,"Developing",64.3,12916229,11.631377
+"1599","Africa","Senegal",2009,"Developing",63.5,1255917,12.566464
+"1600","Africa","Senegal",2008,"Developing",62.8,1223957,11.33678
+"1601","Africa","Senegal",2007,"Developing",62.1,11873557,95.3978522
+"1602","Africa","Senegal",2006,"Developing",61.3,11556763,89.838296
+"1603","Africa","Senegal",2005,"Developing",65,11251266,773.8698713
+"1604","Africa","Senegal",2004,"Developing",59.7,1955944,733.581811
+"1605","Africa","Senegal",2003,"Developing",59,16799,642.7663113
+"1606","Africa","Senegal",2002,"Developing",58.4,1396861,513.26227
+"1607","Africa","Senegal",2001,"Developing",57.9,1134497,481.287397
+"1608","Africa","Senegal",2000,"Developing",57.5,988452,473.45338
+"1609","Europe","Serbia",2015,"Developing",75.6,795383,5237.255334
+"1610","Europe","Serbia",2014,"Developing",75.4,713576,62.173221
+"1611","Europe","Serbia",2013,"Developing",75.3,7164132,6353.826383
+"1612","Europe","Serbia",2012,"Developing",74.9,719977,5659.3824
+"1613","Europe","Serbia",2011,"Developing",74.6,723499,6423.291783
+"1614","Europe","Serbia",2010,"Developing",74.4,7291436,5411.87744
+"1615","Europe","Serbia",2009,"Developing",74.1,73287,5821.35397
+"1616","Europe","Serbia",2008,"Developing",74,735222,671.773913
+"1617","Europe","Serbia",2007,"Developing",73.8,7381579,5458.121718
+"1618","Europe","Serbia",2006,"Developing",73.6,7411569,4129.758741
+"1619","Europe","Serbia",2005,"Developing",73,744769,3528.1318
+"1620","Europe","Serbia",2004,"Developing",73,7463157,3331.228766
+"1621","Europe","Serbia",2003,"Developing",73,748591,2832.49652
+"1622","Europe","Serbia",2002,"Developing",72.9,7496522,2149.9944
+"1623","Europe","Serbia",2001,"Developing",73.1,753433,1634.87561
+"1624","Europe","Serbia",2000,"Developing",72.6,7516346,87.1365252
+"1625","Africa","Seychelles",2015,"Developing",73.2,93419,1539.464
+"1626","Africa","Seychelles",2014,"Developing",73,91359,1557.77892
+"1627","Africa","Seychelles",2013,"Developing",72.9,89949,15687.34795
+"1628","Africa","Seychelles",2012,"Developing",72.7,8833,12845.17363
+"1629","Africa","Seychelles",2011,"Developing",72.6,87441,12189.9516
+"1630","Africa","Seychelles",2010,"Developing",72.4,8977,184.68447
+"1631","Africa","Seychelles",2009,"Developing",72.3,87298,976.9566
+"1632","Africa","Seychelles",2008,"Developing",72.2,86956,11122.8627
+"1633","Africa","Seychelles",2007,"Developing",72.2,8533,12154.82994
+"1634","Africa","Seychelles",2006,"Developing",72.2,846,1214.39987
+"1635","Africa","Seychelles",2005,"Developing",72.2,82858,1192.5174
+"1636","Africa","Seychelles",2004,"Developing",72.1,82475,1176.65871
+"1637","Africa","Seychelles",2003,"Developing",72.1,82781,8524.961236
+"1638","Africa","Seychelles",2002,"Developing",72.1,83723,8331.261997
+"1639","Africa","Seychelles",2001,"Developing",72,8122,7663.1378
+"1640","Africa","Seychelles",2000,"Developing",71.8,81131,7578.85153
+"1641","Europe","Slovenia",2015,"Developed",88,263531,2729.86383
+"1642","Europe","Slovenia",2014,"Developed",87,26198,242.67286
+"1643","Europe","Slovenia",2013,"Developed",85,259953,2315.31799
+"1644","Europe","Slovenia",2012,"Developed",82,257159,22486.47167
+"1645","Europe","Slovenia",2011,"Developed",79.8,252843,24985.24827
+"1646","Europe","Slovenia",2010,"Developed",79.5,248583,23437.4722
+"1647","Europe","Slovenia",2009,"Developed",79.1,239669,24633.79785
+"1648","Europe","Slovenia",2008,"Developed",78.9,221316,2751.8127
+"1649","Europe","Slovenia",2007,"Developed",78.3,218122,23841.31792
+"1650","Europe","Slovenia",2006,"Developed",78.1,26868,19726.1265
+"1651","Europe","Slovenia",2005,"Developed",77.5,2474,18169.1891
+"1652","Europe","Slovenia",2004,"Developed",77.2,199712,1726.9151
+"1653","Europe","Slovenia",2003,"Developed",76.5,1995733,1488.47154
+"1654","Europe","Slovenia",2002,"Developed",76.6,199453,11814.9994
+"1655","Europe","Slovenia",2001,"Developed",76.2,19926,1479.29634
+"1656","Europe","Slovenia",2000,"Developed",76,1988925,1227.73677
+"1657","Europe","Spain",2015,"Developed",82.8,46447697,25683.84565
+"1658","Europe","Spain",2014,"Developed",82.6,4648882,296.47225
+"1659","Europe","Spain",2013,"Developed",82.4,466245,2921.9342
+"1660","Europe","Spain",2012,"Developed",82,4677355,28562.29324
+"1661","Europe","Spain",2011,"Developed",82.1,46742697,31834.21816
+"1662","Europe","Spain",2010,"Developed",81.9,46576897,3736.228
+"1663","Europe","Spain",2009,"Developed",81.6,46362946,32333.4661
+"1664","Europe","Spain",2008,"Developed",81.3,4595416,35578.73619
+"1665","Europe","Spain",2007,"Developed",89,4522683,3279.414
+"1666","Europe","Spain",2006,"Developed",88,44397319,28482.6948
+"1667","Europe","Spain",2005,"Developed",81,43653155,2651.71745
+"1668","Europe","Spain",2004,"Developed",81,42921895,24918.64584
+"1669","Europe","Spain",2003,"Developed",79.4,42187645,21495.7741
+"1670","Europe","Spain",2002,"Developed",79.5,41431558,1719.53541
+"1671","Europe","Spain",2001,"Developed",79.4,485412,15323.6114
+"1672","Europe","Spain",2000,"Developed",79.1,4567864,14676.769
+"1673","Africa","Sudan",2015,"Developing",64.1,3864783,2513.884661
+"1674","Africa","Sudan",2014,"Developing",63.8,37737913,2176.89829
+"1675","Africa","Sudan",2013,"Developing",63.5,36849918,1955.66799
+"1676","Africa","Sudan",2012,"Developing",63.2,3599192,1892.894352
+"1677","Africa","Sudan",2011,"Developing",62.7,35167314,1666.857757
+"1678","Africa","Sudan",2010,"Developing",62.5,34385963,1476.47887
+"1679","Africa","Sudan",2009,"Developing",62,3365619,1226.884381
+"1680","Africa","Sudan",2008,"Developing",61.8,32955496,1291.528826
+"1681","Africa","Sudan",2007,"Developing",61.4,32282526,1115.6952
+"1682","Africa","Sudan",2006,"Developing",61,316764,893.8793645
+"1683","Africa","Sudan",2005,"Developing",67,3911914,679.7539949
+"1684","Africa","Sudan",2004,"Developing",59.7,3186341,565.569459
+"1685","Africa","Sudan",2003,"Developing",59.6,29435944,477.738478
+"1686","Africa","Sudan",2002,"Developing",59.4,28679565,412.1517561
+"1687","Africa","Sudan",2001,"Developing",58.9,279455,377.5254454
+"1688","Africa","Sudan",2000,"Developing",58.6,2725535,361.35843
+"1689","South America","Suriname",2015,"Developing",71.6,55328,8818.982566
+"1690","South America","Suriname",2014,"Developing",71.4,547928,9564.46383
+"1691","South America","Suriname",2013,"Developing",71.2,54254,9484.56898
+"1692","South America","Suriname",2012,"Developing",71.3,53777,9272.413453
+"1693","South America","Suriname",2011,"Developing",76,531589,8318.97692
+"1694","South America","Suriname",2010,"Developing",73,52613,833.31332
+"1695","South America","Suriname",2009,"Developing",70,52619,7443.85178
+"1696","South America","Suriname",2008,"Developing",69.8,515148,6858.163158
+"1697","South America","Suriname",2007,"Developing",69.5,5975,5761.39536
+"1698","South America","Suriname",2006,"Developing",69.3,5437,527.92
+"1699","South America","Suriname",2005,"Developing",68.9,498946,3595.8855
+"1700","South America","Suriname",2004,"Developing",68.3,49363,36.48773
+"1701","South America","Suriname",2003,"Developing",68,488332,263.1399
+"1702","South America","Suriname",2002,"Developing",67.9,48344,2232.513244
+"1703","South America","Suriname",2001,"Developing",67.7,47774,1598.77512
+"1704","South America","Suriname",2000,"Developing",67.4,47239,1888.61829
+"1705","Europe","Sweden",2015,"Developed",82.4,9799186,5585.25847
+"1706","Europe","Sweden",2014,"Developed",82.3,969611,5918.19898
+"1707","Europe","Sweden",2013,"Developed",81.9,96379,6283.24522
+"1708","Europe","Sweden",2012,"Developed",81.7,9519374,57134.777
+"1709","Europe","Sweden",2011,"Developed",81.7,9449213,59593.28711
+"1710","Europe","Sweden",2010,"Developed",81.5,9378126,5276.25591
+"1711","Europe","Sweden",2009,"Developed",81.4,9298515,4627.592
+"1712","Europe","Sweden",2008,"Developed",81.1,9219637,55746.84238
+"1713","Europe","Sweden",2007,"Developed",89,914892,53324.37937
+"1714","Europe","Sweden",2006,"Developed",88,9855,46256.4716
+"1715","Europe","Sweden",2005,"Developed",85,929572,4385.35315
+"1716","Europe","Sweden",2004,"Developed",83,8993531,42442.2245
+"1717","Europe","Sweden",2003,"Developed",82,8958229,36961.42537
+"1718","Europe","Sweden",2002,"Developed",79.9,8924958,29571.7446
+"1719","Europe","Sweden",2001,"Developed",79.8,889596,26969.24457
+"1720","Europe","Sweden",2000,"Developed",79.6,887219,29283.55
+"1721","Europe","Switzerland",2015,"Developed",83.4,8282396,8989.8424
+"1722","Europe","Switzerland",2014,"Developed",83.2,8188649,85814.58857
+"1723","Europe","Switzerland",2013,"Developed",83,889346,84658.88768
+"1724","Europe","Switzerland",2012,"Developed",82.7,7996861,83164.38795
+"1725","Europe","Switzerland",2011,"Developed",82.6,7912398,87998.44468
+"1726","Europe","Switzerland",2010,"Developed",82.3,782499,74276.71842
+"1727","Europe","Switzerland",2009,"Developed",82.1,7743831,69672.471
+"1728","Europe","Switzerland",2008,"Developed",82,7647675,72119.5687
+"1729","Europe","Switzerland",2007,"Developed",81.7,7551117,63223.46778
+"1730","Europe","Switzerland",2006,"Developed",81.5,7483934,57348.92788
+"1731","Europe","Switzerland",2005,"Developed",81.1,7437115,54797.54663
+"1732","Europe","Switzerland",2004,"Developed",81,7389625,53255.97631
+"1733","Europe","Switzerland",2003,"Developed",85,73391,4796.56497
+"1734","Europe","Switzerland",2002,"Developed",84,7284753,41336.72192
+"1735","Europe","Switzerland",2001,"Developed",82,7229854,38538.64447
+"1736","Europe","Switzerland",2000,"Developed",79.7,718425,37813.23426
+"1737","Asia","Tajikistan",2015,"Developing",69.7,8548651,918.6771543
+"1738","Asia","Tajikistan",2014,"Developing",69.6,8362745,114.45919
+"1739","Asia","Tajikistan",2013,"Developing",69.3,817789,14.214412
+"1740","Asia","Tajikistan",2012,"Developing",68.8,799562,954.725253
+"1741","Asia","Tajikistan",2011,"Developing",68.1,7815949,834.5412953
+"1742","Asia","Tajikistan",2010,"Developing",67.3,764163,738.3475227
+"1743","Asia","Tajikistan",2009,"Developing",66.7,7472819,666.3458569
+"1744","Asia","Tajikistan",2008,"Developing",66.4,739728,76.914128
+"1745","Asia","Tajikistan",2007,"Developing",66.1,7152385,52.35956
+"1746","Asia","Tajikistan",2006,"Developing",65.9,7557,44.2872665
+"1747","Asia","Tajikistan",2005,"Developing",65.5,6854176,337.359236
+"1748","Asia","Tajikistan",2004,"Developing",65.9,6712841,39.281834
+"1749","Asia","Tajikistan",2003,"Developing",65.2,6576877,236.314438
+"1750","Asia","Tajikistan",2002,"Developing",64.3,6447688,189.3878519
+"1751","Asia","Tajikistan",2001,"Developing",64,6327125,17.8159721
+"1752","Asia","Tajikistan",2000,"Developing",63.7,621625,138.436633
+"1753","Asia","Thailand",2015,"Developing",74.9,686576,5814.863134
+"1754","Asia","Thailand",2014,"Developing",74.6,68416772,5941.8471
+"1755","Asia","Thailand",2013,"Developing",74.5,6814365,6171.262444
+"1756","Asia","Thailand",2012,"Developing",74.3,67843979,5859.915622
+"1757","Asia","Thailand",2011,"Developing",74.1,675313,5491.159981
+"1758","Asia","Thailand",2010,"Developing",73.9,672888,575.32176
+"1759","Asia","Thailand",2009,"Developing",73.7,66881867,4212.5492
+"1760","Asia","Thailand",2008,"Developing",73.5,6654576,4378.68746
+"1761","Asia","Thailand",2007,"Developing",73.3,66195615,3972.26475
+"1762","Asia","Thailand",2006,"Developing",73,65824164,3368.952576
+"1763","Asia","Thailand",2005,"Developing",72.5,6542547,2893.651356
+"1764","Asia","Thailand",2004,"Developing",71.6,652231,2659.83918
+"1765","Asia","Thailand",2003,"Developing",71.7,64554952,2358.93629
+"1766","Asia","Thailand",2002,"Developing",71.4,6473164,296.54617
+"1767","Asia","Thailand",2001,"Developing",71.2,63543322,1893.145377
+"1768","Asia","Thailand",2000,"Developing",71.1,6295821,27.564826
+"1769","Asia","Timor-Leste",2015,"Developing",68.3,124977,1161.76935
+"1770","Asia","Timor-Leste",2014,"Developing",68,1212814,1153.51578
+"1771","Asia","Timor-Leste",2013,"Developing",67.7,1184366,117.765674
+"1772","Asia","Timor-Leste",2012,"Developing",67.4,115676,1117.77724
+"1773","Asia","Timor-Leste",2011,"Developing",67.2,1131523,114.56179
+"1774","Asia","Timor-Leste",2010,"Developing",66.9,119591,849.8626972
+"1775","Asia","Timor-Leste",2009,"Developing",66.6,19221,757.3114436
+"1776","Asia","Timor-Leste",2008,"Developing",66.2,17811,643.71911
+"1777","Asia","Timor-Leste",2007,"Developing",65.8,164973,524.8959363
+"1778","Asia","Timor-Leste",2006,"Developing",64.9,148621,441.53226
+"1779","Asia","Timor-Leste",2005,"Developing",63.7,126484,478.331859
+"1780","Asia","Timor-Leste",2004,"Developing",62.3,996698,467.5438297
+"1781","Asia","Timor-Leste",2003,"Developing",61,96852,471.4565823
+"1782","Asia","Timor-Leste",2002,"Developing",62,923825,48.61552
+"1783","Asia","Timor-Leste",2001,"Developing",59.4,892531,56.4249869
+"1784","Asia","Timor-Leste",2000,"Developing",58.7,87167,422.28633
+"1785","Africa","Togo",2015,"Developing",59.9,741682,551.138346
+"1786","Africa","Togo",2014,"Developing",59.7,7228915,62.1318489
+"1787","Africa","Togo",2013,"Developing",59.4,742948,579.43485
+"1788","Africa","Togo",2012,"Developing",58.9,6859482,563.6894247
+"1789","Africa","Togo",2011,"Developing",58.3,6679282,562.3393592
+"1790","Africa","Togo",2010,"Developing",57.4,652952,487.9238913
+"1791","Africa","Togo",2009,"Developing",56.7,633472,499.6468713
+"1792","Africa","Togo",2008,"Developing",56.2,6161796,513.391914
+"1793","Africa","Togo",2007,"Developing",55.9,5997385,42.764743
+"1794","Africa","Togo",2006,"Developing",55.7,5837792,377.33629
+"1795","Africa","Togo",2005,"Developing",55,5683268,372.1721837
+"1796","Africa","Togo",2004,"Developing",54.9,5534598,349.9937253
+"1797","Africa","Togo",2003,"Developing",54.7,539141,31.437144
+"1798","Africa","Togo",2002,"Developing",54.7,5251472,28.832123
+"1799","Africa","Togo",2001,"Developing",54.6,511177,26.6394652
+"1800","Africa","Togo",2000,"Developing",54.6,497367,26.3932935
+"1801","Oceania","Tonga",2015,"Developing",73.5,16364,493.775387
+"1802","Oceania","Tonga",2014,"Developing",73.3,15782,4192.349758
+"1803","Oceania","Tonga",2013,"Developing",73.2,15328,4266.557174
+"1804","Oceania","Tonga",2012,"Developing",73,14951,451.542462
+"1805","Oceania","Tonga",2011,"Developing",72.9,14577,445.18866
+"1806","Oceania","Tonga",2010,"Developing",72.8,14137,3547.59975
+"1807","Oceania","Tonga",2009,"Developing",72.5,1364,37.846563
+"1808","Oceania","Tonga",2008,"Developing",72.6,135,3392.64743
+"1809","Oceania","Tonga",2007,"Developing",72.5,12357,2932.315883
+"1810","Oceania","Tonga",2006,"Developing",72.4,11689,2892.522663
+"1811","Oceania","Tonga",2005,"Developing",72.3,1141,2594.74999
+"1812","Oceania","Tonga",2004,"Developing",72.2,146,2284.37858
+"1813","Oceania","Tonga",2003,"Developing",72,99789,229.714718
+"1814","Oceania","Tonga",2002,"Developing",71.9,99184,1842.44421
+"1815","Oceania","Tonga",2001,"Developing",71.8,98611,1837.977391
+"1816","Oceania","Tonga",2000,"Developing",71.6,9882,263.27236
+"1817","Africa","Tunisia",2015,"Developing",75.3,11273661,3828.91589
+"1818","Africa","Tunisia",2014,"Developing",75.1,1114398,4271.68172
+"1819","Africa","Tunisia",2013,"Developing",74.9,1114558,4199.47253
+"1820","Africa","Tunisia",2012,"Developing",74.9,1886668,4137.55421
+"1821","Africa","Tunisia",2011,"Developing",74.8,1761467,4256.91279
+"1822","Africa","Tunisia",2010,"Developing",74.8,1639931,414.15177
+"1823","Africa","Tunisia",2009,"Developing",74.7,1521834,4129.977335
+"1824","Africa","Tunisia",2008,"Developing",74.7,147336,431.9326
+"1825","Africa","Tunisia",2007,"Developing",74.6,129887,3778.184171
+"1826","Africa","Tunisia",2006,"Developing",74.4,1196136,3371.71231
+"1827","Africa","Tunisia",2005,"Developing",74.2,112482,3194.562243
+"1828","Africa","Tunisia",2004,"Developing",74,11761,3112.83529
+"1829","Africa","Tunisia",2003,"Developing",73.7,9939678,2761.969249
+"1830","Africa","Tunisia",2002,"Developing",73.5,9864326,2346.5937
+"1831","Africa","Tunisia",2001,"Developing",73.2,978571,2254.933126
+"1832","Africa","Tunisia",2000,"Developing",72.9,9699197,2213.91488
+"1833","Asia","Turkey",2015,"Developing",75.8,78271472,1979.52569
+"1834","Asia","Turkey",2014,"Developing",75.5,773628,12127.22522
+"1835","Asia","Turkey",2013,"Developing",75.2,75787333,12542.93565
+"1836","Asia","Turkey",2012,"Developing",74.8,74569867,1172.3843
+"1837","Asia","Turkey",2011,"Developing",74.5,7349455,11341.13395
+"1838","Asia","Turkey",2010,"Developing",74.2,72326914,1672.5693
+"1839","Asia","Turkey",2009,"Developing",73.9,71339185,936.499911
+"1840","Asia","Turkey",2008,"Developing",73.5,74432,185.68975
+"1841","Asia","Turkey",2007,"Developing",73.2,69597281,979.49246
+"1842","Asia","Turkey",2006,"Developing",72.8,6876345,834.869161
+"1843","Asia","Turkey",2005,"Developing",72.4,679346,7384.354661
+"1844","Asia","Turkey",2004,"Developing",72,677855,64.72953
+"1845","Asia","Turkey",2003,"Developing",71.6,668583,4718.51291
+"1846","Asia","Turkey",2002,"Developing",71.2,6514354,366.57
+"1847","Asia","Turkey",2001,"Developing",78,64191474,3119.63716
+"1848","Asia","Turkey",2000,"Developing",74,6324121,4316.553895
+"1849","Asia","Turkmenistan",2015,"Developing",66.3,5565284,6432.668768
+"1850","Asia","Turkmenistan",2014,"Developing",66,5466241,7962.365824
+"1851","Asia","Turkmenistan",2013,"Developing",65.4,5366277,734.42525
+"1852","Asia","Turkmenistan",2012,"Developing",65.6,5267839,6675.262954
+"1853","Asia","Turkmenistan",2011,"Developing",65.6,517461,5649.978486
+"1854","Asia","Turkmenistan",2010,"Developing",65.8,58721,4439.23
+"1855","Asia","Turkmenistan",2009,"Developing",65.6,5795,436.459223
+"1856","Asia","Turkmenistan",2008,"Developing",64.5,4935762,394.467675
+"1857","Asia","Turkmenistan",2007,"Developing",64.1,487137,26.371428
+"1858","Asia","Turkmenistan",2006,"Developing",63.7,48115,2136.66815
+"1859","Asia","Turkmenistan",2005,"Developing",63.3,4754641,174.51475
+"1860","Asia","Turkmenistan",2004,"Developing",63.5,473398,1453.917166
+"1861","Asia","Turkmenistan",2003,"Developing",63.4,4655741,1283.885977
+"1862","Asia","Turkmenistan",2002,"Developing",63.3,4612,967.917468
+"1863","Asia","Turkmenistan",2001,"Developing",64,45648,774.4763388
+"1864","Asia","Turkmenistan",2000,"Developing",63.8,4516131,643.17518
+"1865","Africa","Uganda",2015,"Developing",62.3,414487,693.8963829
+"1866","Africa","Uganda",2014,"Developing",61.5,38833338,719.172669
+"1867","Africa","Uganda",2013,"Developing",67,37553726,662.492293
+"1868","Africa","Uganda",2012,"Developing",60,3636796,647.74741
+"1869","Africa","Uganda",2011,"Developing",59.3,3593648,584.3962137
+"1870","Africa","Uganda",2010,"Developing",58.4,33915133,594.9972557
+"1871","Africa","Uganda",2009,"Developing",57.5,32771895,647.17732
+"1872","Africa","Uganda",2008,"Developing",56.3,31663896,449.6928183
+"1873","Africa","Uganda",2007,"Developing",55.5,359487,41.858631
+"1874","Africa","Uganda",2006,"Developing",54.9,2955662,336.4593923
+"1875","Africa","Uganda",2005,"Developing",53.2,2854394,315.788227
+"1876","Africa","Uganda",2004,"Developing",51.3,27568436,288.236949
+"1877","Africa","Uganda",2003,"Developing",51,2662482,237.9995917
+"1878","Africa","Uganda",2002,"Developing",48.8,2571848,24.2423229
+"1879","Africa","Uganda",2001,"Developing",47.7,24854892,234.984775
+"1880","Africa","Uganda",2000,"Developing",46.6,2439274,257.63369
+"1881","Europe","Ukraine",2015,"Developing",71.3,4515429,2124.662666
+"1882","Europe","Ukraine",2014,"Developing",78,45271947,314.658296
+"1883","Europe","Ukraine",2013,"Developing",71,454896,429.71554
+"1884","Europe","Ukraine",2012,"Developing",77,455933,3855.42128
+"1885","Europe","Ukraine",2011,"Developing",75,45761,3569.75727
+"1886","Europe","Ukraine",2010,"Developing",69.8,45877,2965.142365
+"1887","Europe","Ukraine",2009,"Developing",69.2,46533,2545.48341
+"1888","Europe","Ukraine",2008,"Developing",67.7,462582,3891.37823
+"1889","Europe","Ukraine",2007,"Developing",67.5,465935,368.68998
+"1890","Europe","Ukraine",2006,"Developing",67.7,4678775,233.18831
+"1891","Europe","Ukraine",2005,"Developing",67,471515,1828.717626
+"1892","Europe","Ukraine",2004,"Developing",67.4,474516,1367.352433
+"1893","Europe","Ukraine",2003,"Developing",67.6,4781295,148.522488
+"1894","Europe","Ukraine",2002,"Developing",67.6,48225,879.475486
+"1895","Europe","Ukraine",2001,"Developing",67.7,48683865,78.738243
+"1896","Europe","Ukraine",2000,"Developing",67.5,49175848,635.789635
+"1897","South America","Uruguay",2015,"Developing",77,3431552,15524.84247
+"1898","South America","Uruguay",2014,"Developing",76.8,3419546,16737.89827
+"1899","South America","Uruguay",2013,"Developing",76.8,3485,16881.2568
+"1900","South America","Uruguay",2012,"Developing",76.5,3396777,1592.6819
+"1901","South America","Uruguay",2011,"Developing",77,3385624,14166.4998
+"1902","South America","Uruguay",2010,"Developing",76.3,3374415,11938.212
+"1903","South America","Uruguay",2009,"Developing",76.6,3362755,9415.17386
+"1904","South America","Uruguay",2008,"Developing",76.4,335824,962.312164
+"1905","South America","Uruguay",2007,"Developing",75.4,3339741,79.69746
+"1906","South America","Uruguay",2006,"Developing",76.2,333143,5877.87678
+"1907","South America","Uruguay",2005,"Developing",75.7,3325612,522.951116
+"1908","South America","Uruguay",2004,"Developing",75.4,332496,4117.38853
+"1909","South America","Uruguay",2003,"Developing",75.4,3325637,3622.52284
+"1910","South America","Uruguay",2002,"Developing",75.4,3327773,488.768855
+"1911","South America","Uruguay",2001,"Developing",75.2,332713,6281.37747
+"1912","South America","Uruguay",2000,"Developing",75.1,3321245,6871.897677
+"1913","Asia","Uzbekistan",2015,"Developing",69.4,312989,2137.576852
+"1914","Asia","Uzbekistan",2014,"Developing",69.2,37577,25.448414
+"1915","Asia","Uzbekistan",2013,"Developing",69.1,32432,197.551233
+"1916","Asia","Uzbekistan",2012,"Developing",68.8,297745,174.468298
+"1917","Asia","Uzbekistan",2011,"Developing",68.5,293394,1564.966945
+"1918","Asia","Uzbekistan",2010,"Developing",68.3,285624,1377.8214
+"1919","Asia","Uzbekistan",2009,"Developing",68,277674,1213.265328
+"1920","Asia","Uzbekistan",2008,"Developing",67.9,27328,182.28625
+"1921","Asia","Uzbekistan",2007,"Developing",67.8,26868,83.476942
+"1922","Asia","Uzbekistan",2006,"Developing",67.6,2648825,654.2838373
+"1923","Asia","Uzbekistan",2005,"Developing",67.3,26167,546.776852
+"1924","Asia","Uzbekistan",2004,"Developing",67.8,2586435,465.1198869
+"1925","Asia","Uzbekistan",2003,"Developing",67.2,2556765,396.129969
+"1926","Asia","Uzbekistan",2002,"Developing",67.1,2527185,383.3494997
+"1927","Asia","Uzbekistan",2001,"Developing",67.4,2496445,456.734892
+"1928","Asia","Uzbekistan",2000,"Developing",67.1,24654,558.221144
+"1929","Oceania","Vanuatu",2015,"Developing",72,26463,285.83414
+"1930","Oceania","Vanuatu",2014,"Developing",71.7,25885,3148.36513
+"1931","Oceania","Vanuatu",2013,"Developing",71.6,253142,3167.34356
+"1932","Oceania","Vanuatu",2012,"Developing",71.4,247485,3158.58688
+"1933","Oceania","Vanuatu",2011,"Developing",71.2,241871,3275.91684
+"1934","Oceania","Vanuatu",2010,"Developing",71,236295,2965.82434
+"1935","Oceania","Vanuatu",2009,"Developing",78,23785,2643.441423
+"1936","Oceania","Vanuatu",2008,"Developing",75,22534,2697.961375
+"1937","Oceania","Vanuatu",2007,"Developing",73,219953,2393.367265
+"1938","Oceania","Vanuatu",2006,"Developing",71,214634,247.97823
+"1939","Oceania","Vanuatu",2005,"Developing",69.9,2937,1886.433359
+"1940","Oceania","Vanuatu",2004,"Developing",69.6,24143,1787.94723
+"1941","Oceania","Vanuatu",2003,"Developing",69.4,198964,158.52724
+"1942","Oceania","Vanuatu",2002,"Developing",69.3,193956,1353.934819
+"1943","Oceania","Vanuatu",2001,"Developing",69.1,18929,1362.61731
+"1944","Oceania","Vanuatu",2000,"Developing",69,18563,1469.849149
+"1945","Africa","Zambia",2015,"Developing",61.8,161587,1313.889646
+"1946","Africa","Zambia",2014,"Developing",61.1,1562974,1738.8822
+"1947","Africa","Zambia",2013,"Developing",63,1515321,185.793359
+"1948","Africa","Zambia",2012,"Developing",59.2,14699937,1734.93612
+"1949","Africa","Zambia",2011,"Developing",58.2,14264756,1644.619672
+"1950","Africa","Zambia",2010,"Developing",58,138533,1463.213573
+"1951","Africa","Zambia",2009,"Developing",57.4,13456417,1139.11233
+"1952","Africa","Zambia",2008,"Developing",55.7,1382517,1369.68249
+"1953","Africa","Zambia",2007,"Developing",52.6,12725974,114.587985
+"1954","Africa","Zambia",2006,"Developing",58,12383446,13.154199
+"1955","Africa","Zambia",2005,"Developing",49.3,1252156,691.3178164
+"1956","Africa","Zambia",2004,"Developing",47.9,11731746,53.2772217
+"1957","Africa","Zambia",2003,"Developing",46.4,11421984,429.1583434
+"1958","Africa","Zambia",2002,"Developing",45.5,111249,377.135244
+"1959","Africa","Zambia",2001,"Developing",44.6,1824125,378.2736238
+"1960","Africa","Zambia",2000,"Developing",43.8,1531221,341.955625
+"1961","Africa","Zimbabwe",2015,"Developing",67,15777451,118.69383
+"1962","Africa","Zimbabwe",2014,"Developing",59.2,15411675,127.47462
+"1963","Africa","Zimbabwe",2013,"Developing",58,155456,111.227396
+"1964","Africa","Zimbabwe",2012,"Developing",56.6,1471826,955.648466
+"1965","Africa","Zimbabwe",2011,"Developing",54.9,14386649,839.927936
+"1966","Africa","Zimbabwe",2010,"Developing",52.4,1486317,713.63562
+"1967","Africa","Zimbabwe",2009,"Developing",50,1381599,65.824121
+"1968","Africa","Zimbabwe",2008,"Developing",48.2,13558469,325.678573
+"1969","Africa","Zimbabwe",2007,"Developing",46.6,1332999,396.9982166
+"1970","Africa","Zimbabwe",2006,"Developing",45.4,13124267,414.796232
+"1971","Africa","Zimbabwe",2005,"Developing",44.6,129432,444.76575
+"1972","Africa","Zimbabwe",2004,"Developing",44.3,12777511,454.366654
+"1973","Africa","Zimbabwe",2003,"Developing",44.5,12633897,453.3511552
+"1974","Africa","Zimbabwe",2002,"Developing",44.8,125525,57.34834
+"1975","Africa","Zimbabwe",2001,"Developing",45.3,12366165,548.587312
+"1976","Africa","Zimbabwe",2000,"Developing",46,12222251,547.3588785

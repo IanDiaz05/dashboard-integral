@@ -1,42 +1,45 @@
-# Dashboard de Mantenimiento - ShinyApp
+# Dashboard de Expectativa de Vida
 
-## Configuración del Entorno (Setup)
+Este proyecto contiene un dashboard interactivo desarrollado en R utilizando la librería `shinydashboard`. El objetivo principal de la aplicación es visualizar cómo varía la expectativa de vida en función del Producto Interno Bruto (GDP) a través de los años, tomando en cuenta la población y el continente de diversos países.
 
-Este proyecto está configurado para ejecutarse dentro de un contenedor de desarrollo (DevContainer) para garantizar que todas las dependencias y versiones sean consistentes. 
+El entorno de desarrollo está completamente estandarizado utilizando **Dev Containers** y el manejo de paquetes de R se realiza mediante **renv**, asegurando la reproducibilidad del proyecto.
 
-Sigue estos pasos para preparar tu entorno:
+## Estructura de Archivos
 
-1. Asegúrate de tener **Docker** instalado y ejecutándose en tu sistema.
-2. Clona este repositorio y ábrelo en **Visual Studio Code**.
-3. Al abrir el proyecto, VS Code mostrará una notificación en la parte inferior derecha. Haz clic en **"Reopen in Container"** (Reabrir en contenedor).
-4. Espera a que se construya el contenedor y se instale todo el entorno (este proceso podría tardar varios minutos la primera vez).
-5. **Importante:** Cualquier comando de R debe ejecutarse exclusivamente a través de la **terminal integrada** de Visual Studio Code. La terminal normal de tu sistema no funcionará, ya que todo el entorno de trabajo está aislado dentro del devcontainer.
-6. Una vez que el contenedor esté listo, abre una terminal integrada en VS Code, escribe `R` y presiona Enter para iniciar la consola interactiva.
-7. Ejecuta el comando `renv::restore()` para descargar e instalar todas las dependencias de R necesarias para el proyecto.
+* **`datos_dashboard_examen.csv`**: Base de datos principal que contiene la información histórica (Año, Continente, País, Expectativa de vida, Población, GDP, etc.) utilizada tanto para la exploración como para el dashboard.
+* **`exploracion.Rmd`**: Notebook de R Markdown donde se realizó el análisis exploratorio de los datos (EDA). Aquí se identificaron los tipos de variables, se validaron los rangos fijos para las gráficas y se comprobó la estructura general.
+* **`exploracion.html`**: Reporte en formato HTML, ya estilizado, generado a partir de `exploracion.Rmd`. Contiene los resultados, salidas de celdas y visualizaciones estáticas derivadas de la exploración inicial.
+* **`app.R`**: Script principal que contiene el código completo de la aplicación Shiny (UI y Server). Al ejecutar este archivo, se levanta el dashboard interactivo.
 
-## Archivos Incluidos
+## Requisitos Previos
 
-* `mantenimiento.csv`: Dataset principal incluido en el repositorio que alimenta los datos del proyecto.
-* `exploracion.Rmd`: Notebook de R que contiene el código utilizado para la exploración inicial y diagnóstico de los datos.
-* `exploracion.nb.html`: Reporte visual en formato HTML generado a partir de la ejecución del notebook de exploración.
+Para ejecutar este proyecto en un entorno local aislado y reproducible, necesitarás tener instalado:
 
----
+1. [Docker](https://www.docker.com/products/docker-desktop/) (Docker Desktop corriendo en tu máquina).
+2. [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
+3. La extensión **Dev Containers** instalada en VS Code.
 
-## Estructura del Dashboard
+## Instrucciones de Setup Local
 
-El objetivo de esta ShinyApp es proporcionar un dashboard integral (estratégico, táctico y operativo) dirigido a los supervisores del día a día, centrado en indicadores de corto plazo. 
+Sigue estos pasos para levantar el entorno y ejecutar la aplicación:
 
-A partir de la exploración de datos, el dashboard se compone de los siguientes elementos:
+1. **Clonar el repositorio y abrir en VS Code:**
+   Clona este repositorio (especificamente la rama `dashboard/examen1`) en tu máquina local y abre la carpeta del proyecto en Visual Studio Code.
 
-### 1. Indicadores Clave (KPIs)
-Tarjetas de resumen rápido ubicadas en la parte superior para un vistazo inmediato al estado operativo:
-* **Total de Mantenimientos:** Conteo total de registros en el periodo.
-* **% de Mantenimiento Correctivo:** Proporción de mantenimientos correctivos frente al total (indicador crítico de problemas operativos vs. prevención).
-* **Tiempo Total de Paro:** Suma de la duración en minutos, reflejando el tiempo invertido o de producción perdida.
-* **Máquina más problemática:** Identificación de la línea de producción con más registros o más tiempo de paro acumulado.
+2. **Abrir en el Dev Container:**
+   Al abrir el proyecto, VS Code debería detectar la configuración del contenedor y mostrar una notificación en la esquina inferior derecha. Haz clic en **"Reopen in Container"** (Reabrir en contenedor). 
+   Docker descargará la imagen y construirá el entorno de R necesario (podria tomar varios minutos la primera vez).
 
-### 2. Gráficos Principales
-* **Gráfico de Tendencia (Líneas / Barras apiladas):** Evolución diaria (Fecha vs. Conteo de eventos o Duración), separada por Tipo de Mantenimiento (Preventivo vs. Correctivo). Permite identificar picos de fallas en días específicos.
-* **Análisis por Máquina (Barras horizontales):** Cruce de la Máquina contra el tiempo de paro acumulado. Ayuda a identificar rápidamente qué equipo consume más recursos técnicos.
-* **Distribución de Causas (Barras o Dona):** Categoriza las causas de los mantenimientos. Facilita entender la raíz principal de los problemas en piso.
-* **Carga de Trabajo por Técnico (Barras):** Muestra el número de intervenciones realizadas por cada responsable, ideal para monitorear el balance de las tareas en el equipo.
+3. **Restaurar las dependencias con renv:**
+   Una vez dentro del contenedor, abre la terminal o la consola de R integrada en VS Code y ejecuta el siguiente comando para instalar todas las dependencias exactas del proyecto:
+   
+    ```R
+    renv::restore()
+    ```
+
+4. **Ejecutar el Dashboard:**
+    Cuando todas las librerías terminen de instalarse, puedes levantar la aplicación Shiny ejecutando:
+    ```R
+    shiny::runApp("app.R", port="3838", host="0.0.0.0")
+    ```
+    Esto abrirá el dashboard interactivo en tu navegador o en el visor de VS Code.
