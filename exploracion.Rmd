@@ -52,3 +52,29 @@ colSums(is.na(df))
 ```
 
 *Parece que no hay datos nulos, a simple vista la base de datos esta lista.*
+
+## 4. Cálculo de Límites Fijos
+Extraemos los límites fijos en los ejes X (GDP) e Y (Expectativa de vida).
+
+```{r find-limits}
+limit_x <- range(df$GDP, na.rm = TRUE)
+limit_y <- range(df$Lifeexpectancy, na.rm = TRUE)
+
+print(paste("Límite X (GDP):", limit_x[1], "-", limit_x[2]))
+print(paste("Límite Y (Expectativa):", limit_y[1], "-", limit_y[2]))
+```
+
+## 5. Validación Visual Estática
+
+Comprobamos que las estéticas mapeen correctamente antes de armar la app interactiva.
+
+```{r test-plot}
+ggplot(df, aes(x = GDP, y = Lifeexpectancy, size = Population, color = Continent)) +
+  geom_point(alpha = 0.7) +
+  coord_cartesian(xlim = limit_x, ylim = limit_y) +
+  theme_minimal() +
+  labs(title = "Validación de Estructura de Gráfico",
+       x = "Producto Interno Bruto",
+       y = "Expectativa de Vida")
+```
+
