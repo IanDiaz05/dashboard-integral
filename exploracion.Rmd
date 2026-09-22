@@ -1,82 +1,54 @@
 ---
-title: "Dashboard Mantenimiento"
-output: html_notebook
+title: "Exploración de Datos - Dashboard de Expectativa de Vida"
+author: "Exploración Inicial"
+output: html_document
 ---
 
-## Exploración inicial del dataset
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+# Cargamos las librerías necesarias para la exploracion
+library(ggplot2)
+library(plotly)
+library(dplyr)
 
-### Cargar librerias
-
-```{r message=FALSE, warning=FALSE}
-library(tidyverse)
-library(skimr)
 ```
 
-### Cargar dataset
+## 1. Carga de Datos
 
-```{r message=FALSE, warning=FALSE}
-mantenimiento <- read_csv("mantenimiento.csv", locale = locale(encoding = "latin1"))
+Primero, cargamos la base de datos.
 
-# Visualizacion inicial del dataset
-glimpse(mantenimiento)
-skim(mantenimiento)
+```{r load-data}
+df <- read.csv("datos_dashboard_examen.csv", stringsAsFactors = FALSE)
+
+# Visualizamos la estructura general esperada:
+str(df)
+head(df)
+
 ```
 
-## Prototipos de graficas para el Dashboard
+## 2. Identificación de Tipos de Valores
+Mapeo de la clasificación teórica solicitada con las clases reales de R:
 
-### Cálculo de KPIs (Value Boxes)
-```{r}
-kpis <- mantenimiento %>%
-  summarise(
-    Total_Mantenimientos = n(),
-    Porc_Correctivo = round(mean(TipoMantenimiento == "Correctivo") * 100, 1),
-    Tiempo_Total_Paro = sum(Duracion_min)
-  )
-print(kpis)
+* a. Sin nombre (`X`): Discreta. En R es int (entera). Sirve como índice.
+* b. Continent (`Continent`): Categórica nominal. En R es chr (carácter).
+* c. Year (`Year`): Discreta. En R es int (entera).
+* d. Status (`Status`): Categórica nominal. En R es chr (carácter).
+* e. Lifeexpectancy (`Lifeexpectancy`): Continua. En R es num (numérica).
+* f. Population (`Population`): Discreta. En R es int (entera).
+* g. GDP (`GDP`): Continua. En R es num (numérica).
+
+(Nota: Existe la columna adicional `Country` de tipo chr que usaremos para agregar etiquetas a las burbujas más adelante).
+
+## 3. Verificación de Valores Nulos
+Dado que `GDP` y `Lifeexpectancy` son numéricas/continuas, debemos confirmar si hay datos faltantes para evitar errores en `plotly`.
+
+```{r check-nas}
+# Resumen estadístico general
+# summary(df)
+
+# Conteo de valores nulos por cada columna
+colSums(is.na(df))
+
 ```
 
-### Máquina con mayor tiempo de paro
-```{r }
-maquina_top <- mantenimiento %>%
-  group_by(Máquina) %>%
-  summarise(Tiempo_Total = sum(Duracion_min)) %>%
-  arrange(desc(Tiempo_Total)) %>%
-  slice(1)
-print(maquina_top)
-```
-
-### Graficos con ggplot
-```{r}
-# Gráfico 1: Tendencia de mantenimientos por fecha
-ggplot(mantenimiento, aes(x = Fecha, fill = TipoMantenimiento)) +
-  geom_bar() +
-  scale_fill_manual(values = c("Preventivo" = "#28a745", "Correctivo" = "#dc3545")) +
-  labs(title = "Tendencia Diaria de Mantenimientos", x = "Fecha", y = "Eventos", fill = "Tipo") +
-  theme_minimal()
-
-# Gráfico 2: Tiempo de paro por máquina
-mantenimiento %>%
-  group_by(Máquina) %>%
-  summarise(Tiempo_Total = sum(Duracion_min)) %>%
-  ggplot(aes(x = reorder(Máquina, Tiempo_Total), y = Tiempo_Total)) +
-  geom_col(fill = "#007bff") +
-  coord_flip() +
-  labs(title = "Tiempo de Paro Acumulado", x = "", y = "Minutos Totales") +
-  theme_minimal()
-
-# Gráfico 3: Distribución de Causas
-mantenimiento %>%
-  count(Causa) %>%
-  ggplot(aes(x = reorder(Causa, n), y = n)) +
-  geom_col(fill = "#fd7e14") +
-  coord_flip() +
-  labs(title = "Principales Causas de Intervención", x = "", y = "Frecuencia") +
-  theme_minimal()
-
-# Gráfico 4: Carga de Trabajo por Técnico
-ggplot(mantenimiento, aes(x = fct_infreq(Responsable))) +
-  geom_bar(fill = "#6c757d") +
-  coord_flip() +
-  labs(title = "Intervenciones por Técnico", x = "", y = "Cantidad de Mantenimientos") +
-  theme_minimal()
-```
+*Parece que no hay datos nulos, a simple vista la base de datos esta lista.*
