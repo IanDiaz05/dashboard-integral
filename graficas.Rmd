@@ -1,0 +1,146 @@
+---
+title: "Elementos del Dashboard - Código Base"
+author: "Prototipo de Componentes"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+# Librerías necesarias para todo el dashboard
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(DT) # Para la tabla interactiva
+
+```
+
+## 1. Carga de Datos y Simulación de Input
+
+Cargamos la base de datos y definimos un año específico para simular lo que hará el deslizador en la aplicación Shiny.
+
+```{r load-and-filter}
+# Cargar datos
+df <- read.csv("datos_dashboard_examen.csv", stringsAsFactors = FALSE)
+
+# SIMULACIÓN DEL SLIDER DE SHINY:
+# En la app, esto será manejado por reactive({ filter(df, Year == input$year_slider) })
+input_year <- 2015 
+df_filtrado <- df %>% filter(Year == input_year)
+```
+
+## 2. Indicadores Clave (KPIs)
+
+Estos cálculos alimentarán las cajas de valores (`valueBox` o `infoBox`) en la parte superior del dashboard.
+
+```{r kpis}
+# 1. Expectativa de Vida Promedio (en el año seleccionado)
+kpi_avg_life <- mean(df_filtrado$Lifeexpectancy, na.rm = TRUE)
+print(paste("Promedio Vida:", round(kpi_avg_life, 1), "años"))
+
+# 2. Población Global (en el año seleccionado)
+# Usamos as.numeric para evitar desbordamiento de enteros (integer overflow) al sumar
+kpi_total_pop <- sum(as.numeric(df_filtrado$Population), na.rm = TRUE)
+print(paste("Población Total:", kpi_total_pop))
+
+# 3. País Líder en Expectativa de Vida
+kpi_top_country <- df_filtrado %>% 
+  arrange(desc(Lifeexpectancy)) %>% 
+  slice(1) %>% 
+  select(Country, Lifeexpectancy)
+print(paste("Líder:", kpi_top_country$Country, "-", kpi_top_country$Lifeexpectancy, "años"))
+
+```
+
+## 3. Gráfico Principal: Burbujas Dinámicas
+
+Cumpliendo con los requerimientos base: Expectativa vs GDP, tamaño por Población, color por Continente y límites fijos.
+
+```{r plot-bubble}
+# Límites fijos calculados previamente
+lim_x <- c(1.68, 119172.74)
+lim_y <- c(36.3, 89.0)
+
+p_burbujas <- ggplot(df_filtrado, aes(x = GDP, y = Lifeexpectancy, size = Population, color = Continent, text = Country)) +
+  geom_point(alpha = 0.7) +
+  scale_size_continuous(range = c(2, 15), guide = "none") + # Se oculta la leyenda de tamaño para no saturar plotly
+  coord_cartesian(xlim = lim_x, ylim = lim_y) +
+  theme_minimal() +
+  labs(title = paste("Expectativa de Vida vs GDP en", input_year),
+       x = "Producto Interno Bruto",
+       y = "Expectativa de Vida")
+
+# En Shiny usaremos renderPlotly({ ... })
+ggplotly(p_burbujas, tooltip = c("text", "x", "y", "size"))
+
+```
+
+## 4. Gráficos "Plus"
+
+### A. Evolución Histórica (Líneas)
+
+Este gráfico NO se filtra por el `input_year`, ya que muestra toda la historia.
+
+```{r plot-trend}
+df_tendencia <- df %>%
+  group_by(Year, Continent) %>%
+  summarise(AvgLife = mean(Lifeexpectancy, na.rm = TRUE), .groups = 'drop')
+
+p_lineas <- ggplot(df_tendencia, aes(x = Year, y = AvgLife, color = Continent)) +
+  geom_line(linewidth = 1) + 
+  geom_point() +
+  theme_minimal() +
+  labs(title = "Evolución Histórica por Continente",
+       x = "Año",
+       y = "Expectativa de Vida Promedio")
+
+ggplotly(p_lineas)
+
+```
+
+### B. Distribución por Condición (Boxplot)
+
+Se filtra por el año seleccionado.
+
+```{r plot-boxplot}
+p_cajas <- ggplot(df_filtrado, aes(x = Status, y = Lifeexpectancy, fill = Status)) +
+  geom_boxplot(alpha = 0.7) +
+  theme_minimal() +
+  labs(title = paste("Distribución por Condición de Desarrollo en", input_year),
+       x = "Condición",
+       y = "Expectativa de Vida")
+
+ggplotly(p_cajas)
+
+```
+
+### C. Top 10 Economías (Barras)
+
+Se filtra por el año seleccionado.
+
+```{r plot-bars}
+df_top10 <- df_filtrado %>%
+  arrange(desc(GDP)) %>%
+  slice(1:10)
+
+p_barras <- ggplot(df_top10, aes(x = reorder(Country, GDP), y = GDP, fill = Continent)) +
+  geom_col() +
+  coord_flip() + # Voltea las coordenadas para mejor lectura de nombres
+  theme_minimal() +
+  labs(title = paste("Top 10 Economías (GDP) en", input_year),
+       x = "País",
+       y = "Producto Interno Bruto")
+
+ggplotly(p_barras, tooltip = c("x", "y", "fill"))
+
+```
+
+## 5. Tabla de Datos Exploratoria
+
+Mostramos los datos crudos correspondientes al año seleccionado utilizando la librería DT.
+
+```{r table}
+# En Shiny usaremos renderDT({ ... })
+datatable(df_filtrado, 
+          options = list(pageLength = 5, scrollX = TRUE),
+          rownames = FALSE)
+```
