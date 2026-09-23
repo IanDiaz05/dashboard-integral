@@ -9,7 +9,7 @@ El entorno de desarrollo está completamente estandarizado utilizando **Dev Cont
 * **`datos_dashboard_examen.csv`**: Base de datos principal que contiene la información histórica (Año, Continente, País, Expectativa de vida, Población, GDP, etc.) utilizada tanto para la exploración como para el dashboard.
 * **`exploracion.Rmd`**: Notebook de R Markdown donde se realizó el análisis exploratorio de los datos (EDA). Aquí se identificaron los tipos de variables, se validaron los rangos fijos para las gráficas y se comprobó la estructura general.
 * **`exploracion.html`**: Reporte en formato HTML, ya estilizado, generado a partir de `exploracion.Rmd`. Contiene los resultados, salidas de celdas y visualizaciones estáticas derivadas de la exploración inicial.
-* **`app.R`**: Script principal que contiene el código completo de la aplicación Shiny (UI y Server). Al ejecutar este archivo, se levanta el dashboard interactivo.
+* **`app.R`**: Script principal que inicializa el código completo de la aplicación Shiny (Cargando `ui.R` y `server.R`). Al ejecutar este archivo, se levanta el dashboard interactivo.
 
 ## Requisitos Previos
 
@@ -40,6 +40,6 @@ Sigue estos pasos para levantar el entorno y ejecutar la aplicación:
 4. **Ejecutar el Dashboard:**
     Cuando todas las librerías terminen de instalarse, puedes levantar la aplicación Shiny ejecutando:
     ```R
-    shiny::runApp("app.R", port="3838", host="0.0.0.0")
+    shiny::runApp("app.R", host="0.0.0.0")
     ```
     Esto abrirá el dashboard interactivo en tu navegador o en el visor de VS Code.
