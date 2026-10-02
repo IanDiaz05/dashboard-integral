@@ -19,8 +19,6 @@ Primero, cargamos la base de datos.
 
 ```{r load-data}
 df <- read.csv("ventas.csv", stringsAsFactors = FALSE)
-
-# Visualizamos la estructura general esperada:
 str(df)
 head(df)
 
@@ -52,13 +50,11 @@ sapply(df[, c("region", "producto")], function(x) length(unique(x)))
 
 ## 3. Exploracion
 ```{r data-exploration}
-## 3. Estructura de variables categóricas ----------------------------------
-
 ## 3.1 Niveles y frecuencias
 table(df$region)
 table(df$producto)
 
-## 3.2 Cruce región × producto (detecta combinaciones vacías o desbalanceadas)
+## 3.2 Cruce región * producto
 tabla_cruce <- table(df$region, df$producto)
 tabla_cruce
 prop.table(tabla_cruce, margin = 1)   # proporción por región
@@ -71,15 +67,13 @@ diff(rango_fechas)                    # días cubiertos
 n_distinct(df$fecha)                  # días únicos
 table(format(as.Date(df$fecha), "%Y-%m"))  # registros por mes
 
-## 3.4 Precios distintos (por si hay variación por producto)
+## 3.4 Precios distintos
 sort(unique(df$precio_unitario))
 table(df$precio_unitario)
 ```
 
 ### 4. Validaciones
 ```{r data-validation}
-## 4. Validaciones lógicas ------------------------------------------------
-
 ## 4.1 Identidad aritmética: ingreso_total == unidades * precio
 df$ingreso_calc <- df$unidades_vendidas * df$precio_unitario
 df$diff_ingreso <- df$ingreso_total - df$ingreso_calc
@@ -87,7 +81,7 @@ df$diff_ingreso <- df$ingreso_total - df$ingreso_calc
 summary(df$diff_ingreso)
 sum(df$diff_ingreso != 0, na.rm = TRUE)   # filas inconsistentes
 
-## 4.2 Rangos válidos (no negativos ni cero donde no corresponde)
+## 4.2 Rangos válidos
 sum(df$unidades_vendidas <= 0, na.rm = TRUE)
 sum(df$precio_unitario  <= 0, na.rm = TRUE)
 sum(df$ingreso_total    <= 0, na.rm = TRUE)
@@ -108,8 +102,6 @@ sapply(df[, c("unidades_vendidas", "precio_unitario", "ingreso_total")],
 
 ## 5. Limpieza
 ```{r data-cleaning}
-## 5. Limpieza y variables derivadas --------------------------------------
-
 library(dplyr)
 library(lubridate)
 
@@ -132,7 +124,7 @@ df_clean <- df %>%
     # Derivadas de negocio
     ticket_promedio = ingreso_total / unidades_vendidas,
 
-    # Categoría de precio (útil para segmentar visualmente)
+    # Categoría de precio
     precio_categoria = factor(precio_unitario,
                               levels = c(50, 75, 100, 125),
                               labels = c("Económico", "Estándar", "Premium", "Alto"))
