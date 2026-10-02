@@ -1,5 +1,5 @@
 ---
-title: "Exploración de Datos - Dashboard de Expectativa de Vida"
+title: "Exploración de Datos - Dashboard Estrategico de Ventas"
 author: "Exploración Inicial"
 output: html_document
 ---
@@ -18,7 +18,7 @@ library(dplyr)
 Primero, cargamos la base de datos.
 
 ```{r load-data}
-df <- read.csv("datos_dashboard_examen.csv", stringsAsFactors = FALSE)
+df <- read.csv("ventas.csv", stringsAsFactors = FALSE)
 
 # Visualizamos la estructura general esperada:
 str(df)
@@ -26,55 +26,121 @@ head(df)
 
 ```
 
-## 2. Identificación de Tipos de Valores
-Mapeo de la clasificación teórica solicitada con las clases reales de R:
+## 2. Diagnostico de Calidad
+```{r data-diagnosis}
 
-* a. Sin nombre (`X`): Discreta. En R es int (entera). Sirve como índice.
-* b. Continent (`Continent`): Categórica nominal. En R es chr (carácter).
-* c. Year (`Year`): Discreta. En R es int (entera).
-* d. Status (`Status`): Categórica nominal. En R es chr (carácter).
-* e. Lifeexpectancy (`Lifeexpectancy`): Continua. En R es num (numérica).
-* f. Population (`Population`): Discreta. En R es int (entera).
-* g. GDP (`GDP`): Continua. En R es num (numérica).
+## 2.1 Dimensiones y tipos
+dim(df)
+sapply(df, class)
 
-(Nota: Existe la columna adicional `Country` de tipo chr que usaremos para agregar etiquetas a las burbujas más adelante).
+## 2.2 Resumen estadístico general
+summary(df)
 
-## 3. Verificación de Valores Nulos
-Dado que `GDP` y `Lifeexpectancy` son numéricas/continuas, debemos confirmar si hay datos faltantes para evitar errores en `plotly`.
-
-```{r check-nas}
-# Resumen estadístico general
-# summary(df)
-
-# Conteo de valores nulos por cada columna
+## 2.3 Valores nulos por columna
 colSums(is.na(df))
 
+## 2.4 Valores vacíos o cadenas vacías en columnas de texto
+sapply(df[, sapply(df, is.character)], function(x) sum(trimws(x) == ""))
+
+## 2.5 Duplicados
+sum(duplicated(df))                 # filas completamente duplicadas
+sum(duplicated(df$fecha))           # fechas repetidas (clave para granularidad)
+
+## 2.6 Cardinalidad de variables categóricas
+sapply(df[, c("region", "producto")], function(x) length(unique(x)))
 ```
 
-*Parece que no hay datos nulos, a simple vista la base de datos esta lista.*
+## 3. Exploracion
+```{r data-exploration}
+## 3. Estructura de variables categóricas ----------------------------------
 
-## 4. Cálculo de Límites Fijos
-Extraemos los límites fijos en los ejes X (GDP) e Y (Expectativa de vida).
+## 3.1 Niveles y frecuencias
+table(df$region)
+table(df$producto)
 
-```{r find-limits}
-limit_x <- range(df$GDP, na.rm = TRUE)
-limit_y <- range(df$Lifeexpectancy, na.rm = TRUE)
+## 3.2 Cruce región × producto (detecta combinaciones vacías o desbalanceadas)
+tabla_cruce <- table(df$region, df$producto)
+tabla_cruce
+prop.table(tabla_cruce, margin = 1)   # proporción por región
+prop.table(tabla_cruce, margin = 2)   # proporción por producto
 
-print(paste("Límite X (GDP):", limit_x[1], "-", limit_x[2]))
-print(paste("Límite Y (Expectativa):", limit_y[1], "-", limit_y[2]))
+## 3.3 Rango temporal y cobertura
+rango_fechas <- range(as.Date(df$fecha))
+rango_fechas
+diff(rango_fechas)                    # días cubiertos
+n_distinct(df$fecha)                  # días únicos
+table(format(as.Date(df$fecha), "%Y-%m"))  # registros por mes
+
+## 3.4 Precios distintos (por si hay variación por producto)
+sort(unique(df$precio_unitario))
+table(df$precio_unitario)
 ```
 
-## 5. Validación Visual Estática
+### 4. Validaciones
+```{r data-validation}
+## 4. Validaciones lógicas ------------------------------------------------
 
-Comprobamos que las estéticas mapeen correctamente antes de armar la app interactiva.
+## 4.1 Identidad aritmética: ingreso_total == unidades * precio
+df$ingreso_calc <- df$unidades_vendidas * df$precio_unitario
+df$diff_ingreso <- df$ingreso_total - df$ingreso_calc
 
-```{r test-plot}
-ggplot(df, aes(x = GDP, y = Lifeexpectancy, size = Population, color = Continent)) +
-  geom_point(alpha = 0.7) +
-  coord_cartesian(xlim = limit_x, ylim = limit_y) +
-  theme_minimal() +
-  labs(title = "Validación de Estructura de Gráfico",
-       x = "Producto Interno Bruto",
-       y = "Expectativa de Vida")
+summary(df$diff_ingreso)
+sum(df$diff_ingreso != 0, na.rm = TRUE)   # filas inconsistentes
+
+## 4.2 Rangos válidos (no negativos ni cero donde no corresponde)
+sum(df$unidades_vendidas <= 0, na.rm = TRUE)
+sum(df$precio_unitario  <= 0, na.rm = TRUE)
+sum(df$ingreso_total    <= 0, na.rm = TRUE)
+
+## 4.3 Fechas fuera de rango razonable
+sum(as.Date(df$fecha) > Sys.Date(), na.rm = TRUE)
+
+## 4.4 Detección de outliers univariados (regla IQR)
+detectar_outliers <- function(x) {
+  q1 <- quantile(x, 0.25, na.rm = TRUE)
+  q3 <- quantile(x, 0.75, na.rm = TRUE)
+  iqr <- q3 - q1
+  sum(x < (q1 - 1.5 * iqr) | x > (q3 + 1.5 * iqr), na.rm = TRUE)
+}
+sapply(df[, c("unidades_vendidas", "precio_unitario", "ingreso_total")],
+       detectar_outliers)
 ```
 
+## 5. Limpieza
+```{r data-cleaning}
+## 5. Limpieza y variables derivadas --------------------------------------
+
+library(dplyr)
+
+df_clean <- df %>%
+  mutate(
+    fecha    = as.Date(fecha, format = "%Y-%m-%d"),
+    region   = factor(region),
+    producto = factor(producto),
+
+    # Derivadas temporales para el dashboard
+    anio        = as.integer(format(fecha, "%Y")),
+    mes         = format(fecha, "%Y-%m"),
+    mes_num     = as.integer(format(fecha, "%m")),
+    nombre_mes  = format(fecha, "%B"),
+    trimestre   = paste0(format(fecha, "%Y"), "-T", quarter(fecha)),
+    semana      = format(fecha, "%Y-W%V"),
+    dia_semana  = weekdays(fecha),
+
+    # Derivadas de negocio
+    ticket_promedio = ingreso_total / unidades_vendidas,
+    ingreso_calc    = unidades_vendidas * precio_unitario,
+    diff_ingreso    = ingreso_total - ingreso_calc
+  ) %>%
+  select(-ingreso_calc, -diff_ingreso)   # columnas auxiliares de validación
+
+## 5.1 Chequeo post-limpieza
+str(df_clean)
+summary(df_clean)
+colSums(is.na(df_clean))
+sum(duplicated(df_clean))
+
+## 5.2 Verificación de niveles tras factorizar
+levels(df_clean$region)
+levels(df_clean$producto)
+```
