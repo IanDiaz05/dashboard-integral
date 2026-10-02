@@ -1,146 +1,372 @@
 ---
-title: "Elementos del Dashboard - Código Base"
-author: "Prototipo de Componentes"
-output: html_document
+title: "Gráficas del Dashboard Estratégico de Ventas"
+author: "Catálogo de Visualizaciones"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-# Librerías necesarias para todo el dashboard
+```
+
+## Carga de librerías y dataset
+
+Se importan las librerías de manipulación (`dplyr`, `tidyr`, `lubridate`), visualización interactiva (`plotly`), tablas (`DT`) y formateo (`scales`). Se carga el dataset limpio y se reconvierten los tipos que el CSV no preserva (fechas y factores).
+
+```{r librerias-datos}
+library(dplyr)
+library(tidyr)
+library(lubridate)
 library(ggplot2)
 library(plotly)
-library(dplyr)
-library(DT) # Para la tabla interactiva
+library(DT)
+library(scales)
 
+ventas <- read.csv("ventas_clean.csv",
+                   stringsAsFactors = FALSE,
+                   fileEncoding = "UTF-8") %>%
+  mutate(
+    fecha = as.Date(fecha),
+    region = factor(region, levels = c("Norte", "Sur", "Este", "Oeste")),
+    producto = factor(producto, levels = c("Producto A", "Producto B", "Producto C")),
+    precio_categoria = factor(precio_categoria,
+                              levels = c("Económico", "Estándar", "Premium", "Alto"))
+  )
+
+glimpse(ventas)
 ```
 
-## 1. Carga de Datos y Simulación de Input
+# 1. Resumen Ejecutivo
 
-Cargamos la base de datos y definimos un año específico para simular lo que hará el deslizador en la aplicación Shiny.
+## 1.1 KPIs globales
 
-```{r load-and-filter}
-# Cargar datos
-df <- read.csv("datos_dashboard_examen.csv", stringsAsFactors = FALSE)
+Tabla resumen con los indicadores clave del período completo. En el dashboard estos valores van a `valueBox()`.
 
-# SIMULACIÓN DEL SLIDER DE SHINY:
-# En la app, esto será manejado por reactive({ filter(df, Year == input$year_slider) })
-input_year <- 2015 
-df_filtrado <- df %>% filter(Year == input_year)
+```{r kpis-globales}
+kpis <- tibble(
+  Indicador = c("Ingreso total", "Unidades totales", "Ticket promedio",
+                "Días activos", "Ingreso por día", "Región top",
+                "Producto top", "Mes top"),
+  Valor = c(
+    dollar(sum(ventas$ingreso_total), prefix = "$", big.mark = ","),
+    comma(sum(ventas$unidades_vendidas)),
+    dollar(round(sum(ventas$ingreso_total) / sum(ventas$unidades_vendidas), 2)),
+    comma(n_distinct(ventas$fecha)),
+    dollar(round(sum(ventas$ingreso_total) / n_distinct(ventas$fecha), 2)),
+    as.character(ventas %>% group_by(region) %>%
+                   summarise(t = sum(ingreso_total)) %>%
+                   slice_max(t) %>% pull(region)),
+    as.character(ventas %>% group_by(producto) %>%
+                   summarise(t = sum(ingreso_total)) %>%
+                   slice_max(t) %>% pull(producto)),
+    ventas %>% group_by(mes) %>%
+      summarise(t = sum(ingreso_total)) %>%
+      slice_max(t) %>% pull(mes)
+  )
+)
+kpis
 ```
 
-## 2. Indicadores Clave (KPIs)
+## 1.2 Ingreso mensual
 
-Estos cálculos alimentarán las cajas de valores (`valueBox` o `infoBox`) en la parte superior del dashboard.
+Serie temporal principal del dashboard. Es la primera gráfica que un gerente mira.
 
-```{r kpis}
-# 1. Expectativa de Vida Promedio (en el año seleccionado)
-kpi_avg_life <- mean(df_filtrado$Lifeexpectancy, na.rm = TRUE)
-print(paste("Promedio Vida:", round(kpi_avg_life, 1), "años"))
+```{r ingreso-mensual}
+ingreso_mensual <- ventas %>%
+  group_by(mes) %>%
+  summarise(ingreso = sum(ingreso_total),
+            unidades = sum(unidades_vendidas), .groups = "drop")
 
-# 2. Población Global (en el año seleccionado)
-# Usamos as.numeric para evitar desbordamiento de enteros (integer overflow) al sumar
-kpi_total_pop <- sum(as.numeric(df_filtrado$Population), na.rm = TRUE)
-print(paste("Población Total:", kpi_total_pop))
-
-# 3. País Líder en Expectativa de Vida
-kpi_top_country <- df_filtrado %>% 
-  arrange(desc(Lifeexpectancy)) %>% 
-  slice(1) %>% 
-  select(Country, Lifeexpectancy)
-print(paste("Líder:", kpi_top_country$Country, "-", kpi_top_country$Lifeexpectancy, "años"))
-
+plot_ly(ingreso_mensual, x = ~mes, y = ~ingreso,
+        type = "scatter", mode = "lines+markers",
+        line = list(width = 3)) %>%
+  layout(title = "Ingreso mensual",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Ingreso ($)"))
 ```
 
-## 3. Gráfico Principal: Burbujas Dinámicas
+## 1.3 Variación mes a mes
 
-Cumpliendo con los requerimientos base: Expectativa vs GDP, tamaño por Población, color por Continente y límites fijos.
+Barras divergentes de crecimiento porcentual respecto al mes anterior.
 
-```{r plot-bubble}
-# Límites fijos calculados previamente
-lim_x <- c(1.68, 119172.74)
-lim_y <- c(36.3, 89.0)
+```{r variacion-mom}
+variacion_mom <- ingreso_mensual %>%
+  mutate(var_mom = (ingreso / lag(ingreso) - 1) * 100,
+         color = ifelse(var_mom >= 0, "#2E7D32", "#C62828"))
 
-p_burbujas <- ggplot(df_filtrado, aes(x = GDP, y = Lifeexpectancy, size = Population, color = Continent, text = Country)) +
-  geom_point(alpha = 0.7) +
-  scale_size_continuous(range = c(2, 15), guide = "none") + # Se oculta la leyenda de tamaño para no saturar plotly
-  coord_cartesian(xlim = lim_x, ylim = lim_y) +
-  theme_minimal() +
-  labs(title = paste("Expectativa de Vida vs GDP en", input_year),
-       x = "Producto Interno Bruto",
-       y = "Expectativa de Vida")
-
-# En Shiny usaremos renderPlotly({ ... })
-ggplotly(p_burbujas, tooltip = c("text", "x", "y", "size"))
-
+plot_ly(variacion_mom, x = ~mes, y = ~var_mom, type = "bar",
+        marker = list(color = ~color),
+        text = ~paste0(round(var_mom, 1), "%"),
+        textposition = "outside") %>%
+  layout(title = "Variación % mes a mes",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Δ%"))
 ```
 
-## 4. Gráficos "Plus"
+# 2. Análisis por Región
 
-### A. Evolución Histórica (Líneas)
+## 2.1 Ingreso y participación por región
 
-Este gráfico NO se filtra por el `input_year`, ya que muestra toda la historia.
+Ranking horizontal con valor absoluto y porcentaje de participación.
 
-```{r plot-trend}
-df_tendencia <- df %>%
-  group_by(Year, Continent) %>%
-  summarise(AvgLife = mean(Lifeexpectancy, na.rm = TRUE), .groups = 'drop')
+```{r ingreso-region}
+ingreso_region <- ventas %>%
+  group_by(region) %>%
+  summarise(ingreso = sum(ingreso_total),
+            unidades = sum(unidades_vendidas), .groups = "drop") %>%
+  mutate(participacion = ingreso / sum(ingreso) * 100) %>%
+  arrange(desc(ingreso))
 
-p_lineas <- ggplot(df_tendencia, aes(x = Year, y = AvgLife, color = Continent)) +
-  geom_line(linewidth = 1) + 
-  geom_point() +
-  theme_minimal() +
-  labs(title = "Evolución Histórica por Continente",
-       x = "Año",
-       y = "Expectativa de Vida Promedio")
-
-ggplotly(p_lineas)
-
+plot_ly(ingreso_region, x = ~ingreso, y = ~reorder(region, ingreso),
+        type = "bar", orientation = "h",
+        text = ~paste0("$", comma(ingreso), "  (", round(participacion, 1), "%)"),
+        textposition = "outside") %>%
+  layout(title = "Ingreso por región",
+         xaxis = list(title = "Ingreso ($)"),
+         yaxis = list(title = ""))
 ```
 
-### B. Distribución por Condición (Boxplot)
+## 2.2 Evolución mensual por región
 
-Se filtra por el año seleccionado.
+Series multi-línea para comparar trayectorias regionales a lo largo de los 6 meses.
 
-```{r plot-boxplot}
-p_cajas <- ggplot(df_filtrado, aes(x = Status, y = Lifeexpectancy, fill = Status)) +
-  geom_boxplot(alpha = 0.7) +
-  theme_minimal() +
-  labs(title = paste("Distribución por Condición de Desarrollo en", input_year),
-       x = "Condición",
-       y = "Expectativa de Vida")
+```{r region-mes-serie}
+region_mes <- ventas %>%
+  group_by(mes, region) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop")
 
-ggplotly(p_cajas)
-
+plot_ly(region_mes, x = ~mes, y = ~ingreso, color = ~region,
+        type = "scatter", mode = "lines+markers") %>%
+  layout(title = "Evolución mensual por región",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Ingreso ($)"))
 ```
 
-### C. Top 10 Economías (Barras)
+## 2.3 Distribución de ingreso por región
 
-Se filtra por el año seleccionado.
+Boxplot para comparar dispersión y medianas entre regiones.
 
-```{r plot-bars}
-df_top10 <- df_filtrado %>%
-  arrange(desc(GDP)) %>%
-  slice(1:10)
-
-p_barras <- ggplot(df_top10, aes(x = reorder(Country, GDP), y = GDP, fill = Continent)) +
-  geom_col() +
-  coord_flip() + # Voltea las coordenadas para mejor lectura de nombres
-  theme_minimal() +
-  labs(title = paste("Top 10 Economías (GDP) en", input_year),
-       x = "País",
-       y = "Producto Interno Bruto")
-
-ggplotly(p_barras, tooltip = c("x", "y", "fill"))
-
+```{r boxplot-region}
+plot_ly(ventas, x = ~region, y = ~ingreso_total, color = ~region,
+        type = "box") %>%
+  layout(title = "Distribución de ingreso por región",
+         showlegend = FALSE,
+         xaxis = list(title = ""),
+         yaxis = list(title = "Ingreso ($)"))
 ```
 
-## 5. Tabla de Datos Exploratoria
+## 2.4 Heatmap región × mes
 
-Mostramos los datos crudos correspondientes al año seleccionado utilizando la librería DT.
+Matriz de calor con la intensidad del ingreso por región y mes.
 
-```{r table}
-# En Shiny usaremos renderDT({ ... })
-datatable(df_filtrado, 
-          options = list(pageLength = 5, scrollX = TRUE),
-          rownames = FALSE)
+```{r heatmap-region-mes}
+heatmap_rm <- ventas %>%
+  group_by(region, mes) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop")
+
+plot_ly(heatmap_rm, x = ~mes, y = ~region, z = ~ingreso,
+        type = "heatmap", colors = "Blues") %>%
+  layout(title = "Heatmap región × mes",
+         xaxis = list(title = ""),
+         yaxis = list(title = ""))
+```
+
+# 3. Análisis por Producto
+
+## 3.1 Ingreso y participación por producto
+
+Ranking horizontal de productos por ingreso generado.
+
+```{r ingreso-producto}
+ingreso_producto <- ventas %>%
+  group_by(producto) %>%
+  summarise(ingreso = sum(ingreso_total),
+            unidades = sum(unidades_vendidas), .groups = "drop") %>%
+  mutate(participacion = ingreso / sum(ingreso) * 100) %>%
+  arrange(desc(ingreso))
+
+plot_ly(ingreso_producto, x = ~ingreso, y = ~reorder(producto, ingreso),
+        type = "bar", orientation = "h",
+        text = ~paste0("$", comma(ingreso), "  (", round(participacion, 1), "%)"),
+        textposition = "outside") %>%
+  layout(title = "Ingreso por producto",
+         xaxis = list(title = "Ingreso ($)"),
+         yaxis = list(title = ""))
+```
+
+## 3.2 Evolución mensual por producto
+
+Series temporales de cada producto a lo largo de los 6 meses.
+
+```{r producto-mes-serie}
+producto_mes <- ventas %>%
+  group_by(mes, producto) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop")
+
+plot_ly(producto_mes, x = ~mes, y = ~ingreso, color = ~producto,
+        type = "scatter", mode = "lines+markers") %>%
+  layout(title = "Evolución mensual por producto",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Ingreso ($)"))
+```
+
+## 3.3 Mix de productos por región
+
+Barras 100% apiladas mostrando la composición interna de cada región.
+
+```{r mix-region-producto}
+mix_rp <- ventas %>%
+  group_by(region, producto) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop") %>%
+  group_by(region) %>%
+  mutate(porcentaje = ingreso / sum(ingreso) * 100) %>%
+  ungroup()
+
+plot_ly(mix_rp, x = ~region, y = ~porcentaje, color = ~producto,
+        type = "bar") %>%
+  layout(title = "Mix de productos por región (%)",
+         barmode = "stack",
+         xaxis = list(title = ""),
+         yaxis = list(title = "% del ingreso regional"))
+```
+
+## 3.4 Heatmap producto × mes
+
+Intensidad de ingreso por producto y mes para detectar estacionalidad.
+
+```{r heatmap-producto-mes}
+heatmap_pm <- ventas %>%
+  group_by(producto, mes) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop")
+
+plot_ly(heatmap_pm, x = ~mes, y = ~producto, z = ~ingreso,
+        type = "heatmap", colors = "Greens") %>%
+  layout(title = "Heatmap producto × mes",
+         xaxis = list(title = ""),
+         yaxis = list(title = ""))
+```
+
+# 4. Mix, Precio y Relaciones
+
+## 4.1 Treemap jerárquico región → producto
+
+Composición jerárquica del ingreso total, navegable visualmente.
+
+```{r treemap}
+nivel_region <- ventas %>%
+  group_by(region) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop") %>%
+  transmute(id = as.character(region),
+            parent = "",
+            label = as.character(region),
+            ingreso)
+
+nivel_producto <- ventas %>%
+  group_by(region, producto) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop") %>%
+  transmute(id = paste(region, producto, sep = " | "),
+            parent = as.character(region),
+            label = as.character(producto),
+            ingreso)
+
+treemap_df <- bind_rows(nivel_region, nivel_producto)
+
+plot_ly(treemap_df, type = "treemap",
+        ids = ~id, labels = ~label, parents = ~parent,
+        values = ~ingreso, branchvalues = "total") %>%
+  layout(title = "Ingreso por región y producto")
+```
+
+## 4.2 Heatmap región × producto
+
+Intensidad del ingreso cruzando ambas dimensiones categóricas.
+
+```{r heatmap-region-producto}
+heatmap_rp <- ventas %>%
+  group_by(region, producto) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop")
+
+plot_ly(heatmap_rp, x = ~producto, y = ~region, z = ~ingreso,
+        type = "heatmap", colorscale = "Viridis") %>%
+  layout(title = "Heatmap región × producto",
+         xaxis = list(title = ""),
+         yaxis = list(title = ""))
+```
+
+## 4.3 Frecuencia por precio unitario
+
+Distribución de registros según los cuatro precios disponibles.
+
+```{r frecuencia-precio}
+freq_precio <- ventas %>%
+  count(precio_unitario, precio_categoria)
+
+plot_ly(freq_precio, x = ~factor(precio_unitario), y = ~n,
+        type = "bar", text = ~n, textposition = "outside") %>%
+  layout(title = "Frecuencia por precio unitario",
+         xaxis = list(title = "Precio ($)"),
+         yaxis = list(title = "Registros"))
+```
+
+## 4.4 Precio promedio ponderado por región
+
+Precio efectivo que termina pagando cada región (ingreso total / unidades totales).
+
+```{r precio-ponderado-region}
+precio_region <- ventas %>%
+  group_by(region) %>%
+  summarise(precio_prom = sum(ingreso_total) / sum(unidades_vendidas),
+            .groups = "drop")
+
+plot_ly(precio_region, x = ~region, y = ~precio_prom,
+        type = "bar", text = ~round(precio_prom, 2),
+        textposition = "outside") %>%
+  layout(title = "Precio promedio ponderado por región",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Precio ($)"))
+```
+
+## 4.5 Precio vs unidades vendidas
+
+Dispersión coloreada por producto para explorar la relación precio-volumen.
+
+```{r scatter-precio-unidades}
+plot_ly(ventas, x = ~precio_unitario, y = ~unidades_vendidas,
+        color = ~producto, type = "scatter", mode = "markers",
+        marker = list(size = 9, opacity = 0.7)) %>%
+  layout(title = "Precio vs unidades vendidas",
+         xaxis = list(title = "Precio unitario ($)"),
+         yaxis = list(title = "Unidades vendidas"))
+```
+
+## 4.6 Distribución de unidades vendidas
+
+Histograma de volumen por transacción.
+
+```{r hist-unidades}
+plot_ly(ventas, x = ~unidades_vendidas, type = "histogram", nbinsx = 20) %>%
+  layout(title = "Distribución de unidades vendidas",
+         xaxis = list(title = "Unidades"),
+         yaxis = list(title = "Frecuencia"))
+```
+
+# 5. Detalle
+
+## 5.1 Tabla interactiva
+
+Tabla filtrable y ordenable con todos los registros limpios. En el dashboard va a reaccionar a los filtros globales.
+
+```{r tabla-detalle}
+datatable(
+  ventas %>%
+    select(fecha, region, producto, unidades_vendidas,
+           precio_unitario, ingreso_total, ticket_promedio),
+  options = list(pageLength = 10, scrollX = TRUE),
+  filter = "top",
+  rownames = FALSE,
+  caption = "Detalle de ventas"
+)
 ```
