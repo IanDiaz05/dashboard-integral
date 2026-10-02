@@ -111,36 +111,54 @@ sapply(df[, c("unidades_vendidas", "precio_unitario", "ingreso_total")],
 ## 5. Limpieza y variables derivadas --------------------------------------
 
 library(dplyr)
+library(lubridate)
 
 df_clean <- df %>%
+  select(-ingreso_calc, -diff_ingreso) %>%   # quitamos auxiliares de validación
   mutate(
     fecha    = as.Date(fecha, format = "%Y-%m-%d"),
-    region   = factor(region),
-    producto = factor(producto),
+    region   = factor(region, levels = c("Norte", "Sur", "Este", "Oeste")),
+    producto = factor(producto, levels = c("Producto A", "Producto B", "Producto C")),
 
-    # Derivadas temporales para el dashboard
-    anio        = as.integer(format(fecha, "%Y")),
-    mes         = format(fecha, "%Y-%m"),
-    mes_num     = as.integer(format(fecha, "%m")),
-    nombre_mes  = format(fecha, "%B"),
-    trimestre   = paste0(format(fecha, "%Y"), "-T", quarter(fecha)),
-    semana      = format(fecha, "%Y-W%V"),
-    dia_semana  = weekdays(fecha),
+    # Derivadas temporales
+    anio       = as.integer(format(fecha, "%Y")),
+    mes        = format(fecha, "%Y-%m"),
+    mes_num    = as.integer(format(fecha, "%m")),
+    nombre_mes = format(fecha, "%B"),
+    trimestre  = paste0(format(fecha, "%Y"), "-T", quarter(fecha)),
+    semana     = format(fecha, "%Y-W%V"),
+    dia_semana = weekdays(fecha),
 
     # Derivadas de negocio
     ticket_promedio = ingreso_total / unidades_vendidas,
-    ingreso_calc    = unidades_vendidas * precio_unitario,
-    diff_ingreso    = ingreso_total - ingreso_calc
-  ) %>%
-  select(-ingreso_calc, -diff_ingreso)   # columnas auxiliares de validación
+
+    # Categoría de precio (útil para segmentar visualmente)
+    precio_categoria = factor(precio_unitario,
+                              levels = c(50, 75, 100, 125),
+                              labels = c("Económico", "Estándar", "Premium", "Alto"))
+  )
 
 ## 5.1 Chequeo post-limpieza
 str(df_clean)
 summary(df_clean)
 colSums(is.na(df_clean))
 sum(duplicated(df_clean))
-
-## 5.2 Verificación de niveles tras factorizar
 levels(df_clean$region)
 levels(df_clean$producto)
+
+## 5.2 Confirmación del hallazgo: 1 registro por día
+nrow(df_clean) == n_distinct(df_clean$fecha)   # debe ser TRUE
+
+## 5.3 Distribución de registros por región y mes (para series agregadas)
+df_clean %>% count(region, mes) %>% tidyr::pivot_wider(names_from = mes, values_from = n)
+
+## 5.4 Distribución de registros por producto y mes
+df_clean %>% count(producto, mes) %>% tidyr::pivot_wider(names_from = mes, values_from = n) 
+```
+
+---
+## Exportacionde CSV
+```{r export-csv}
+write.csv(df_clean, "ventas_clean.csv", row.names = FALSE)
+saveRDS(df_clean, "ventas_clean.rds")
 ```
