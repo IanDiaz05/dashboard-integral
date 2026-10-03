@@ -1,0 +1,220 @@
+---
+title: "Gráficas del Dashboard Estratégico de Ventas"
+author: "Catálogo de Visualizaciones"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Carga de librerías y dataset
+
+Se importan las librerías de manipulación (`dplyr`, `tidyr`, `lubridate`), visualización interactiva (`plotly`), tablas (`DT`) y formateo (`scales`). Se carga el dataset limpio y se reconvierten los tipos que el CSV no preserva (fechas y factores).
+
+```{r librerias-datos}
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(ggplot2)
+library(plotly)
+library(DT)
+library(scales)
+
+ventas <- read.csv("ventas_clean.csv",
+                   stringsAsFactors = FALSE,
+                   fileEncoding = "UTF-8") %>%
+  mutate(
+    fecha = as.Date(fecha),
+    region = factor(region, levels = c("Norte", "Sur", "Este", "Oeste")),
+    producto = factor(producto, levels = c("Producto A", "Producto B", "Producto C")),
+    precio_categoria = factor(precio_categoria,
+                              levels = c("Económico", "Estándar", "Premium", "Alto"))
+  )
+
+glimpse(ventas)
+```
+
+# 1. Resumen Ejecutivo
+
+## 1.1 KPIs globales
+
+Tabla resumen con los indicadores clave del período completo. En el dashboard estos valores van a `valueBox()`.
+
+```{r kpis-globales}
+kpis <- tibble(
+  Indicador = c("Ingreso total", "Unidades totales", "Ticket promedio",
+                "Días activos", "Ingreso por día", "Región top",
+                "Producto top", "Mes top"),
+  Valor = c(
+    dollar(sum(ventas$ingreso_total), prefix = "$", big.mark = ","),
+    comma(sum(ventas$unidades_vendidas)),
+    dollar(round(sum(ventas$ingreso_total) / sum(ventas$unidades_vendidas), 2)),
+    comma(n_distinct(ventas$fecha)),
+    dollar(round(sum(ventas$ingreso_total) / n_distinct(ventas$fecha), 2)),
+    as.character(ventas %>% group_by(region) %>%
+                   summarise(t = sum(ingreso_total)) %>%
+                   slice_max(t) %>% pull(region)),
+    as.character(ventas %>% group_by(producto) %>%
+                   summarise(t = sum(ingreso_total)) %>%
+                   slice_max(t) %>% pull(producto)),
+    ventas %>% group_by(mes) %>%
+      summarise(t = sum(ingreso_total)) %>%
+      slice_max(t) %>% pull(mes)
+  )
+)
+kpis
+```
+
+## 1.2 Ingreso mensual
+
+Serie temporal principal del dashboard. Es la primera gráfica que un gerente mira.
+
+```{r ingreso-mensual}
+ingreso_mensual <- ventas %>%
+  group_by(mes) %>%
+  summarise(ingreso = sum(ingreso_total),
+            unidades = sum(unidades_vendidas), .groups = "drop")
+
+plot_ly(ingreso_mensual, x = ~mes, y = ~ingreso,
+        type = "scatter", mode = "lines+markers",
+        line = list(width = 3)) %>%
+  layout(title = "Ingreso mensual",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Ingreso ($)"))
+```
+
+# 2. Análisis por Región
+
+## 2.1 Ingreso y participación por región
+
+Ranking horizontal con valor absoluto y porcentaje de participación.
+
+```{r ingreso-region}
+ingreso_region <- ventas %>%
+  group_by(region) %>%
+  summarise(ingreso = sum(ingreso_total),
+            unidades = sum(unidades_vendidas), .groups = "drop") %>%
+  mutate(participacion = ingreso / sum(ingreso) * 100) %>%
+  arrange(desc(ingreso))
+
+plot_ly(ingreso_region, x = ~ingreso, y = ~reorder(region, ingreso),
+        type = "bar", orientation = "h",
+        text = ~paste0("$", comma(ingreso), "  (", round(participacion, 1), "%)"),
+        textposition = "outside") %>%
+  layout(title = "Ingreso por región",
+         xaxis = list(title = "Ingreso ($)"),
+         yaxis = list(title = ""))
+```
+
+## 2.2 Evolución mensual por región
+
+Series multi-línea para comparar trayectorias regionales a lo largo de los 6 meses.
+
+```{r region-mes-serie}
+region_mes <- ventas %>%
+  group_by(mes, region) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop")
+
+plot_ly(region_mes, x = ~mes, y = ~ingreso, color = ~region,
+        type = "scatter", mode = "lines+markers") %>%
+  layout(title = "Evolución mensual por región",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Ingreso ($)"))
+```
+
+# 3. Análisis por Producto
+
+## 3.1 Ingreso y participación por producto
+
+Ranking horizontal de productos por ingreso generado.
+
+```{r ingreso-producto}
+ingreso_producto <- ventas %>%
+  group_by(producto) %>%
+  summarise(ingreso = sum(ingreso_total),
+            unidades = sum(unidades_vendidas), .groups = "drop") %>%
+  mutate(participacion = ingreso / sum(ingreso) * 100) %>%
+  arrange(desc(ingreso))
+
+plot_ly(ingreso_producto, x = ~ingreso, y = ~reorder(producto, ingreso),
+        type = "bar", orientation = "h",
+        text = ~paste0("$", comma(ingreso), "  (", round(participacion, 1), "%)"),
+        textposition = "outside") %>%
+  layout(title = "Ingreso por producto",
+         xaxis = list(title = "Ingreso ($)"),
+         yaxis = list(title = ""))
+```
+
+## 3.3 Mix de productos por región
+
+Barras 100% apiladas mostrando la composición interna de cada región.
+
+```{r mix-region-producto}
+mix_rp <- ventas %>%
+  group_by(region, producto) %>%
+  summarise(ingreso = sum(ingreso_total), .groups = "drop") %>%
+  group_by(region) %>%
+  mutate(porcentaje = ingreso / sum(ingreso) * 100) %>%
+  ungroup()
+
+plot_ly(mix_rp, x = ~region, y = ~porcentaje, color = ~producto,
+        type = "bar") %>%
+  layout(title = "Mix de productos por región (%)",
+         barmode = "stack",
+         xaxis = list(title = ""),
+         yaxis = list(title = "% del ingreso regional"))
+```
+
+# 4. Mix, Precio y Relaciones
+
+## 4.4 Precio promedio ponderado por región
+
+Precio efectivo que termina pagando cada región (ingreso total / unidades totales).
+
+```{r precio-ponderado-region}
+precio_region <- ventas %>%
+  group_by(region) %>%
+  summarise(precio_prom = sum(ingreso_total) / sum(unidades_vendidas),
+            .groups = "drop")
+
+plot_ly(precio_region, x = ~region, y = ~precio_prom,
+        type = "bar", text = ~round(precio_prom, 2),
+        textposition = "outside") %>%
+  layout(title = "Precio promedio ponderado por región",
+         xaxis = list(title = ""),
+         yaxis = list(title = "Precio ($)"))
+```
+
+## 4.6 Distribución de unidades vendidas
+
+Histograma de volumen por transacción.
+
+```{r hist-unidades}
+plot_ly(ventas, x = ~unidades_vendidas, type = "histogram", nbinsx = 20) %>%
+  layout(title = "Distribución de unidades vendidas",
+         xaxis = list(title = "Unidades"),
+         yaxis = list(title = "Frecuencia"))
+```
+
+# 5. Detalle
+
+## 5.1 Tabla interactiva
+
+Tabla filtrable y ordenable con todos los registros limpios. En el dashboard va a reaccionar a los filtros globales.
+
+```{r tabla-detalle}
+datatable(
+  ventas %>%
+    select(fecha, region, producto, unidades_vendidas,
+           precio_unitario, ingreso_total, ticket_promedio),
+  options = list(pageLength = 10, scrollX = TRUE),
+  filter = "top",
+  rownames = FALSE,
+  caption = "Detalle de ventas"
+)
+```
