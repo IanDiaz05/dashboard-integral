@@ -1,158 +1,268 @@
+library(shiny)
+library(shinydashboard)
+library(shinyWidgets)
 library(DT)
+library(plotly)
+library(dplyr)
+library(scales)
+library(lubridate)
 
-# 1. Carga inicial de datos (fuera de la función server)
-df <- read.csv("datos_dashboard_examen.csv", stringsAsFactors = FALSE)
+# 1. Carga y preparación inicial (segura)
+ventas <- tryCatch(
+  {
+    df <- read.csv("ventas_clean.csv", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+    df$fecha <- as.Date(df$fecha)
+    # `mes` ("YYYY-MM") ordenado cronologicamente como factor
+    df$mes <- factor(df$mes, levels = sort(unique(df$mes)))
+    df$region <- factor(df$region, levels = c("Norte", "Sur", "Este", "Oeste"))
+    df$producto <- factor(df$producto, levels = sort(unique(as.character(df$producto))))
+    df
+  },
+  error = function(e) {
+    warning("No se pudo leer ventas_clean.csv: ", conditionMessage(e))
+    data.frame(
+      fecha = as.Date(character()),
+      mes = factor(),
+      region = factor(),
+      producto = factor(),
+      unidades_vendidas = numeric(),
+      precio_unitario = numeric(),
+      ingreso_total = numeric(),
+      ticket_promedio = numeric()
+    )
+  }
+)
 
-# Formato de números grandes: comas como separador de miles y punto decimal
-fmt_miles <- function(x) {
-    format(x, big.mark = ",", decimal.mark = ".", scientific = FALSE, trim = TRUE)
-}
+min_fecha_global <- if (nrow(ventas) > 0) min(ventas$fecha, na.rm = TRUE) else Sys.Date() - 180
+max_fecha_global <- if (nrow(ventas) > 0) max(ventas$fecha, na.rm = TRUE) else Sys.Date()
+regiones_global <- if (nrow(ventas) > 0) sort(unique(as.character(ventas$region))) else c("Norte", "Sur", "Este", "Oeste")
+productos_global <- if (nrow(ventas) > 0) sort(unique(as.character(ventas$producto))) else c("Producto A", "Producto B", "Producto C")
 
 server <- function(input, output, session) {
 
-    # 2. Dataset reactivo filtrado por el año seleccionado --------------------
-    df_filtered <- reactive({
-        req(input$year_slider)
-        df %>% filter(Year == input$year_slider)
-    })
+  # Restablecer filtros a los valores globales
+  observeEvent(input$reset_filtros, {
+    updateDateRangeInput(session, "filtro_fecha",
+                         start = min_fecha_global, end = max_fecha_global,
+                         min = min_fecha_global, max = max_fecha_global)
+    updatePickerInput(session, "filtro_region", selected = regiones_global)
+    updatePickerInput(session, "filtro_producto", selected = productos_global)
+  })
 
-    # 3. ValueBoxes ----------------------------------------------------------
+  # 2. Datos reactivos: unico punto de filtrado
+  data_filtrada <- reactive({
+    req(input$filtro_fecha, input$filtro_region, input$filtro_producto)
+    datos <- ventas %>%
+      filter(
+        fecha >= as.Date(input$filtro_fecha[1]),
+        fecha <= as.Date(input$filtro_fecha[2]),
+        as.character(region) %in% input$filtro_region,
+        as.character(producto) %in% input$filtro_producto
+      )
+    validate(need(nrow(datos) > 0, "No hay datos para la selección actual. Ajuste los filtros."))
+    datos
+  })
 
-    # Promedio de expectativa de vida del año seleccionado
-    output$vbox_avg_life <- renderValueBox({
-        datos <- df_filtered()
-        req(nrow(datos) > 0)
+  # ---- ValueBoxes ejecutivos ----
+  output$vb_ingreso <- renderValueBox({
+    d <- data_filtrada()
+    valueBox(
+      value = paste0("$", comma(sum(d$ingreso_total, na.rm = TRUE))),
+      subtitle = "Ingreso Total",
+      icon = icon("dollar-sign"),
+      color = "navy"
+    )
+  })
 
-        promedio <- mean(datos$Lifeexpectancy, na.rm = TRUE)
+  output$vb_unidades <- renderValueBox({
+    d <- data_filtrada()
+    valueBox(
+      value = comma(sum(d$unidades_vendidas, na.rm = TRUE)),
+      subtitle = "Unidades Totales",
+      icon = icon("cubes"),
+      color = "purple"
+    )
+  })
 
-        valueBox(
-            value = format(round(promedio, 2), big.mark = ",", decimal.mark = ".",
-                           scientific = FALSE, trim = TRUE, nsmall = 2),
-            subtitle = "Expectativa de Vida Promedio",
-            icon = icon("heart"),
-            color = "aqua"
-        )
-    })
+  output$vb_ticket <- renderValueBox({
+    d <- data_filtrada()
+    ticket <- sum(d$ingreso_total, na.rm = TRUE) / sum(d$unidades_vendidas, na.rm = TRUE)
+    valueBox(
+      value = dollar(ticket, prefix = "$", accuracy = 0.01),
+      subtitle = "Ticket Promedio (precio efectivo)",
+      icon = icon("receipt"),
+      color = "teal"
+    )
+  })
 
-    # Población total del año seleccionado
-    output$vbox_total_pop <- renderValueBox({
-        datos <- df_filtered()
-        req(nrow(datos) > 0)
+  output$vb_lider <- renderValueBox({
+    d <- data_filtrada()
+    top_region <- d %>%
+      group_by(region) %>%
+      summarise(t = sum(ingreso_total, na.rm = TRUE), .groups = "drop") %>%
+      arrange(desc(t)) %>%
+      slice(1)
+    top_prod <- d %>%
+      group_by(producto) %>%
+      summarise(t = sum(ingreso_total, na.rm = TRUE), .groups = "drop") %>%
+      arrange(desc(t)) %>%
+      slice(1)
+    valueBox(
+      value = as.character(top_region$region[1]),
+      subtitle = paste0("Región Líder | Prod: ", as.character(top_prod$producto[1])),
+      icon = icon("trophy"),
+      color = "green"
+    )
+  })
 
-        total_poblacion <- sum(as.numeric(datos$Population), na.rm = TRUE)
+  # ---- Plot 1: Ingreso mensual (linea + marcadores) ----
+  output$plot_ingreso_mensual <- renderPlotly({
+    d <- data_filtrada()
+    ingreso_mensual <- d %>%
+      group_by(mes) %>%
+      summarise(ingreso = sum(ingreso_total, na.rm = TRUE),
+                unidades = sum(unidades_vendidas, na.rm = TRUE),
+                .groups = "drop") %>%
+      arrange(mes)
+    plot_ly(ingreso_mensual, x = ~mes, y = ~ingreso,
+            type = "scatter", mode = "lines+markers",
+            line = list(width = 3),
+            hovertemplate = "%{x}<br>$%{y:,.0f}<extra></extra>") %>%
+      layout(title = "Ingreso mensual",
+             xaxis = list(title = ""),
+             yaxis = list(title = "Ingreso ($)"))
+  })
 
-        valueBox(
-            value = format(total_poblacion, big.mark = ",", decimal.mark = ".",
-                           scientific = FALSE, trim = TRUE),
-            subtitle = "Población Total",
-            icon = icon("users"),
-            color = "green"
-        )
-    })
+  # ---- Plot 2: Ranking regional (barras horizontales + cuota) ----
+  output$plot_ingreso_region <- renderPlotly({
+    d <- data_filtrada()
+    ingreso_region <- d %>%
+      group_by(region) %>%
+      summarise(ingreso = sum(ingreso_total, na.rm = TRUE),
+                unidades = sum(unidades_vendidas, na.rm = TRUE),
+                .groups = "drop") %>%
+      mutate(participacion = ingreso / sum(ingreso) * 100) %>%
+      arrange(desc(ingreso))
+    plot_ly(ingreso_region, x = ~ingreso, y = ~reorder(region, ingreso),
+            type = "bar", orientation = "h",
+            text = ~paste0("$", comma(ingreso), "  (", round(participacion, 1), "%)"),
+            textposition = "outside") %>%
+      layout(title = "Ingreso por región",
+             xaxis = list(title = "Ingreso ($)"),
+             yaxis = list(title = ""))
+  })
 
-    # País con mayor expectativa de vida
-    output$vbox_top_country <- renderValueBox({
-        datos <- df_filtered()
-        req(nrow(datos) > 0)
+  # ---- Plot 3: Evolucion temporal comparativa por region ----
+  output$plot_evolucion_region <- renderPlotly({
+    d <- data_filtrada()
+    region_mes <- d %>%
+      group_by(mes, region) %>%
+      summarise(ingreso = sum(ingreso_total, na.rm = TRUE), .groups = "drop") %>%
+      arrange(mes)
+    plot_ly(region_mes, x = ~mes, y = ~ingreso, color = ~region,
+            type = "scatter", mode = "lines+markers",
+            hovertemplate = "%{fullData.name}<br>%{x}: $%{y:,.0f}<extra></extra>") %>%
+      layout(title = "Evolución mensual por región",
+             xaxis = list(title = ""),
+             yaxis = list(title = "Ingreso ($)"))
+  })
 
-        pais_top <- datos$Country[which.max(datos$Lifeexpectancy)]
+  # ---- Plot 4: Ingreso por producto ----
+  output$plot_ingreso_producto <- renderPlotly({
+    d <- data_filtrada()
+    ingreso_producto <- d %>%
+      group_by(producto) %>%
+      summarise(ingreso = sum(ingreso_total, na.rm = TRUE),
+                unidades = sum(unidades_vendidas, na.rm = TRUE),
+                .groups = "drop") %>%
+      mutate(participacion = ingreso / sum(ingreso) * 100) %>%
+      arrange(desc(ingreso))
+    plot_ly(ingreso_producto, x = ~ingreso, y = ~reorder(producto, ingreso),
+            type = "bar", orientation = "h",
+            text = ~paste0("$", comma(ingreso), "  (", round(participacion, 1), "%)"),
+            textposition = "outside") %>%
+      layout(title = "Ingreso por producto",
+             xaxis = list(title = "Ingreso ($)"),
+             yaxis = list(title = ""))
+  })
 
-        valueBox(
-            value = pais_top,
-            subtitle = "País con Mayor Expectativa de Vida",
-            icon = icon("trophy"),
-            color = "yellow"
-        )
-    })
+  # ---- Plot 5: Mix de producto por region (100% apilado, base ingreso) ----
+  output$plot_mix_region <- renderPlotly({
+    d <- data_filtrada()
+    mix_rp <- d %>%
+      group_by(region, producto) %>%
+      summarise(ingreso = sum(ingreso_total, na.rm = TRUE), .groups = "drop") %>%
+      group_by(region) %>%
+      mutate(porcentaje = ingreso / sum(ingreso) * 100) %>%
+      ungroup()
+    plot_ly(mix_rp, x = ~region, y = ~porcentaje, color = ~producto,
+            type = "bar",
+            hovertemplate = "%{fullData.name} en %{x}: %{y:.1f}%<extra></extra>") %>%
+      layout(title = "Mix de productos por región (%)",
+             barmode = "stack",
+             xaxis = list(title = ""),
+             yaxis = list(title = "% del ingreso regional", ticksuffix = "%"))
+  })
 
-    # 4. Gráficos Plotly -----------------------------------------------------
+  # ---- Plot 6: Precio promedio ponderado por region ----
+  output$plot_precio_ponderado <- renderPlotly({
+    d <- data_filtrada()
+    precio_region <- d %>%
+      group_by(region) %>%
+      summarise(precio_prom = sum(ingreso_total, na.rm = TRUE) / sum(unidades_vendidas, na.rm = TRUE),
+                .groups = "drop")
+    plot_ly(precio_region, x = ~region, y = ~precio_prom,
+            type = "bar", text = ~paste0("$", round(precio_prom, 2)),
+            textposition = "outside",
+            hovertemplate = "%{x}: $%{y:.2f}<extra></extra>") %>%
+      layout(title = "Precio promedio ponderado por región",
+             xaxis = list(title = ""),
+             yaxis = list(title = "Precio ($)"))
+  })
 
-    # Gráfico de burbujas: Expectativa de Vida vs GDP
-    output$bubble_chart <- renderPlotly({
-        p_burbujas <- ggplot(
-            df_filtered(),
-            aes(x = GDP, y = Lifeexpectancy, size = Population, color = Continent)
-        ) +
-            geom_point(alpha = 0.7) +
-            scale_x_continuous(limits = c(1.68, 119172.74), labels = fmt_miles) +
-            scale_y_continuous(limits = c(36.3, 89.0)) +
-            scale_color_brewer(palette = "Set2") +
-            guides(size = "none") +
-            labs(
-                x = "PIB per cápita",
-                y = "Expectativa de Vida",
-                color = "Continente"
-            )
+  # ---- Plot 7: Distribucion de unidades vendidas ----
+  output$plot_distribucion_unidades <- renderPlotly({
+    d <- data_filtrada()
+    plot_ly(d, x = ~unidades_vendidas, type = "histogram", nbinsx = 20) %>%
+      layout(title = "Distribución de unidades vendidas",
+             xaxis = list(title = "Unidades"),
+             yaxis = list(title = "Frecuencia"))
+  })
 
-        ggplotly(p_burbujas)
-    })
-
-    # Evolución histórica (usa el dataset completo, no el reactivo)
-    output$line_trend_chart <- renderPlotly({
-        df_linea <- df %>%
-            group_by(Year, Continent) %>%
-            summarise(
-                LifeExp = mean(Lifeexpectancy, na.rm = TRUE),
-                .groups = "drop"
-            )
-
-        p_linea <- ggplot(
-            df_linea,
-            aes(x = Year, y = LifeExp, color = Continent, group = Continent)
-        ) +
-            geom_line(linewidth = 1) +
-            geom_point(size = 2) +
-            scale_color_brewer(palette = "Set2") +
-            labs(
-                x = "Año",
-                y = "Expectativa de Vida Promedio",
-                color = "Continente"
-            )
-
-        ggplotly(p_linea)
-    })
-
-    # Boxplot: Expectativa de Vida según Status (dataset reactivo)
-    output$boxplot_status_chart <- renderPlotly({
-        p_boxplot <- ggplot(
-            df_filtered(),
-            aes(x = Status, y = Lifeexpectancy, fill = Status)
-        ) +
-            geom_boxplot(alpha = 0.85, outlier.color = "gray50", outlier.size = 1.5) +
-            scale_fill_brewer(palette = "Set2") +
-            labs(x = "Status", y = "Expectativa de Vida", fill = "Status")
-
-        ggplotly(p_boxplot)
-    })
-
-    # Top 10 países con mayor GDP del año seleccionado
-    output$bar_top10_chart <- renderPlotly({
-        top10 <- df_filtered() %>%
-            arrange(desc(GDP)) %>%
-            head(10)
-
-        p_top10 <- ggplot(
-            top10,
-            aes(x = reorder(Country, GDP), y = GDP, fill = Continent)
-        ) +
-            geom_col() +
-            coord_flip() +
-            scale_fill_brewer(palette = "Set2") +
-            scale_y_continuous(labels = fmt_miles) +
-            labs(x = "País", y = "PIB per cápita", fill = "Continente")
-
-        ggplotly(p_top10)
-    })
-
-    # 5. Tabla interactiva ---------------------------------------------------
-
-    output$data_table <- renderDT({
-        datatable(
-            df_filtered(),
-            options = list(pageLength = 5, scrollX = TRUE),
-            rownames = FALSE
-        ) %>%
-            formatRound("Population", digits = 0, mark = ",", dec.mark = ".") %>%
-            formatRound("GDP", digits = 2, mark = ",", dec.mark = ".")
-    })
+  # ---- Tabla maestra con exportacion ----
+  output$tabla_ventas <- renderDT({
+    d <- data_filtrada()
+    cols <- intersect(
+      c("fecha", "mes", "region", "producto", "unidades_vendidas",
+        "precio_unitario", "ingreso_total", "ticket_promedio"),
+      names(d)
+    )
+    dt <- datatable(
+      d %>% select(all_of(cols)),
+      extensions = c("Buttons"),
+      options = list(
+        pageLength = 10,
+        lengthMenu = c(10, 25, 50, 100),
+        scrollX = TRUE,
+        dom = "Blfrtip",
+        buttons = c("copy", "csv", "excel", "pdf", "print")
+      ),
+      filter = "top",
+      rownames = FALSE,
+      caption = "Detalle de ventas"
+    )
+    if ("ingreso_total" %in% cols) {
+      dt <- formatCurrency(dt, "ingreso_total", currency = "$", digits = 0, mark = ",")
+    }
+    if ("precio_unitario" %in% cols) {
+      dt <- formatCurrency(dt, "precio_unitario", currency = "$", digits = 2, mark = ",")
+    }
+    if ("ticket_promedio" %in% cols) {
+      dt <- formatCurrency(dt, "ticket_promedio", currency = "$", digits = 2, mark = ",")
+    }
+    if ("unidades_vendidas" %in% cols) {
+      dt <- formatRound(dt, "unidades_vendidas", digits = 0, mark = ",")
+    }
+    dt
+  })
 }
